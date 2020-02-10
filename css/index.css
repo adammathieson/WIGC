@@ -101,6 +101,7 @@ img {
 header {
   display: flex;
   justify-content: space-between;
+  position: sticky;
 }
 header #wigc-logo {
   padding: 1em;
@@ -111,9 +112,11 @@ header nav {
   justify-content: space-between;
   align-items: center;
   width: 50%;
+  border: 1px solid red;
 }
 header nav a {
   text-decoration: none;
+  font-size: 1.2rem;
 }
 
 #main-title {
