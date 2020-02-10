@@ -98,4 +98,8 @@ img {
   height: auto;
 }
 
+header #main-title {
+  border: 1px solid red;
+}
+
 /*# sourceMappingURL=index.css.map */
