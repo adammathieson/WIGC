@@ -98,7 +98,25 @@ img {
   height: auto;
 }
 
-header #main-title {
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header #wigc-logo {
+  padding: 1em;
+  width: 25%;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+header nav a {
+  text-decoration: none;
+}
+
+#main-title {
   border: 1px solid red;
 }
 
