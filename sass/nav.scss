@@ -2,20 +2,21 @@ header {
     display: flex;
     justify-content: space-between;
     position: sticky;
+    background: rgb(71, 74, 72);
 
     #wigc-logo {
         padding: 1em;
         width: 25%;
     }
 
-    nav {
+    .nav-link ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 50%;
-        border: 1px solid red;
+        // border: 1px solid red;
 
-        a {
+        ul li a {
             text-decoration: none;
             font-size: 1.2rem;
         }

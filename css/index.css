@@ -102,6 +102,7 @@ header {
   display: flex;
   justify-content: space-between;
   position: sticky;
+  background: #474a48;
 }
 header #wigc-logo {
   padding: 1em;
