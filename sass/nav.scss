@@ -48,6 +48,10 @@ nav {
         cursor: pointer;
         // border: 1px solid yellow;
 
+        @media screen and (min-width: 501px) {
+            display: none;
+        }
+
         div {
         background-color: rgba(255, 255, 255, 0.651);
         height: 3px;
