@@ -25,6 +25,7 @@ nav {
                 width: 100%;
                 background: rgb(71, 74, 72);
         }
+
         li a {
             text-decoration: none;
             font-size: 1.4rem;
@@ -34,13 +35,17 @@ nav {
                 font-size: 2rem;
             }
         }
+    }
 
+    .toggle {
+        display: none;
     }
 
     .burger {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        cursor: pointer;
         // border: 1px solid yellow;
 
         div {

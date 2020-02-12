@@ -136,10 +136,14 @@ nav ul li a {
     font-size: 2rem;
   }
 }
+nav .toggle {
+  display: none;
+}
 nav .burger {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer;
 }
 nav .burger div {
   background-color: rgba(255, 255, 255, 0.651);
