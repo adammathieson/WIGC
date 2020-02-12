@@ -17,7 +17,7 @@ nav {
         width: 50%;
         border: 1px solid red;
 
-        @media screen and (max-width: 500px) {
+        @media screen and ($mobile) {
                 position: absolute;
                 flex-direction: column;
                 top: 100%;
@@ -31,7 +31,7 @@ nav {
             font-size: 1.4rem;
             color: rgba(255, 255, 255, 0.651);
 
-            @media screen and (max-width: 500px) {
+            @media screen and ($mobile) {
                 font-size: 2rem;
             }
         }
@@ -48,7 +48,7 @@ nav {
         cursor: pointer;
         // border: 1px solid yellow;
 
-        @media screen and (min-width: 501px) {
+        @media screen and ($desktop) {
             display: none;
         }
 
