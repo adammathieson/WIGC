@@ -17,11 +17,24 @@ nav {
         width: 50%;
         border: 1px solid red;
 
+        @media screen and (max-width: 500px) {
+                position: absolute;
+                flex-direction: column;
+                top: 100%;
+                height: 92vh;
+                width: 100%;
+                background: rgb(71, 74, 72);
+        }
         li a {
             text-decoration: none;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             color: rgba(255, 255, 255, 0.651);
+
+            @media screen and (max-width: 500px) {
+                font-size: 2rem;
+            }
         }
+
     }
 
     .burger {
