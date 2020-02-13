@@ -114,7 +114,6 @@ nav ul {
   justify-content: space-around;
   align-items: center;
   width: 50%;
-  border: 1px solid red;
 }
 @media screen and (max-width: 500px) {
   nav ul {
