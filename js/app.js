@@ -1,8 +1,8 @@
-const menu = document.querySelector('.nav-list')
-const burger = document.querySelector('.burger')
 
 const toggleMenu = () => {
-
+    const menu = document.querySelector('.nav-list')
+    const burger = document.querySelector('.burger')
+    
     burger.addEventListener('click', () => {
         menu.classList.toggle('toggle')
     })
@@ -30,6 +30,7 @@ const toggleMenu = () => {
 }
 
 const load = () => {
+    const menu = document.querySelector('.nav-list')
     if (window.innerWidth > 500) {
         menu.classList.remove('toggle')
         console.log('load')
