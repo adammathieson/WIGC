@@ -31,6 +31,10 @@ nav {
             font-size: 1.4rem;
             color: rgba(255, 255, 255, 0.651);
 
+            :hover {
+                color: yellow;
+            }
+
             @media screen and ($mobile) {
                 font-size: 2rem;
             }

@@ -1,7 +1,5 @@
 const menu = document.querySelector('.nav-list')
 const burger = document.querySelector('.burger')
-// const body = document.querySelector("body")
-
 
 const toggleMenu = () => {
 
@@ -17,9 +15,8 @@ const toggleMenu = () => {
             menu.classList.add('toggle')
         }        
     })
-}
 
-const clickOffClose = () => {
+    // Click off elements to close menu
     window.addEventListener('mouseup', () => {
         if (
             !menu.classList.contains('toggle') &&
@@ -30,8 +27,19 @@ const clickOffClose = () => {
             }
         
     })
-    
 }
 
-toggleMenu()
-clickOffClose()
+const load = () => {
+    if (window.innerWidth > 500) {
+        menu.classList.remove('toggle')
+        console.log('load')
+    }
+}
+
+const app = () => {
+    toggleMenu()
+    load()
+}
+
+app()
+

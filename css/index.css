@@ -130,6 +130,9 @@ nav ul li a {
   font-size: 1.4rem;
   color: rgba(255, 255, 255, 0.651);
 }
+nav ul li a :hover {
+  color: yellow;
+}
 @media screen and (max-width: 500px) {
   nav ul li a {
     font-size: 2rem;
