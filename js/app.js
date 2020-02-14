@@ -3,11 +3,9 @@ const toggleMenu = () => {
     const menu = document.querySelector('.nav-list')
     const burger = document.querySelector('.burger')
     const navLinks = document.querySelectorAll('.nav-list li a')
-    console.log(navLinks)
     
     burger.addEventListener('click', () => {
         menu.classList.toggle('toggle')
-        // console.log('click')
     })
     
     // Hides menu when resizing to mobile view
