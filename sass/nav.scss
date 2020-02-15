@@ -43,7 +43,7 @@ header {
 
             li a {
                 text-decoration: none;
-                font-size: 1.4rem;
+                font-size: 1.8rem;
                 color: rgba(255, 255, 255, 0.651);
 
                 @media screen and ($mobile) {
@@ -80,6 +80,25 @@ header {
                 margin: 4px;
                 border-radius: 3px;
             }
+        }
+    }
+
+    .banner-text {
+        text-align: center;
+        color: rgba(248, 234, 234, 0.842);
+        background: transparentize($color: #000000, $amount: 0.7);
+        border-radius: 5px;
+        padding: 3em;
+        // border: 1px solid blue;
+
+        @media screen and ($tablet) {
+            width: 40%;
+            float: right;
+            margin-right: 5em;
+            line-height: 4.2rem;
+            // height: 100%;
+            // display: flex;
+            // flex-direction: column;
         }
     }
 }
