@@ -1,10 +1,14 @@
 header {
+    background-image: url(../img/mink-lake-reflection.png);
+    // background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
 
     nav {
         display: flex;
         justify-content: space-between;
         position: sticky;
-        background: rgb(71, 74, 72);
+        // background: rgb(71, 74, 72);
         min-height: 8vh;
 
         #wigc-logo {
