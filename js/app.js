@@ -18,24 +18,23 @@ const toggleMenu = () => {
     })
 
     // Click off elements to close menu
-    window.addEventListener('mouseup', () => {
-        if (
-            !menu.classList.contains('toggle') &&
-            event.target !== menu && 
-            event.target !== burger && 
-            navLinks.forEach(link => link !== event.target)
-        ) {
-            menu.classList.add('toggle')            
-            }
-        
-    })
+    // window.addEventListener('mouseup', (e) => {
+    //     if (
+    //         !menu.classList.contains('toggle') &&
+    //         event.target !== menu &&
+    //         event.target !== burger &&
+    //         navLinks.forEach(link => link !== event.target)
+    //     ) {
+    //         menu.classList.add('toggle')
+    //         }
+    // })
 }
 
 const load = () => {
     const menu = document.querySelector('.nav-list')
     if (window.innerWidth > 500) {
         menu.classList.remove('toggle')
-        console.log('load')
+        // console.log('loaded')
     }
 }
 
