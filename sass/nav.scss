@@ -2,6 +2,7 @@ header {
     background-image: url(../img/mink-lake-reflection.png);
     background-size: cover;
     min-height: 400px;
+    margin-bottom: 4em;
     // height: 50vh;
 
     nav {
@@ -85,10 +86,11 @@ header {
 
     .banner {
         text-align: center;
-        color: rgba(248, 234, 234, 0.842);
+        // color: rgba(248, 234, 234, 0.842);
         background: transparentize($color: #000000, $amount: 0.7);
         border-radius: 5px;
         padding: 3em;
+        margin-bottom: 1em;
         // border: 1px solid blue;
 
         @media screen and ($tablet) {

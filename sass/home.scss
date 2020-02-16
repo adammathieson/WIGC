@@ -1,4 +1,46 @@
 
-#main-title {
-    
+.mid-content {
+    background: black;
+    display: flex;
+    padding: 3em;
+
+    .img-group {
+        border: 1px solid red;
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        img {
+            padding: 2em;
+
+        }
+
+        .small {
+            width: 50%;
+        }
+
+        .small-wide {
+            
+        }
+    }
+
+    .copy {
+        border: 1px solid blue;
+        width: 50%;
+        padding: 2em;
+
+        .bold {
+            font-weight: 900;
+        }
+
+        ul li {
+            padding: 1em 0 1em 2em;
+            font-size: 1.5rem;
+
+            ::before {
+                content: ""
+            }
+        }
+    }
 }
