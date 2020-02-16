@@ -103,7 +103,6 @@ header {
   background-image: url(../img/mink-lake-reflection.png);
   background-size: cover;
   min-height: 400px;
-  height: 50vh;
 }
 header nav {
   display: flex;
@@ -176,7 +175,7 @@ header nav .burger div {
   margin: 4px;
   border-radius: 3px;
 }
-header .banner-text {
+header .banner {
   text-align: center;
   color: rgba(248, 234, 234, 0.842);
   background: rgba(0, 0, 0, 0.3);
@@ -184,11 +183,16 @@ header .banner-text {
   padding: 3em;
 }
 @media screen and (max-width: 800px) {
-  header .banner-text {
+  header .banner {
     width: 40%;
     float: right;
-    margin-right: 5em;
+    margin-right: 3em;
     line-height: 4.2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  header .banner p {
+    display: none;
   }
 }
 
