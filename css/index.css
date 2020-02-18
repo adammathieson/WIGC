@@ -201,7 +201,6 @@ header .banner {
 .mid-content {
   background: black;
   display: flex;
-  padding: 3em;
 }
 .mid-content .img-group {
   border: 1px solid red;
@@ -212,9 +211,7 @@ header .banner {
 }
 .mid-content .img-group img {
   padding: 2em;
-}
-.mid-content .img-group .small {
-  width: 50%;
+  max-height: 200px;
 }
 .mid-content .copy {
   border: 1px solid blue;
@@ -227,9 +224,6 @@ header .banner {
 .mid-content .copy ul li {
   padding: 1em 0 1em 2em;
   font-size: 1.5rem;
-}
-.mid-content .copy ul li ::before {
-  content: "";
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -2,7 +2,7 @@
 .mid-content {
     background: black;
     display: flex;
-    padding: 3em;
+    // padding: 3em;
 
     .img-group {
         border: 1px solid red;
@@ -13,15 +13,17 @@
 
         img {
             padding: 2em;
+            max-height: 200px;
 
         }
 
         .small {
-            width: 50%;
+            // max-width: 50%;
+            
         }
 
         .small-wide {
-            
+            // max-height: 200px;
         }
     }
 
@@ -37,10 +39,6 @@
         ul li {
             padding: 1em 0 1em 2em;
             font-size: 1.5rem;
-
-            ::before {
-                content: ""
-            }
         }
     }
 }
