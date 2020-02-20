@@ -226,4 +226,10 @@ header .banner {
   font-size: 1.5rem;
 }
 
+.about-container {
+  background-image: url(../img/scenes/WIGC_homescape.png);
+  background-size: cover;
+  min-height: 100vh;
+}
+
 /*# sourceMappingURL=index.css.map */
