@@ -2,7 +2,14 @@
     background-image: url(../img/scenes/WIGC_homescape_about.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 900px;
+    position: relative;
     // border: 1px solid red;
     // display: none;
+}
+
+.sheep-img{
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
 }
