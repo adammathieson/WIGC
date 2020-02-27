@@ -66,7 +66,7 @@ html, body {
 }
 
 body {
-  max-width: 1000px;
+  max-width: 1440px;
   margin: 0 auto;
   background-image: url(../img/webb-dark/webb-dark.png);
 }
@@ -101,10 +101,7 @@ img {
 }
 
 header {
-  background-image: url(../img/mink-lake-reflection.png);
-  background-size: cover;
-  min-height: 400px;
-  margin-bottom: 4em;
+  background: linear-gradient(180deg, #092264 0%, rgba(104, 1, 153, 0.64) 100%);
 }
 header nav {
   display: flex;
@@ -227,9 +224,10 @@ header .banner {
 }
 
 .about-container {
-  background-image: url(../img/scenes/WIGC_homescape.png);
+  background-image: url(../img/scenes/WIGC_homescape_about.png);
   background-size: cover;
-  min-height: 100vh;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=index.css.map */
