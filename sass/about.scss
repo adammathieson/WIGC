@@ -2,14 +2,30 @@
     background-image: url(../img/scenes/WIGC_homescape_about.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 900px;
+    width: 100%;
+    min-height: 900px;
     position: relative;
+    border-radius: 20px;
     // border: 1px solid red;
     // display: none;
+    margin-bottom: 2em;
 }
 
 .sheep-img{
     position: absolute;
     bottom: 10%;
     left: 40%;
+    // border: 1px solid red;
+    // display: none;
+    animation: walk 4s alternate infinite;
+}
+
+@keyframes walk {
+    0% {
+        transform: translateX(0px)
+    }
+
+    100% {
+        transform: translateX(300px);
+    }
 }
