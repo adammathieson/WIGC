@@ -242,12 +242,67 @@ header .banner {
   animation: walk 4s alternate infinite;
 }
 
+.sheep-img2 {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  animation: hop 4s alternate infinite;
+}
+
+.logo-spinner {
+  justify-content: center;
+  width: 151px;
+}
+
+#spin-big {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  right: 0;
+  width: 205px;
+  animation: reverse-spin 2s infinite linear;
+}
+
+#spin-mid {
+  position: absolute;
+  z-index: 1;
+  left: 30px;
+  top: 30px;
+  animation: spin 1s infinite linear;
+}
+
+#spin-little {
+  position: absolute;
+  z-index: 2;
+  left: 63px;
+  top: 63px;
+  animation: reverse-spin 2s infinite linear;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes reverse-spin {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 @keyframes walk {
   0% {
     transform: translateX(0px);
   }
   100% {
     transform: translateX(300px);
+  }
+}
+@keyframes hop {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-300px);
   }
 }
 
