@@ -240,7 +240,7 @@ header .banner {
   bottom: 160px;
   left: 450px;
   z-index: 2;
-  animation: hop 1s alternate 1s infinite linear;
+  animation: hop 1s 1s infinite ease-in-out;
 }
 
 .sheep-img2 {
@@ -248,14 +248,23 @@ header .banner {
   bottom: 170px;
   left: 600px;
   z-index: 2;
-  animation: hop 1s alternate infinite linear;
+  animation: hop 2s infinite ease-in-out;
 }
 
 .mink {
   position: absolute;
-  bottom: 20%;
+  top: 600px;
   left: 550px;
   width: 65px;
+}
+.mink #mink-body {
+  position: absolute;
+  z-index: 0;
+}
+.mink #mink-head {
+  position: absolute;
+  z-index: 1;
+  animation: head-tilt 1s alternate 2s infinite cubic-bezier(0.6, -0.28, 0.735, 1);
 }
 
 .trampoline {
@@ -324,16 +333,34 @@ header .banner {
   0% {
     transform: translateY(0px);
   }
+  50% {
+    transform: translateY(-300px) rotate(180deg);
+  }
   100% {
-    transform: translateY(-300px);
+    transform: translateY(0px) rotate(360deg);
   }
 }
-@keyframes flip {
+@keyframes head-tilt {
   0% {
     transform: rotate(0deg);
   }
+  15% {
+    transform: translateX(5px);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  35% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(-7deg);
+  }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(20deg);
   }
 }
 @keyframes tramp-bounce {
