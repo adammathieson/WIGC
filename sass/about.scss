@@ -44,11 +44,11 @@
 
     #mink-head {
         position: absolute;
+        left: 5px;
         z-index: 1;
-        animation: head-tilt 1s alternate 2s infinite cubic-bezier(0.6, -0.28, 0.735, 1);
+        animation: head-tilt 3s alternate infinite cubic-bezier(0.6, -0.28, 0.735, 1);
+        // animation: spin 1s infinite cubic-bezier(0.6, -0.28, 0.735, 0.045)
     }
-
-
 }
 
 .trampoline {
@@ -68,7 +68,6 @@
         left: 29px;
         animation: tramp-bounce .5s alternate infinite;
     }
-
 }
 
 .logo-spinner {
@@ -152,16 +151,16 @@
 
 @keyframes head-tilt {
     0% {
-        transform: rotate(0deg)
+        transform: rotate(0deg);
     }
     15% {
-        transform: translateX(5px);
+        transform: translateX(5px) translateY(-3px);
     }
     25% {
         transform: rotate(10deg);
     }
     35% {
-        transform: translateY(5px)
+        transform: translateY(5px) translateX(-2px);
     }
     50% {
         transform: rotate(-30deg);
