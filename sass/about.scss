@@ -27,24 +27,29 @@
     animation: hop 4s alternate infinite;
 }
 
-// .mid-segment {
-//     display: none;
-// }
-.logo-spinner {
-    justify-content: center;
-    width: 151px;
-    // display: none;
+.mink {
+    position: absolute;
+    bottom: 25%;
+    left: 45%;
+    width: 100px;
+    
 }
 
-#spin-big {
+.logo-spinner {
+    position: relative;
+    // display: none;
+    // left: 25%;
+    right: -40%;
+    margin: auto;
+
+    #spin-big {
     position: absolute;
     z-index: 0;
     left: 0;
     right: 0;
-    width: 205px;
-    animation: reverse-spin 2s infinite linear;
-    // margin: auto;
-    // border: 1px solid #ff0000;
+    max-width: 205px;
+    animation: reverse-spin 4s infinite linear;
+    // border: 1px solid red;
 }
 
 #spin-mid {
@@ -52,9 +57,7 @@
     z-index: 1;
     left: 30px;
     top: 30px;
-    animation: spin 1s infinite linear;
-    // margin: auto;
-    // border: 1px solid blue;
+    animation: spin 3s infinite linear;
 }
 
 #spin-little {
@@ -62,9 +65,7 @@
     z-index: 2;
     left: 63px;
     top: 63px;
-    animation: reverse-spin 2s infinite linear;
-    // margin: auto;
-    // border: 1px solid green;
+    animation: reverse-spin 1s infinite linear;
 }
 
 @keyframes spin {
@@ -84,6 +85,9 @@
         transform: rotate(-360deg);
     }
 }
+}
+
+
 
 @keyframes walk {
     0% {

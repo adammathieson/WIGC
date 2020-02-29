@@ -249,36 +249,40 @@ header .banner {
   animation: hop 4s alternate infinite;
 }
 
-.logo-spinner {
-  justify-content: center;
-  width: 151px;
+.mink {
+  position: absolute;
+  bottom: 25%;
+  left: 45%;
+  width: 100px;
 }
 
-#spin-big {
+.logo-spinner {
+  position: relative;
+  right: -40%;
+  margin: auto;
+}
+.logo-spinner #spin-big {
   position: absolute;
   z-index: 0;
   left: 0;
   right: 0;
-  width: 205px;
-  animation: reverse-spin 2s infinite linear;
+  max-width: 205px;
+  animation: reverse-spin 4s infinite linear;
 }
-
-#spin-mid {
+.logo-spinner #spin-mid {
   position: absolute;
   z-index: 1;
   left: 30px;
   top: 30px;
-  animation: spin 1s infinite linear;
+  animation: spin 3s infinite linear;
 }
-
-#spin-little {
+.logo-spinner #spin-little {
   position: absolute;
   z-index: 2;
   left: 63px;
   top: 63px;
-  animation: reverse-spin 2s infinite linear;
+  animation: reverse-spin 1s infinite linear;
 }
-
 @keyframes spin {
   100% {
     transform: rotate(360deg);
@@ -289,6 +293,7 @@ header .banner {
     transform: rotate(-360deg);
   }
 }
+
 @keyframes walk {
   0% {
     transform: translateX(0px);
