@@ -235,12 +235,47 @@ header .banner {
   margin-bottom: 2em;
 }
 
+.sheep {
+  position: relative;
+  top: 700px;
+  left: 450px;
+  width: 120px;
+  height: 92px;
+  border: 1px solid blue;
+}
+.sheep .sheep-body {
+  position: absolute;
+  z-index: 0;
+}
+.sheep .sheep-head {
+  position: absolute;
+  z-index: 1;
+  left: -2%;
+  top: 3%;
+}
+.sheep .leg {
+  position: absolute;
+  z-index: 1;
+  top: 65%;
+}
+.sheep .right-front {
+  left: 28%;
+}
+.sheep .left-front {
+  left: 36%;
+}
+.sheep .right-back {
+  left: 67%;
+}
+.sheep .left-back {
+  left: 75%;
+}
+
 .sheep-img {
   position: absolute;
   bottom: 160px;
   left: 450px;
   z-index: 2;
-  animation: hop 1s 1s infinite ease-in-out;
 }
 
 .sheep-img2 {
@@ -248,7 +283,6 @@ header .banner {
   bottom: 170px;
   left: 600px;
   z-index: 2;
-  animation: hop 2s infinite ease-in-out;
 }
 
 .mink {
@@ -265,7 +299,6 @@ header .banner {
   position: absolute;
   left: 5px;
   z-index: 1;
-  animation: head-tilt 3s alternate infinite cubic-bezier(0.6, -0.28, 0.735, 1);
 }
 
 .trampoline {
@@ -281,7 +314,6 @@ header .banner {
   position: absolute;
   z-index: 1;
   left: 29px;
-  animation: tramp-bounce 0.5s alternate infinite;
 }
 
 .logo-spinner {
@@ -295,21 +327,18 @@ header .banner {
   left: 0;
   right: 0;
   max-width: 205px;
-  animation: reverse-spin 4s infinite linear;
 }
 .logo-spinner #spin-mid {
   position: absolute;
   z-index: 1;
   left: 30px;
   top: 30px;
-  animation: spin 3s infinite linear;
 }
 .logo-spinner #spin-little {
   position: absolute;
   z-index: 2;
   left: 63px;
   top: 63px;
-  animation: reverse-spin 1s infinite linear;
 }
 @keyframes spin {
   100% {

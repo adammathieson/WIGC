@@ -11,6 +11,43 @@
     margin-bottom: 2em;
 }
 
+.sheep {
+    position: relative;
+    top: 700px;
+    left: 450px;
+    width: 120px;
+    height: 92px;
+    border: 1px solid blue;
+
+    .sheep-body {
+        position: absolute;
+        z-index: 0;
+    }
+    .sheep-head {
+        position: absolute;
+        z-index: 1;
+        left: -2%;
+        top: 3%;
+    }
+    .leg {
+        position: absolute;
+        z-index: 1;
+        top: 65%;
+    }
+    .right-front {
+        left: 28%;
+    }
+    .left-front {
+        left: 36%;
+    }
+    .right-back {
+        left: 67%;
+    }
+    .left-back {
+        left: 75%;
+    }
+}
+
 .sheep-img{
     position: absolute;
     bottom: 160px;
@@ -18,7 +55,7 @@
     z-index: 2;
     // border: 1px solid red;
     // display: none;
-    animation: hop 1s 1s infinite ease-in-out;
+    // animation: hop 1s 1s infinite ease-in-out;
 }
 
 .sheep-img2 {
@@ -26,7 +63,7 @@
     bottom: 170px;
     left: 600px;
     z-index: 2;
-    animation: hop 2s infinite ease-in-out;
+    // animation: hop 4s infinite ease-in-out;
 
 }
 
@@ -39,15 +76,15 @@
     
     #mink-body {
         position: absolute;
-        z-index: 0
+        z-index: 0;
     }
 
     #mink-head {
         position: absolute;
         left: 5px;
         z-index: 1;
-        animation: head-tilt 3s alternate infinite cubic-bezier(0.6, -0.28, 0.735, 1);
-        // animation: spin 1s infinite cubic-bezier(0.6, -0.28, 0.735, 0.045)
+        // animation: head-tilt 3s alternate infinite cubic-bezier(0.6, -0.28, 0.735, 1);
+        // animation: spin 1s infinite linear;
     }
 }
 
@@ -66,7 +103,7 @@
         position: absolute;
         z-index: 1;
         left: 29px;
-        animation: tramp-bounce .5s alternate infinite;
+        // animation: tramp-bounce .5s alternate infinite;
     }
 }
 
@@ -84,7 +121,7 @@
     left: 0;
     right: 0;
     max-width: 205px;
-    animation: reverse-spin 4s infinite linear;
+    // animation: reverse-spin 4s infinite linear;
     // border: 1px solid red;
 }
 
@@ -93,7 +130,7 @@
     z-index: 1;
     left: 30px;
     top: 30px;
-    animation: spin 3s infinite linear;
+    // animation: spin 3s infinite linear;
 }
 
 #spin-little {
@@ -101,7 +138,7 @@
     z-index: 2;
     left: 63px;
     top: 63px;
-    animation: reverse-spin 1s infinite linear;
+    // animation: reverse-spin 1s infinite linear;
 }
 
 @keyframes spin {
