@@ -1,4 +1,3 @@
-
 const toggleMenu = () => {
     const menu = document.querySelector('.nav-list')
     const burger = document.querySelector('.burger')
@@ -44,4 +43,3 @@ const app = () => {
 }
 
 app()
-
