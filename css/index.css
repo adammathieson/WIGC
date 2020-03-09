@@ -238,10 +238,10 @@ header .banner {
 .sheep {
   position: relative;
   top: 700px;
-  left: 450px;
+  left: 600px;
   width: 120px;
   height: 92px;
-  animation: walk 4s linear infinite;
+  animation: walk 8s linear infinite;
 }
 .sheep .flock {
   position: inherit;
@@ -267,19 +267,19 @@ header .banner {
 }
 .sheep .right-front {
   left: 28%;
-  animation: step 0.6s alternate infinite linear;
+  animation: step 0.4s alternate infinite linear;
 }
 .sheep .left-front {
   left: 36%;
-  animation: step 0.6s alternate-reverse infinite linear;
+  animation: step 0.4s alternate-reverse infinite linear;
 }
 .sheep .right-back {
   left: 67%;
-  animation: step 0.6s alternate-reverse infinite linear;
+  animation: step 0.4s alternate-reverse infinite linear;
 }
 .sheep .left-back {
   left: 75%;
-  animation: step 0.6s alternate infinite linear;
+  animation: step 0.4s alternate infinite linear;
 }
 
 .sheep-img {
@@ -359,7 +359,7 @@ header .banner {
     transform: translateX(0px);
   }
   50% {
-    transform: translateX(-300px);
+    transform: translateX(-500px);
   }
   100% {
     transform: translateX(0px);
