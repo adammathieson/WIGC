@@ -241,7 +241,14 @@ header .banner {
   left: 450px;
   width: 120px;
   height: 92px;
-  animation: walk 4s infinite ease-in;
+  animation: walk 4s linear infinite;
+}
+.sheep .flock {
+  position: inherit;
+  height: inherit;
+}
+.sheep .reverse {
+  transform: scaleX(-1);
 }
 .sheep .sheep-body {
   position: absolute;
@@ -351,8 +358,11 @@ header .banner {
   0% {
     transform: translateX(0px);
   }
-  100% {
+  50% {
     transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0px);
   }
 }
 @keyframes step {

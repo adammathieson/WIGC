@@ -12,15 +12,24 @@
 }
 
 .sheep {
-    // display: none;
     position: relative;
     top: 700px;
     left: 450px;
     width: 120px;
     height: 92px;
     // border: 1px solid blue;
-    animation: walk 4s infinite ease-in;
-
+    animation: walk 4s linear infinite;
+    
+    .flock {
+        position: inherit;
+        height: inherit;
+        // border: 1px solid yellow;
+    }
+    
+    .reverse {
+        transform: scaleX(-1);
+    }
+    
     .sheep-body {
         position: absolute;
         z-index: 0;
@@ -148,36 +157,18 @@
     // animation: reverse-spin 1s infinite linear;
 }
 
-// @keyframes spin {
-//     0% {
-
-//     }
-//     100% {
-//         transform: rotate(360deg);
-//     }
-// }
-
-// @keyframes reverse-spin {
-//     0% {
-
-//     }
-//     100% {
-//         transform: rotate(-360deg);
-//     }
-// }
-
-
-
-
 @keyframes walk {
     0% {
         transform: translateX(0px)
     }
-
-    100% {
+    50% {
         transform: translateX(-300px);
     }
+    100% {
+        transform: translateX(0px);
+    }
 }
+
 
 @keyframes step {
     0% {

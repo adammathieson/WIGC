@@ -37,9 +37,18 @@ const load = () => {
     }
 }
 
+const sheepTurn = () => {
+    const sheep = document.querySelector('.flock')
+    console.log(sheep)
+    setInterval(() => {
+        sheep.classList.toggle('reverse')
+    }, 2000)
+}
+
 const app = () => {
     toggleMenu()
     load()
+    sheepTurn()
 }
 
 app()
