@@ -12,12 +12,14 @@
 }
 
 .sheep {
+    // display: none;
     position: relative;
     top: 700px;
     left: 450px;
     width: 120px;
     height: 92px;
-    border: 1px solid blue;
+    // border: 1px solid blue;
+    animation: walk 4s infinite ease-in;
 
     .sheep-body {
         position: absolute;
@@ -36,15 +38,19 @@
     }
     .right-front {
         left: 28%;
+        animation: step .6s alternate infinite linear;
     }
     .left-front {
         left: 36%;
+        animation: step .6s alternate-reverse infinite linear;
     }
     .right-back {
         left: 67%;
+        animation: step .6s alternate-reverse infinite linear;
     }
     .left-back {
         left: 75%;
+        animation: step .6s alternate infinite linear;
     }
 }
 
@@ -115,14 +121,15 @@
     margin: auto;
     // border: 1px solid red;
 
-    #spin-big {
-    position: absolute;
-    z-index: 0;
-    left: 0;
-    right: 0;
-    max-width: 205px;
-    // animation: reverse-spin 4s infinite linear;
-    // border: 1px solid red;
+        #spin-big {
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        right: 0;
+        max-width: 205px;
+        // animation: reverse-spin 4s infinite linear;
+        // border: 1px solid red;
+    }
 }
 
 #spin-mid {
@@ -141,24 +148,24 @@
     // animation: reverse-spin 1s infinite linear;
 }
 
-@keyframes spin {
-    0% {
+// @keyframes spin {
+//     0% {
 
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
+//     }
+//     100% {
+//         transform: rotate(360deg);
+//     }
+// }
 
-@keyframes reverse-spin {
-    0% {
+// @keyframes reverse-spin {
+//     0% {
 
-    }
-    100% {
-        transform: rotate(-360deg);
-    }
-}
-}
+//     }
+//     100% {
+//         transform: rotate(-360deg);
+//     }
+// }
+
 
 
 
@@ -168,23 +175,39 @@
     }
 
     100% {
-        transform: translateX(300px);
+        transform: translateX(-300px);
     }
 }
 
-@keyframes hop {
+@keyframes step {
     0% {
-        transform: translateY(0px);
+        transform: rotate(20deg);
+        transform-origin: top left;
     }
-
     50% {
-        transform: translateY(-300px) rotate(180deg);
+        transform: rotate(0deg);
+        transform-origin: top left;
+    }
+    100% {
+        transform: rotate(-20deg);
+        transform-origin: top left;
     }
 
-    100% {
-        transform: translateY(0px) rotate(360deg);
-    }
 }
+
+// @keyframes hop {
+//     0% {
+//         transform: translateY(0px);
+//     }
+
+//     50% {
+//         transform: translateY(-300px) rotate(180deg);
+//     }
+
+//     100% {
+//         transform: translateY(0px) rotate(360deg);
+//     }
+// }
 
 @keyframes head-tilt {
     0% {
@@ -210,12 +233,12 @@
     }
 }
 
-@keyframes tramp-bounce {
-    0% {
-        transform: translateY(0px);
-    }
-    100% {
-        transform: translateY(10px);
-    }
-}
+// @keyframes tramp-bounce {
+//     0% {
+//         transform: translateY(0px);
+//     }
+//     100% {
+//         transform: translateY(10px);
+//     }
+// }
 

@@ -241,7 +241,7 @@ header .banner {
   left: 450px;
   width: 120px;
   height: 92px;
-  border: 1px solid blue;
+  animation: walk 4s infinite ease-in;
 }
 .sheep .sheep-body {
   position: absolute;
@@ -260,15 +260,19 @@ header .banner {
 }
 .sheep .right-front {
   left: 28%;
+  animation: step 0.6s alternate infinite linear;
 }
 .sheep .left-front {
   left: 36%;
+  animation: step 0.6s alternate-reverse infinite linear;
 }
 .sheep .right-back {
   left: 67%;
+  animation: step 0.6s alternate-reverse infinite linear;
 }
 .sheep .left-back {
   left: 75%;
+  animation: step 0.6s alternate infinite linear;
 }
 
 .sheep-img {
@@ -328,27 +332,19 @@ header .banner {
   right: 0;
   max-width: 205px;
 }
-.logo-spinner #spin-mid {
+
+#spin-mid {
   position: absolute;
   z-index: 1;
   left: 30px;
   top: 30px;
 }
-.logo-spinner #spin-little {
+
+#spin-little {
   position: absolute;
   z-index: 2;
   left: 63px;
   top: 63px;
-}
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes reverse-spin {
-  100% {
-    transform: rotate(-360deg);
-  }
 }
 
 @keyframes walk {
@@ -356,18 +352,21 @@ header .banner {
     transform: translateX(0px);
   }
   100% {
-    transform: translateX(300px);
+    transform: translateX(-300px);
   }
 }
-@keyframes hop {
+@keyframes step {
   0% {
-    transform: translateY(0px);
+    transform: rotate(20deg);
+    transform-origin: top left;
   }
   50% {
-    transform: translateY(-300px) rotate(180deg);
+    transform: rotate(0deg);
+    transform-origin: top left;
   }
   100% {
-    transform: translateY(0px) rotate(360deg);
+    transform: rotate(-20deg);
+    transform-origin: top left;
   }
 }
 @keyframes head-tilt {
@@ -391,14 +390,6 @@ header .banner {
   }
   100% {
     transform: rotate(20deg);
-  }
-}
-@keyframes tramp-bounce {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(10px);
   }
 }
 
