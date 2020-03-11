@@ -7,7 +7,7 @@ header {
     // height: 50vh;
     // height: 50px; 
     // border-radius: 20px;
-    height: 7rem;
+    height: 8rem;
     opacity: .8;
     position: sticky;
     top: 0px;
@@ -23,17 +23,18 @@ header {
         // min-height: 8vh;
 
         #wigc-logo {
-            height: 100%;
-            // padding: 1em;
-            // width: 30%;
+            // height: au;
+            // padding: .5em;
+            margin-left: 1em;
+            max-width: 240px;
             // border: 1px solid red;
 
             @media screen and ($tablet) {
-                // width: 40%;
+                // max-width: 40%;
             }
 
             @media screen and ($mobile) {
-                // width: 48%;
+                // max-width: 48%;
             }
         }
 
