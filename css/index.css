@@ -178,6 +178,52 @@ header nav .burger div {
   min-height: 900px;
   position: relative;
 }
+.home-scene-container .flock-geese {
+  position: relative;
+  top: 400px;
+  left: 220px;
+  width: 111px;
+  height: 130px;
+}
+.home-scene-container .flock-geese .goose {
+  position: inherit;
+  height: inherit;
+}
+.home-scene-container .flock-geese .goose-body {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 10%;
+}
+.home-scene-container .flock-geese .goose-head-neck {
+  position: absolute;
+  top: 0%;
+  left: 56%;
+}
+.home-scene-container .flock-geese .goose-wing {
+  position: absolute;
+  z-index: 2;
+  top: 42%;
+  left: 25%;
+}
+.home-scene-container .flock-geese .goose-tail {
+  position: absolute;
+  z-index: 0;
+  top: 34%;
+  left: 1%;
+}
+.home-scene-container .flock-geese .back-foot {
+  position: absolute;
+  z-index: 0;
+  top: 65%;
+  left: 40%;
+}
+.home-scene-container .flock-geese .front-foot {
+  position: absolute;
+  z-index: 0;
+  top: 65%;
+  left: 60%;
+}
 
 .about-scene-container {
   background-image: url(../img/scenes/backgrounds/WIGC_homescape_about.png);
@@ -189,7 +235,7 @@ header nav .burger div {
   margin-bottom: 2em;
 }
 
-.sheep {
+.flock {
   position: relative;
   top: 700px;
   left: 600px;
@@ -197,57 +243,43 @@ header nav .burger div {
   height: 92px;
   animation: walk 8s linear infinite;
 }
-.sheep .flock {
+.flock .sheep {
   position: inherit;
   height: inherit;
 }
-.sheep .reverse {
+.flock .reverse {
   transform: scaleX(-1);
 }
-.sheep .sheep-body {
+.flock .sheep-body {
   position: absolute;
   z-index: 0;
 }
-.sheep .sheep-head {
+.flock .sheep-head {
   position: absolute;
   z-index: 1;
   left: -2%;
   top: 3%;
 }
-.sheep .leg {
+.flock .leg {
   position: absolute;
   z-index: 1;
   top: 65%;
 }
-.sheep .right-front {
+.flock .right-front {
   left: 28%;
   animation: step 0.4s alternate infinite linear;
 }
-.sheep .left-front {
+.flock .left-front {
   left: 36%;
   animation: step 0.4s alternate-reverse infinite linear;
 }
-.sheep .right-back {
+.flock .right-back {
   left: 67%;
   animation: step 0.4s alternate-reverse infinite linear;
 }
-.sheep .left-back {
+.flock .left-back {
   left: 75%;
   animation: step 0.4s alternate infinite linear;
-}
-
-.sheep-img {
-  position: absolute;
-  bottom: 160px;
-  left: 450px;
-  z-index: 2;
-}
-
-.sheep-img2 {
-  position: absolute;
-  bottom: 170px;
-  left: 600px;
-  z-index: 2;
 }
 
 .mink {
@@ -264,48 +296,6 @@ header nav .burger div {
   position: absolute;
   left: 5px;
   z-index: 1;
-}
-
-.trampoline {
-  position: relative;
-  top: 700px;
-  left: 400px;
-}
-.trampoline #tramp-base {
-  position: absolute;
-  z-index: 0;
-}
-.trampoline #tramp-surface {
-  position: absolute;
-  z-index: 1;
-  left: 29px;
-}
-
-.logo-spinner {
-  position: relative;
-  right: -40%;
-  margin: auto;
-}
-.logo-spinner #spin-big {
-  position: absolute;
-  z-index: 0;
-  left: 0;
-  right: 0;
-  max-width: 205px;
-}
-
-#spin-mid {
-  position: absolute;
-  z-index: 1;
-  left: 30px;
-  top: 30px;
-}
-
-#spin-little {
-  position: absolute;
-  z-index: 2;
-  left: 63px;
-  top: 63px;
 }
 
 @keyframes walk {

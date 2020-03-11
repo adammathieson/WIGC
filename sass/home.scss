@@ -8,5 +8,55 @@
     // border-radius: 20px;
     // margin-bottom: 2em;
 
-    
+    .flock-geese {
+        position: relative;
+        top: 400px;
+        left: 220px;
+        width: 111px;
+        height: 130px;
+        // border: 1px solid red;
+
+        .goose {
+            position: inherit;
+            height: inherit;
+            // border: 1px solid yellow;
+
+        }
+        .goose-body {
+            position: absolute;
+            z-index: 1;
+            top: 30%;
+            left: 10%;
+        }
+        .goose-head-neck {
+            position: absolute;
+            // border: 1px solid blue;
+            top: 0%;
+            left: 56%;
+        }
+        .goose-wing {
+            position: absolute;
+            z-index: 2;
+            top: 42%;
+            left: 25%;
+        }
+        .goose-tail {
+            position: absolute;
+            z-index: 0;
+            top: 34%;
+            left: 1%;
+        }
+        .back-foot {
+            position: absolute;
+            z-index: 0;
+            top: 65%;
+            left: 40%;
+        }
+        .front-foot {
+            position: absolute;
+            z-index: 0;
+            top: 65%;
+            left: 60%;
+        }
+    }
 }

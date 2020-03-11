@@ -9,7 +9,7 @@
     margin-bottom: 2em;
 }
 
-.sheep {
+.flock {
     position: relative;
     top: 700px;
     left: 600px;
@@ -18,7 +18,7 @@
     // border: 1px solid blue;
     animation: walk 8s linear infinite;
     
-    .flock {
+    .sheep {
         position: inherit;
         height: inherit;
         // border: 1px solid yellow;
@@ -61,25 +61,6 @@
     }
 }
 
-.sheep-img{
-    position: absolute;
-    bottom: 160px;
-    left: 450px;
-    z-index: 2;
-    // border: 1px solid red;
-    // display: none;
-    // animation: hop 1s 1s infinite ease-in-out;
-}
-
-.sheep-img2 {
-    position: absolute;
-    bottom: 170px;
-    left: 600px;
-    z-index: 2;
-    // animation: hop 4s infinite ease-in-out;
-
-}
-
 .mink {
     position: absolute;
     top: 600px;
@@ -99,60 +80,6 @@
         // animation: head-tilt 3s alternate infinite cubic-bezier(0.6, -0.28, 0.735, 1);
         // animation: spin 1s infinite linear;
     }
-}
-
-.trampoline {
-    position: relative;
-    top: 700px;
-    left: 400px;
-
-    #tramp-base {
-        position: absolute;
-        z-index: 0;
-        
-    }
-
-    #tramp-surface {
-        position: absolute;
-        z-index: 1;
-        left: 29px;
-        // animation: tramp-bounce .5s alternate infinite;
-    }
-}
-
-.logo-spinner {
-    position: relative;
-    // display: none;
-    // left: 25%;
-    right: -40%;
-    margin: auto;
-    // border: 1px solid red;
-
-        #spin-big {
-        position: absolute;
-        z-index: 0;
-        left: 0;
-        right: 0;
-        max-width: 205px;
-        // animation: reverse-spin 4s infinite linear;
-        // border: 1px solid red;
-    }
-}
-
-#spin-mid {
-    position: absolute;
-    z-index: 1;
-    left: 30px;
-    top: 30px;
-    // animation: spin 3s infinite linear;
-}
-
-#spin-little {
-    position: absolute;
-    z-index: 2;
-    left: 63px;
-    top: 63px;
-    // animation: reverse-spin 1s infinite linear;
 }
 
 @keyframes walk {
@@ -221,13 +148,3 @@
         transform: rotate(20deg);
     }
 }
-
-// @keyframes tramp-bounce {
-//     0% {
-//         transform: translateY(0px);
-//     }
-//     100% {
-//         transform: translateY(10px);
-//     }
-// }
-
