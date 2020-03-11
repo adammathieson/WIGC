@@ -1,44 +1,10 @@
-
-.mid-content {
-    background: black;
-    display: flex;
-    // padding: 3em;
-
-    .img-group {
-        border: 1px solid red;
-        width: 50%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        img {
-            padding: 2em;
-            max-height: 200px;
-
-        }
-
-        .small {
-            // max-width: 50%;
-            
-        }
-
-        .small-wide {
-            // max-height: 200px;
-        }
-    }
-
-    .copy {
-        border: 1px solid blue;
-        width: 50%;
-        padding: 2em;
-
-        .bold {
-            font-weight: 900;
-        }
-
-        ul li {
-            padding: 1em 0 1em 2em;
-            font-size: 1.5rem;
-        }
-    }
+.home-scene-container {
+    background-image: url(../img/scenes/backgrounds/Cityscape-1440x900.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 900px;
+    position: relative;
+    // border-radius: 20px;
+    // margin-bottom: 2em;
 }

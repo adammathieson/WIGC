@@ -1,13 +1,11 @@
-.about-container {
-    background-image: url(../img/scenes/WIGC_homescape_about.png);
+.about-scene-container {
+    background-image: url(../img/scenes/backgrounds/WIGC_homescape_about.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     min-height: 900px;
     position: relative;
-    border-radius: 20px;
-    // border: 1px solid red;
-    // display: none;
+    // border-radius: 20px;
     margin-bottom: 2em;
 }
 
