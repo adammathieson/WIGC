@@ -1,5 +1,5 @@
 const sheepTurn = () => {
-    const sheep = document.querySelector('.flock')
+    const sheep = document.querySelector('.sheep')
     console.log(sheep)
     setInterval(() => {
         let count = 0

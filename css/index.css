@@ -105,6 +105,7 @@ header {
   opacity: 0.8;
   position: sticky;
   top: 0px;
+  z-index: 100;
 }
 header nav {
   display: flex;
@@ -145,7 +146,6 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   color: #141615;
-  transform: scale(1.5);
 }
 header nav .toggle {
   display: none;
@@ -178,47 +178,44 @@ header nav .burger div {
   min-height: 900px;
   position: relative;
 }
-.home-scene-container .flock-geese {
+.home-scene-container .goose {
   position: relative;
   top: 400px;
   left: 220px;
   width: 111px;
   height: 130px;
+  border: 1px solid red;
 }
-.home-scene-container .flock-geese .goose {
-  position: inherit;
-  height: inherit;
-}
-.home-scene-container .flock-geese .goose-body {
+.home-scene-container .goose .goose-body {
   position: absolute;
   z-index: 1;
   top: 30%;
   left: 10%;
 }
-.home-scene-container .flock-geese .goose-head-neck {
+.home-scene-container .goose .goose-head-neck {
   position: absolute;
   top: 0%;
   left: 56%;
 }
-.home-scene-container .flock-geese .goose-wing {
+.home-scene-container .goose .goose-wing {
   position: absolute;
   z-index: 2;
   top: 42%;
   left: 25%;
 }
-.home-scene-container .flock-geese .goose-tail {
+.home-scene-container .goose .goose-tail {
   position: absolute;
   z-index: 0;
   top: 34%;
   left: 1%;
 }
-.home-scene-container .flock-geese .back-foot {
+.home-scene-container .goose .back-foot {
   position: absolute;
   z-index: 0;
   top: 65%;
   left: 40%;
 }
-.home-scene-container .flock-geese .front-foot {
+.home-scene-container .goose .front-foot {
   position: absolute;
   z-index: 0;
   top: 65%;

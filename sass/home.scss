@@ -8,20 +8,22 @@
     // border-radius: 20px;
     // margin-bottom: 2em;
 
-    .flock-geese {
+    .goose{
+        // display: none;
         position: relative;
         top: 400px;
         left: 220px;
+        // width: 111px;
         width: 111px;
+        // height: 130px;
         height: 130px;
-        // border: 1px solid red;
+        border: 1px solid red;
 
-        .goose {
-            position: inherit;
-            height: inherit;
-            // border: 1px solid yellow;
-
-        }
+        // .goose {
+        //     position: inherit;
+        //     height: inherit;
+        //     border: 1px solid yellow;
+        // }
         .goose-body {
             position: absolute;
             z-index: 1;
@@ -39,6 +41,7 @@
             z-index: 2;
             top: 42%;
             left: 25%;
+            // display: none;
         }
         .goose-tail {
             position: absolute;

@@ -11,6 +11,7 @@ header {
     opacity: .8;
     position: sticky;
     top: 0px;
+    z-index: 100;
 
 
 
@@ -67,7 +68,6 @@ header {
 
             li a:hover {
                 color: rgb(20, 22, 21);
-                transform: scale(1.5);
             }
         }
 
