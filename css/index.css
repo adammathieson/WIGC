@@ -184,7 +184,6 @@ header nav .burger div {
   left: 220px;
   width: 111px;
   height: 130px;
-  border: 1px solid red;
 }
 .home-scene-container .goose .goose-body {
   position: absolute;
@@ -192,16 +191,36 @@ header nav .burger div {
   top: 30%;
   left: 10%;
 }
-.home-scene-container .goose .goose-head-neck {
+.home-scene-container .goose .goose-head-neck-stand {
   position: absolute;
   top: 0%;
   left: 56%;
 }
-.home-scene-container .goose .goose-wing {
+.home-scene-container .goose .goose-head-neck-fly {
+  display: none;
+  position: absolute;
+  top: 33%;
+  right: -40%;
+}
+.home-scene-container .goose .goose-wing-stand {
   position: absolute;
   z-index: 2;
   top: 42%;
   left: 25%;
+}
+.home-scene-container .goose .goose-wing-fly-R {
+  position: absolute;
+  z-index: 2;
+  top: -8%;
+  left: 35%;
+  display: none;
+}
+.home-scene-container .goose .goose-wing-fly-L {
+  position: absolute;
+  z-index: 0;
+  top: 3%;
+  left: 20%;
+  display: none;
 }
 .home-scene-container .goose .goose-tail {
   position: absolute;
@@ -220,6 +239,51 @@ header nav .burger div {
   z-index: 0;
   top: 65%;
   left: 60%;
+}
+.home-scene-container .fly {
+  animation: fly 3s infinite ease-in;
+}
+.home-scene-container .fly .goose-head-neck-stand {
+  display: none;
+}
+.home-scene-container .fly .goose-head-neck-fly {
+  display: block;
+}
+.home-scene-container .fly .front-foot, .home-scene-container .fly .back-foot {
+  display: none;
+}
+.home-scene-container .fly .goose-wing-stand {
+  display: none;
+}
+.home-scene-container .fly .goose-wing-fly-R, .home-scene-container .fly .goose-wing-fly-L {
+  display: block;
+  animation: flap 0.5s infinite;
+}
+.home-scene-container .fly .goose-tail {
+  transform-origin: bottom right;
+  transform: rotate(-25deg);
+}
+@keyframes flap {
+  0% {
+    transform-origin: 0% 90%;
+    transform: scaleY(1);
+  }
+  50% {
+    transform-origin: 0% 90%;
+    transform: scaleY(-1);
+  }
+  100% {
+    transform-origin: 0% 90%;
+    transform: scaleY(1);
+  }
+}
+@keyframes fly {
+  from {
+    transform: translateY(0px) translateX(0px) scale(1);
+  }
+  to {
+    transform: translateY(-800px) translateX(1600px) scale(4);
+  }
 }
 
 .about-scene-container {
