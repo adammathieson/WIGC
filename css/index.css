@@ -240,9 +240,6 @@ header nav .burger div {
   top: 65%;
   left: 60%;
 }
-.home-scene-container .fly {
-  animation: fly 3s infinite ease-in;
-}
 .home-scene-container .fly .goose-head-neck-stand {
   display: none;
 }
@@ -257,7 +254,6 @@ header nav .burger div {
 }
 .home-scene-container .fly .goose-wing-fly-R, .home-scene-container .fly .goose-wing-fly-L {
   display: block;
-  animation: flap 0.5s infinite;
 }
 .home-scene-container .fly .goose-tail {
   transform-origin: bottom right;
@@ -282,7 +278,7 @@ header nav .burger div {
     transform: translateY(0px) translateX(0px) scale(1);
   }
   to {
-    transform: translateY(-800px) translateX(1600px) scale(4);
+    transform: translateY(-800px) translateX(1600px) scale(3);
   }
 }
 

@@ -85,7 +85,7 @@
     }
 
     .fly {
-        animation: fly 3s infinite ease-in;
+        // animation: fly 3s infinite ease-in;
         .goose-head-neck-stand {
             display: none;
         }
@@ -100,7 +100,7 @@
         }
         .goose-wing-fly-R, .goose-wing-fly-L {
             display: block;
-            animation: flap .5s infinite;
+            // animation: flap .3s infinite;
         }
         .goose-tail {
             transform-origin: bottom right;
@@ -128,7 +128,7 @@
             transform: translateY(0px) translateX(0px) scale(1)
         }
         to {
-            transform: translateY(-800px) translateX(1600px) scale(4)
+            transform: translateY(-800px) translateX(1600px) scale(3)
         }
     }
 }
