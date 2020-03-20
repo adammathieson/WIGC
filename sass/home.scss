@@ -13,9 +13,7 @@
         position: relative;
         top: 400px;
         left: 220px;
-        // width: 111px;
         width: 111px;
-        // height: 130px;
         height: 130px;
         // border: 1px solid red;
 
@@ -105,6 +103,78 @@
         .goose-tail {
             transform-origin: bottom right;
             transform: rotate(-25deg)
+        }
+    }
+
+    .car {
+        // display: none;
+        width: 175px;
+        position: relative;
+        top: 60px;
+        left: 150px;
+        animation: drive 3s ease-out;
+
+        .car-body {
+            z-index: 1;
+            position: absolute;
+        }
+        .car-wheel {
+            position: absolute;
+            width: 27.2px;
+            top: 128%;
+            text-align: center;
+            // animation: rotate 4s infinite linear;
+            border: 1px solid red;
+        }
+        .front {
+            left: 73%;
+        }
+        .back {
+            left: 9%;
+        }
+        .car-hatch {
+            position: relative;
+            width: 43.5px;
+            top: 8px;
+            left: 2px;
+            animation: hatch-open 3s 4s ease-in-out;
+
+        }
+    }
+    @keyframes drive {
+        from {
+            transform: translateX(-400px)
+        }
+        to {
+            transform: translateX(0px);
+        }
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg)
+        }
+        to {
+            transform: rotate(360deg)
+        }
+    }
+
+    @keyframes hatch-open {
+        0% {
+            transform-origin: right top;
+            transform: rotate(0deg)
+        }
+        10% {
+            transform-origin: right top;
+            transform: rotate(70deg)
+        }
+        80% {
+            transform-origin: right top;
+            transform: rotate(70deg)
+        }
+        100% {
+            transform-origin: right top;
+            transform: rotate(0deg)
         }
     }
 
