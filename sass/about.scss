@@ -16,7 +16,7 @@
     width: 120px;
     height: 92px;
     // border: 1px solid blue;
-    animation: walk 8s linear infinite;
+    // animation: walk 8s linear infinite;
     
     .sheep {
         position: inherit;
@@ -45,40 +45,76 @@
     }
     .right-front {
         left: 28%;
-        animation: step .4s alternate infinite linear;
+        // animation: step-sheep .4s alternate infinite linear;
     }
     .left-front {
         left: 36%;
-        animation: step .4s alternate-reverse infinite linear;
+        // animation: step-sheep .4s alternate-reverse infinite linear;
     }
     .right-back {
         left: 67%;
-        animation: step .4s alternate-reverse infinite linear;
+        // animation: step-sheep .4s alternate-reverse infinite linear;
     }
     .left-back {
         left: 75%;
-        animation: step .4s alternate infinite linear;
+        // animation: step-sheep .4s alternate infinite linear;
     }
 }
 
-.mink {
-    position: absolute;
+.mink-profile-lg {
+    position: relative;
     top: 600px;
-    left: 550px;
+    left: 200px;
     // display: none;
-    width: 65px;
+    width: 150px;
+    height: 98px;
+    border: 1px solid red;
     
-    #mink-body {
+    .mplg-inner {
+        position: inherit;
+        height: inherit;
+    }
+    .mplg-body {
+        position: absolute;
+        left: 24px;
+        z-index: 1;
+    }
+    .mplg-head {
+        position: absolute;
+        z-index: 2;
+        left: 69%;
+        top: -8%;
+    }
+    .mplg-FLL {
         position: absolute;
         z-index: 0;
+        left: 55%;
+        top: 33%;
     }
-
-    #mink-head {
+    .mplg-FRL {
         position: absolute;
-        left: 5px;
+        z-index: 2;
+        left: 59%;
+        top: 35%;
+    }
+    .mplg-BLL {
+        position: absolute;
+        z-index: 0;
+        left: 20%;
+        top: 28%;
+    }
+    .mplg-BRL {
+        position: absolute;
+        z-index: 2;
+        left: 12%;
+        top: 21%;
+    }
+    
+    .mplg-tail {
+        position: absolute;
         z-index: 1;
-        // animation: head-tilt 3s alternate infinite cubic-bezier(0.6, -0.28, 0.735, 1);
-        // animation: spin 1s infinite linear;
+        top: 14%;
+        left: 1%;
     }
 }
 
@@ -95,7 +131,7 @@
 }
 
 
-@keyframes step {
+@keyframes step-sheep {
     0% {
         transform: rotate(20deg);
         transform-origin: top left;
@@ -125,26 +161,26 @@
 //     }
 // }
 
-@keyframes head-tilt {
-    0% {
-        transform: rotate(0deg);
-    }
-    15% {
-        transform: translateX(5px) translateY(-3px);
-    }
-    25% {
-        transform: rotate(10deg);
-    }
-    35% {
-        transform: translateY(5px) translateX(-2px);
-    }
-    50% {
-        transform: rotate(-30deg);
-    }
-    75% {
-        transform: rotate(-7deg);
-    }
-    100% {
-        transform: rotate(20deg);
-    }
-}
+// @keyframes head-tilt {
+//     0% {
+//         transform: rotate(0deg);
+//     }
+//     15% {
+//         transform: translateX(5px) translateY(-3px);
+//     }
+//     25% {
+//         transform: rotate(10deg);
+//     }
+//     35% {
+//         transform: translateY(5px) translateX(-2px);
+//     }
+//     50% {
+//         transform: rotate(-30deg);
+//     }
+//     75% {
+//         transform: rotate(-7deg);
+//     }
+//     100% {
+//         transform: rotate(20deg);
+//     }
+// }

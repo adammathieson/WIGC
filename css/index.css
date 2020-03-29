@@ -367,7 +367,6 @@ header nav .burger div {
   left: 600px;
   width: 120px;
   height: 92px;
-  animation: walk 8s linear infinite;
 }
 .flock .sheep {
   position: inherit;
@@ -393,35 +392,69 @@ header nav .burger div {
 }
 .flock .right-front {
   left: 28%;
-  animation: step 0.4s alternate infinite linear;
 }
 .flock .left-front {
   left: 36%;
-  animation: step 0.4s alternate-reverse infinite linear;
 }
 .flock .right-back {
   left: 67%;
-  animation: step 0.4s alternate-reverse infinite linear;
 }
 .flock .left-back {
   left: 75%;
-  animation: step 0.4s alternate infinite linear;
 }
 
-.mink {
-  position: absolute;
+.mink-profile-lg {
+  position: relative;
   top: 600px;
-  left: 550px;
-  width: 65px;
+  left: 200px;
+  width: 150px;
+  height: 98px;
+  border: 1px solid red;
 }
-.mink #mink-body {
+.mink-profile-lg .mplg-inner {
+  position: inherit;
+  height: inherit;
+}
+.mink-profile-lg .mplg-body {
+  position: absolute;
+  left: 24px;
+  z-index: 1;
+}
+.mink-profile-lg .mplg-head {
+  position: absolute;
+  z-index: 2;
+  left: 69%;
+  top: -8%;
+}
+.mink-profile-lg .mplg-FLL {
   position: absolute;
   z-index: 0;
+  left: 55%;
+  top: 33%;
 }
-.mink #mink-head {
+.mink-profile-lg .mplg-FRL {
   position: absolute;
-  left: 5px;
+  z-index: 2;
+  left: 59%;
+  top: 35%;
+}
+.mink-profile-lg .mplg-BLL {
+  position: absolute;
+  z-index: 0;
+  left: 20%;
+  top: 28%;
+}
+.mink-profile-lg .mplg-BRL {
+  position: absolute;
+  z-index: 2;
+  left: 12%;
+  top: 21%;
+}
+.mink-profile-lg .mplg-tail {
+  position: absolute;
   z-index: 1;
+  top: 14%;
+  left: 1%;
 }
 
 @keyframes walk {
@@ -435,7 +468,7 @@ header nav .burger div {
     transform: translateX(0px);
   }
 }
-@keyframes step {
+@keyframes step-sheep {
   0% {
     transform: rotate(20deg);
     transform-origin: top left;
@@ -447,29 +480,6 @@ header nav .burger div {
   100% {
     transform: rotate(-20deg);
     transform-origin: top left;
-  }
-}
-@keyframes head-tilt {
-  0% {
-    transform: rotate(0deg);
-  }
-  15% {
-    transform: translateX(5px) translateY(-3px);
-  }
-  25% {
-    transform: rotate(10deg);
-  }
-  35% {
-    transform: translateY(5px) translateX(-2px);
-  }
-  50% {
-    transform: rotate(-30deg);
-  }
-  75% {
-    transform: rotate(-7deg);
-  }
-  100% {
-    transform: rotate(20deg);
   }
 }
 
