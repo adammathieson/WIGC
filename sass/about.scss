@@ -16,7 +16,7 @@
     width: 120px;
     height: 92px;
     // border: 1px solid blue;
-    // animation: walk 8s linear infinite;
+    animation: walk 8s linear infinite;
     
     .sheep {
         position: inherit;
@@ -45,30 +45,31 @@
     }
     .right-front {
         left: 28%;
-        // animation: step-sheep .4s alternate infinite linear;
+        animation: step .4s alternate infinite linear;
     }
     .left-front {
         left: 36%;
-        // animation: step-sheep .4s alternate-reverse infinite linear;
+        animation: step .4s alternate-reverse infinite linear;
     }
     .right-back {
         left: 67%;
-        // animation: step-sheep .4s alternate-reverse infinite linear;
+        animation: step .4s alternate-reverse infinite linear;
     }
     .left-back {
         left: 75%;
-        // animation: step-sheep .4s alternate infinite linear;
+        animation: step .4s alternate infinite linear;
     }
 }
 
 .mink-profile-lg {
     position: relative;
-    top: 600px;
+    top: 500px;
     left: 200px;
     // display: none;
     width: 150px;
     height: 98px;
     border: 1px solid red;
+    animation: walk-mink 4s alternate infinite linear;
     
     .mplg-inner {
         position: inherit;
@@ -90,24 +91,31 @@
         z-index: 0;
         left: 55%;
         top: 33%;
+        animation: step-mink .3s alternate  infinite ease-in;
     }
     .mplg-FRL {
         position: absolute;
         z-index: 2;
         left: 59%;
         top: 35%;
+        animation: step-mink .3s alternate-reverse infinite ease-in;
+
     }
     .mplg-BLL {
         position: absolute;
         z-index: 0;
         left: 20%;
         top: 28%;
+        animation: step-mink .3s alternate-reverse infinite ease-in;
+
     }
     .mplg-BRL {
         position: absolute;
         z-index: 2;
         left: 12%;
         top: 21%;
+        animation: step-mink .3s alternate infinite ease-in;
+
     }
     
     .mplg-tail {
@@ -123,15 +131,26 @@
         transform: translateX(0px)
     }
     50% {
-        transform: translateX(-500px);
+        transform: translateX(-400px);
     }
     100% {
         transform: translateX(0px);
     }
 }
 
+@keyframes walk-mink{
+    0% {
+        transform: translateX(0px)
+    }
+    50% {
+        transform: translateX(400px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
 
-@keyframes step-sheep {
+@keyframes step {
     0% {
         transform: rotate(20deg);
         transform-origin: top left;
@@ -144,7 +163,21 @@
         transform: rotate(-20deg);
         transform-origin: top left;
     }
+}
 
+@keyframes step-mink {
+    0% {
+        transform: rotate(15deg);
+        transform-origin: top;
+    }
+    50% {
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    100% {
+        transform: rotate(-15deg);
+        transform-origin: top;
+    }
 }
 
 // @keyframes hop {

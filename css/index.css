@@ -367,6 +367,7 @@ header nav .burger div {
   left: 600px;
   width: 120px;
   height: 92px;
+  animation: walk 8s linear infinite;
 }
 .flock .sheep {
   position: inherit;
@@ -392,24 +393,29 @@ header nav .burger div {
 }
 .flock .right-front {
   left: 28%;
+  animation: step 0.4s alternate infinite linear;
 }
 .flock .left-front {
   left: 36%;
+  animation: step 0.4s alternate-reverse infinite linear;
 }
 .flock .right-back {
   left: 67%;
+  animation: step 0.4s alternate-reverse infinite linear;
 }
 .flock .left-back {
   left: 75%;
+  animation: step 0.4s alternate infinite linear;
 }
 
 .mink-profile-lg {
   position: relative;
-  top: 600px;
+  top: 500px;
   left: 200px;
   width: 150px;
   height: 98px;
   border: 1px solid red;
+  animation: walk-mink 4s alternate infinite linear;
 }
 .mink-profile-lg .mplg-inner {
   position: inherit;
@@ -431,24 +437,28 @@ header nav .burger div {
   z-index: 0;
   left: 55%;
   top: 33%;
+  animation: step-mink 0.3s alternate infinite ease-in;
 }
 .mink-profile-lg .mplg-FRL {
   position: absolute;
   z-index: 2;
   left: 59%;
   top: 35%;
+  animation: step-mink 0.3s alternate-reverse infinite ease-in;
 }
 .mink-profile-lg .mplg-BLL {
   position: absolute;
   z-index: 0;
   left: 20%;
   top: 28%;
+  animation: step-mink 0.3s alternate-reverse infinite ease-in;
 }
 .mink-profile-lg .mplg-BRL {
   position: absolute;
   z-index: 2;
   left: 12%;
   top: 21%;
+  animation: step-mink 0.3s alternate infinite ease-in;
 }
 .mink-profile-lg .mplg-tail {
   position: absolute;
@@ -462,13 +472,24 @@ header nav .burger div {
     transform: translateX(0px);
   }
   50% {
-    transform: translateX(-500px);
+    transform: translateX(-400px);
   }
   100% {
     transform: translateX(0px);
   }
 }
-@keyframes step-sheep {
+@keyframes walk-mink {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes step {
   0% {
     transform: rotate(20deg);
     transform-origin: top left;
@@ -480,6 +501,20 @@ header nav .burger div {
   100% {
     transform: rotate(-20deg);
     transform-origin: top left;
+  }
+}
+@keyframes step-mink {
+  0% {
+    transform: rotate(15deg);
+    transform-origin: top;
+  }
+  50% {
+    transform: rotate(0deg);
+    transform-origin: top;
+  }
+  100% {
+    transform: rotate(-15deg);
+    transform-origin: top;
   }
 }
 
