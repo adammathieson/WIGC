@@ -68,7 +68,7 @@
     // display: none;
     width: 150px;
     height: 98px;
-    border: 1px solid red;
+    // border: 1px solid red;
     animation: walk-mink 4s alternate infinite linear;
     
     .mplg-inner {
@@ -91,7 +91,7 @@
         z-index: 0;
         left: 55%;
         top: 33%;
-        animation: step-mink .3s alternate  infinite ease-in;
+        animation: step-mink .3s alternate infinite ease-in;
     }
     .mplg-FRL {
         position: absolute;
@@ -167,7 +167,7 @@
 
 @keyframes step-mink {
     0% {
-        transform: rotate(15deg);
+        transform: rotate(13deg);
         transform-origin: top;
     }
     50% {
@@ -175,7 +175,7 @@
         transform-origin: top;
     }
     100% {
-        transform: rotate(-15deg);
+        transform: rotate(-13deg);
         transform-origin: top;
     }
 }

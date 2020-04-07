@@ -414,7 +414,6 @@ header nav .burger div {
   left: 200px;
   width: 150px;
   height: 98px;
-  border: 1px solid red;
   animation: walk-mink 4s alternate infinite linear;
 }
 .mink-profile-lg .mplg-inner {
@@ -505,7 +504,7 @@ header nav .burger div {
 }
 @keyframes step-mink {
   0% {
-    transform: rotate(15deg);
+    transform: rotate(13deg);
     transform-origin: top;
   }
   50% {
@@ -513,7 +512,7 @@ header nav .burger div {
     transform-origin: top;
   }
   100% {
-    transform: rotate(-15deg);
+    transform: rotate(-13deg);
     transform-origin: top;
   }
 }
