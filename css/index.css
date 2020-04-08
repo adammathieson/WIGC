@@ -414,7 +414,6 @@ header nav .burger div {
   left: 200px;
   width: 150px;
   height: 98px;
-  animation: walk-mink 4s alternate infinite linear;
 }
 .mink-profile-lg .mplg-inner {
   position: inherit;
@@ -436,34 +435,88 @@ header nav .burger div {
   z-index: 0;
   left: 55%;
   top: 33%;
-  animation: step-mink 0.3s alternate infinite ease-in;
 }
 .mink-profile-lg .mplg-FRL {
   position: absolute;
   z-index: 2;
   left: 59%;
   top: 35%;
-  animation: step-mink 0.3s alternate-reverse infinite ease-in;
 }
 .mink-profile-lg .mplg-BLL {
   position: absolute;
   z-index: 0;
   left: 20%;
   top: 28%;
-  animation: step-mink 0.3s alternate-reverse infinite ease-in;
 }
 .mink-profile-lg .mplg-BRL {
   position: absolute;
   z-index: 2;
   left: 12%;
   top: 21%;
-  animation: step-mink 0.3s alternate infinite ease-in;
 }
 .mink-profile-lg .mplg-tail {
   position: absolute;
   z-index: 1;
   top: 14%;
   left: 1%;
+}
+
+.mink-profile-crouch-lg {
+  position: relative;
+  top: 500px;
+  left: 200px;
+  width: 150px;
+  height: 98px;
+  animation: walk-mink 4s alternate infinite linear;
+}
+.mink-profile-crouch-lg .mplg-inner {
+  position: inherit;
+  height: inherit;
+}
+.mink-profile-crouch-lg .mplg-body {
+  position: absolute;
+  left: 24px;
+  z-index: 1;
+}
+.mink-profile-crouch-lg .mplg-head {
+  position: absolute;
+  z-index: 2;
+  left: 69%;
+  top: -8%;
+}
+.mink-profile-crouch-lg .mplg-FLL {
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 28%;
+  animation: creep 0.5s infinite 0.25s linear;
+}
+.mink-profile-crouch-lg .mplg-FRL {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 28%;
+  animation: creep 0.5s infinite linear;
+}
+.mink-profile-crouch-lg .mplg-BLL {
+  position: absolute;
+  z-index: 0;
+  left: 12%;
+  top: 21%;
+  animation: step-mink 0.5s alternate-reverse infinite ease-in;
+}
+.mink-profile-crouch-lg .mplg-BRL {
+  position: absolute;
+  z-index: 2;
+  left: 12%;
+  top: 21%;
+  animation: step-mink 0.5s alternate infinite ease-in;
+}
+.mink-profile-crouch-lg .mplg-tail {
+  position: absolute;
+  z-index: 1;
+  top: 8%;
+  left: -4%;
 }
 
 @keyframes walk {
@@ -488,6 +541,23 @@ header nav .burger div {
     transform: translateX(0px);
   }
 }
+@keyframes creep {
+  0% {
+    transform: translate3d(0);
+  }
+  25% {
+    transform: translate3d(4px, -2px, 0);
+  }
+  50% {
+    transform: translate3d(8px, 0px, 0);
+  }
+  75% {
+    transform: translate3d(4px, 2px, 0);
+  }
+  100% {
+    transform: translate3d(0);
+  }
+}
 @keyframes step {
   0% {
     transform: rotate(20deg);
@@ -504,7 +574,7 @@ header nav .burger div {
 }
 @keyframes step-mink {
   0% {
-    transform: rotate(13deg);
+    transform: rotate(10deg);
     transform-origin: top;
   }
   50% {
@@ -512,7 +582,7 @@ header nav .burger div {
     transform-origin: top;
   }
   100% {
-    transform: rotate(-13deg);
+    transform: rotate(-10deg);
     transform-origin: top;
   }
 }
