@@ -473,6 +473,9 @@ header nav .burger div {
   position: inherit;
   height: inherit;
 }
+.mink-profile-crouch-lg .mink-reverse {
+  transform: scaleX(-1);
+}
 .mink-profile-crouch-lg .mplg-body {
   position: absolute;
   left: 24px;

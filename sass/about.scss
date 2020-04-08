@@ -141,6 +141,11 @@
         position: inherit;
         height: inherit;
     }
+
+    .mink-reverse {
+        transform: scaleX(-1);
+    }
+
     .mplg-body {
         position: absolute;
         left: 24px;
