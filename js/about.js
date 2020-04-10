@@ -13,7 +13,7 @@ const minkTurn = () => {
     const mink = document.querySelector('.mplg-inner')
     setInterval(() => {
         mink.classList.toggle('mink-reverse')
-    }, 2000)
+    }, 4000)
 }
 
 const about = () => {

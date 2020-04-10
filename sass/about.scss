@@ -9,6 +9,18 @@
     margin-bottom: 2em;
 }
 
+.start-btn button {
+    position: absolute;
+    width: 15em;
+    height: 5em;
+    border-radius: 5px;
+    left: 50%;
+    margin-left: -7.5em;
+    
+    
+    // display: none;
+}
+
 .flock {
     position: relative;
     top: 700px;
@@ -135,7 +147,7 @@
     width: 150px;
     height: 98px;
     // border: 1px solid red;
-    animation: walk-mink 4s alternate infinite linear;
+    animation: walk-mink 8s linear infinite;
 
     .mplg-inner {
         position: inherit;
@@ -154,8 +166,8 @@
     .mplg-head {
         position: absolute;
         z-index: 2;
-        left: 69%;
-        top: -8%;
+        left: 65%;
+        top: -6%;
     }
     .mplg-FLL {
         position: absolute;

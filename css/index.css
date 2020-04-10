@@ -361,6 +361,15 @@ header nav .burger div {
   margin-bottom: 2em;
 }
 
+.start-btn button {
+  position: absolute;
+  width: 15em;
+  height: 5em;
+  border-radius: 5px;
+  left: 50%;
+  margin-left: -7.5em;
+}
+
 .flock {
   position: relative;
   top: 700px;
@@ -467,7 +476,7 @@ header nav .burger div {
   left: 200px;
   width: 150px;
   height: 98px;
-  animation: walk-mink 4s alternate infinite linear;
+  animation: walk-mink 8s linear infinite;
 }
 .mink-profile-crouch-lg .mplg-inner {
   position: inherit;
@@ -484,8 +493,8 @@ header nav .burger div {
 .mink-profile-crouch-lg .mplg-head {
   position: absolute;
   z-index: 2;
-  left: 69%;
-  top: -8%;
+  left: 65%;
+  top: -6%;
 }
 .mink-profile-crouch-lg .mplg-FLL {
   position: absolute;
