@@ -384,7 +384,6 @@ header nav .burger div {
   left: 600px;
   width: 120px;
   height: 92px;
-  animation: walk 8s linear infinite;
 }
 .flock .sheep {
   position: inherit;
@@ -410,24 +409,20 @@ header nav .burger div {
 }
 .flock .right-front {
   left: 28%;
-  animation: step 0.4s alternate infinite linear;
 }
 .flock .left-front {
   left: 36%;
-  animation: step 0.4s alternate-reverse infinite linear;
 }
 .flock .right-back {
   left: 67%;
-  animation: step 0.4s alternate-reverse infinite linear;
 }
 .flock .left-back {
   left: 75%;
-  animation: step 0.4s alternate infinite linear;
 }
 
 .mink-profile-lg {
   position: relative;
-  top: 500px;
+  top: 400px;
   left: 200px;
   width: 150px;
   height: 98px;
@@ -444,8 +439,8 @@ header nav .burger div {
 .mink-profile-lg .mplg-head {
   position: absolute;
   z-index: 2;
-  left: 69%;
-  top: -8%;
+  left: 64%;
+  top: -7%;
 }
 .mink-profile-lg .mplg-FLL {
   position: absolute;
@@ -462,20 +457,20 @@ header nav .burger div {
 .mink-profile-lg .mplg-BLL {
   position: absolute;
   z-index: 0;
-  left: 20%;
-  top: 28%;
+  left: 10%;
+  top: 17%;
 }
 .mink-profile-lg .mplg-BRL {
   position: absolute;
   z-index: 2;
-  left: 12%;
-  top: 21%;
+  left: 10%;
+  top: 17%;
 }
 .mink-profile-lg .mplg-tail {
   position: absolute;
   z-index: 1;
-  top: 14%;
-  left: 1%;
+  top: 13%;
+  left: -2%;
 }
 
 .mink-profile-crouch-lg {
@@ -484,7 +479,6 @@ header nav .burger div {
   left: 200px;
   width: 150px;
   height: 98px;
-  animation: walk-mink 8s linear infinite;
 }
 .mink-profile-crouch-lg .mplg-inner {
   position: inherit;
@@ -509,28 +503,24 @@ header nav .burger div {
   z-index: 0;
   left: 50%;
   top: 28%;
-  animation: creep 0.5s infinite 0.25s linear;
 }
 .mink-profile-crouch-lg .mplg-FRL {
   position: absolute;
   z-index: 2;
   left: 50%;
   top: 28%;
-  animation: creep 0.5s infinite linear;
 }
 .mink-profile-crouch-lg .mplg-BLL {
   position: absolute;
   z-index: 0;
   left: 12%;
   top: 21%;
-  animation: step-mink 0.5s alternate-reverse infinite ease-in;
 }
 .mink-profile-crouch-lg .mplg-BRL {
   position: absolute;
   z-index: 2;
   left: 12%;
   top: 21%;
-  animation: step-mink 0.5s alternate infinite ease-in;
 }
 .mink-profile-crouch-lg .mplg-tail {
   position: absolute;

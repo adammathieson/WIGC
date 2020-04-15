@@ -36,7 +36,7 @@
     width: 120px;
     height: 92px;
     // border: 1px solid blue;
-    animation: walk 8s linear infinite;
+    // animation: walk 8s linear infinite;
     
     .sheep {
         position: inherit;
@@ -65,28 +65,30 @@
     }
     .right-front {
         left: 28%;
-        animation: step .4s alternate infinite linear;
+        // animation: step .4s alternate infinite linear;
     }
     .left-front {
         left: 36%;
-        animation: step .4s alternate-reverse infinite linear;
+        // animation: step .4s alternate-reverse infinite linear;
     }
     .right-back {
         left: 67%;
-        animation: step .4s alternate-reverse infinite linear;
+        // animation: step .4s alternate-reverse infinite linear;
     }
     .left-back {
         left: 75%;
-        animation: step .4s alternate infinite linear;
+        // animation: step .4s alternate infinite linear;
     }
 }
 // Mink standing profile
 .mink-profile-lg {
     position: relative;
-    top: 500px;
+    top: 400px;
     left: 200px;
     // display: none;
+    // width: 150px;
     width: 150px;
+    // height: 98px;
     height: 98px;
     // border: 1px solid red;
     // animation: walk-mink 4s alternate infinite linear;
@@ -103,8 +105,8 @@
     .mplg-head {
         position: absolute;
         z-index: 2;
-        left: 69%;
-        top: -8%;
+        left: 64%;
+        top: -7%;
     }
     .mplg-FLL {
         position: absolute;
@@ -124,16 +126,16 @@
     .mplg-BLL {
         position: absolute;
         z-index: 0;
-        left: 20%;
-        top: 28%;
+        left: 10%;
+        top: 17%;
         // animation: step-mink .3s alternate-reverse infinite ease-in;
 
     }
     .mplg-BRL {
         position: absolute;
         z-index: 2;
-        left: 12%;
-        top: 21%;
+        left: 10%;
+        top: 17%;
         // animation: step-mink .3s alternate infinite ease-in;
 
     }
@@ -141,8 +143,8 @@
     .mplg-tail {
         position: absolute;
         z-index: 1;
-        top: 14%;
-        left: 1%;
+        top: 13%;
+        left: -2%;
     }
 }
 
@@ -155,7 +157,7 @@
     width: 150px;
     height: 98px;
     // border: 1px solid red;
-    animation: walk-mink 8s linear infinite;
+    // animation: walk-mink 8s linear infinite;
 
     .mplg-inner {
         position: inherit;
@@ -182,14 +184,14 @@
         z-index: 0;
         left: 50%;
         top: 28%;
-        animation: creep .5s infinite .25s linear;
+        // animation: creep .5s infinite .25s linear;
     }
     .mplg-FRL {
         position: absolute;
         z-index: 2;
         left: 50%;
         top: 28%;
-        animation: creep .5s infinite linear;
+        // animation: creep .5s infinite linear;
 
     }
     .mplg-BLL {
@@ -197,7 +199,7 @@
         z-index: 0;
         left: 12%;
         top: 21%;
-        animation: step-mink .5s alternate-reverse infinite ease-in;
+        // animation: step-mink .5s alternate-reverse infinite ease-in;
 
     }
     .mplg-BRL {
@@ -205,7 +207,7 @@
         z-index: 2;
         left: 12%;
         top: 21%;
-        animation: step-mink .5s alternate infinite ease-in;
+        // animation: step-mink .5s alternate infinite ease-in;
 
     }
     

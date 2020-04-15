@@ -17,8 +17,8 @@ const minkTurn = () => {
 }
 
 const about = () => {
-    sheepTurn()
-    minkTurn()
+    // sheepTurn()
+    // minkTurn()
 }
 
 about()
