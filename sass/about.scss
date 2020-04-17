@@ -28,7 +28,7 @@
     }
 }
 
-
+////////////////////// Sheep
 .flock {
     position: relative;
     top: 700px;
@@ -80,7 +80,7 @@
         // animation: step .4s alternate infinite linear;
     }
 }
-// Mink standing profile
+////////////////////////// Mink standing profile
 .mink-profile-lg {
     position: relative;
     top: 400px;
@@ -148,10 +148,10 @@
     }
 }
 
-// Mink Crouch profile
+//////////////////////////// Mink Crouch profile
 .mink-profile-crouch-lg {
     position: relative;
-    top: 500px;
+    top: 450px;
     left: 200px;
     // display: none;
     width: 150px;
@@ -217,6 +217,17 @@
         top: 8%;
         left: -4%;
     }
+}
+
+/////////////////////// Mink front view
+.mink-front-view {
+    position: relative;
+    top: 450px;
+    left: 200px;
+    // display: none;
+    width: 150px;
+    height: 98px;
+    // border: 1px solid red;
 }
 
 @keyframes walk {
