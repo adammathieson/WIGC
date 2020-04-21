@@ -82,17 +82,27 @@
         // animation: step .4s alternate infinite linear;
     }
 }
+
+//////////////////////// Mink sitting (start)
+.mink-sit {
+    position: relative;
+    top: 90px;
+    left: 195px;
+    // border: 1px solid red;
+    // display: none;
+    // height: 98px;
+    // width: 150px;
+
+}
+
 ////////////////////////// Mink standing profile
 .mink-profile-lg {
     position: relative;
-    top: 0px;
+    top: 400px;
     left: 200px;
-    // display: none;
-    // width: 150px;
     width: 150px;
-    // height: 98px;
     height: 98px;
-    border: 1px solid red;
+    // border: 1px solid red;
     // animation: walk-mink 4s alternate infinite linear;
     
     .mplg-inner {

@@ -420,13 +420,18 @@ header nav .burger div {
   left: 75%;
 }
 
+.mink-sit {
+  position: relative;
+  top: 90px;
+  left: 195px;
+}
+
 .mink-profile-lg {
   position: relative;
-  top: 0px;
+  top: 400px;
   left: 200px;
   width: 150px;
   height: 98px;
-  border: 1px solid red;
 }
 .mink-profile-lg .mplg-inner {
   position: inherit;
