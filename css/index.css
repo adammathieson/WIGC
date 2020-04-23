@@ -421,17 +421,19 @@ header nav .burger div {
 }
 
 .mink-sit {
-  position: relative;
-  top: 90px;
+  position: absolute;
+  top: 558px;
   left: 195px;
 }
 
 .mink-profile-lg {
+  display: none;
   position: relative;
   top: 400px;
   left: 200px;
   width: 150px;
   height: 98px;
+  animation: walk-mink 4s linear;
 }
 .mink-profile-lg .mplg-inner {
   position: inherit;
@@ -453,24 +455,28 @@ header nav .burger div {
   z-index: 0;
   left: 55%;
   top: 33%;
+  animation: step-mink 0.3s alternate infinite ease-in;
 }
 .mink-profile-lg .mplg-FRL {
   position: absolute;
   z-index: 2;
   left: 59%;
   top: 35%;
+  animation: step-mink 0.3s alternate-reverse infinite ease-in;
 }
 .mink-profile-lg .mplg-BLL {
   position: absolute;
   z-index: 0;
   left: 10%;
   top: 17%;
+  animation: step-mink 0.3s alternate-reverse infinite ease-in;
 }
 .mink-profile-lg .mplg-BRL {
   position: absolute;
   z-index: 2;
   left: 10%;
   top: 17%;
+  animation: step-mink 0.3s alternate infinite ease-in;
 }
 .mink-profile-lg .mplg-tail {
   position: absolute;
@@ -480,8 +486,9 @@ header nav .burger div {
 }
 
 .mink-profile-crouch-lg {
+  display: none;
   position: relative;
-  top: 450px;
+  top: 575px;
   left: 200px;
   width: 150px;
   height: 98px;
@@ -538,8 +545,8 @@ header nav .burger div {
 
 .mink-front-view {
   position: relative;
-  top: 0px;
-  left: 800px;
+  top: 400px;
+  left: 900px;
   width: 50px;
   height: 98px;
   border: 1px solid red;
