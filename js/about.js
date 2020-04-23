@@ -1,9 +1,20 @@
+const startBtn = document.querySelector('.start-btn button')
+
+const minkAnimation = async () => {
+    const minkSit = document.querySelector('.mink-sit')
+    minkSit.classList.toggle('active')
+}
+
+startBtn.addEventListener('click', () => {
+    minkAnimation()
+})
+
 const sheepTurn = () => {
     const sheep = document.querySelector('.sheep')
     // console.log(sheep)
     let count = 0
     setInterval(() => {
-        console.log(count++)
+        // console.log(count++)
         sheep.classList.toggle('reverse')
         
     }, 4000)
@@ -17,7 +28,7 @@ const minkTurn = () => {
 }
 
 const about = () => {
-    // sheepTurn()
+    sheepTurn()
     // minkTurn()
 }
 

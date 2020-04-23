@@ -384,6 +384,7 @@ header nav .burger div {
   left: 600px;
   width: 120px;
   height: 92px;
+  animation: walk 8s linear infinite;
 }
 .flock .sheep {
   position: inherit;
@@ -409,15 +410,19 @@ header nav .burger div {
 }
 .flock .right-front {
   left: 28%;
+  animation: step 0.4s alternate infinite linear;
 }
 .flock .left-front {
   left: 36%;
+  animation: step 0.4s alternate-reverse infinite linear;
 }
 .flock .right-back {
   left: 67%;
+  animation: step 0.4s alternate-reverse infinite linear;
 }
 .flock .left-back {
   left: 75%;
+  animation: step 0.4s alternate infinite linear;
 }
 
 .mink-sit {
@@ -428,6 +433,7 @@ header nav .burger div {
 }
 
 .mink-profile-lg {
+  display: none;
   position: relative;
   top: 400px;
   left: 200px;
@@ -678,8 +684,11 @@ header nav .burger div {
     transform: rotate(-5deg);
   }
   100% {
-    transform: rotate(5deg);
+    transform: rotate(3deg);
   }
+}
+.active {
+  display: block;
 }
 
 /*# sourceMappingURL=index.css.map */

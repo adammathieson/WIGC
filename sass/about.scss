@@ -35,7 +35,7 @@
     width: 120px;
     height: 92px;
     // border: 1px solid blue;
-    // animation: walk 8s linear infinite;
+    animation: walk 8s linear infinite;
     
     .sheep {
         position: inherit;
@@ -64,19 +64,19 @@
     }
     .right-front {
         left: 28%;
-        // animation: step .4s alternate infinite linear;
+        animation: step .4s alternate infinite linear;
     }
     .left-front {
         left: 36%;
-        // animation: step .4s alternate-reverse infinite linear;
+        animation: step .4s alternate-reverse infinite linear;
     }
     .right-back {
         left: 67%;
-        // animation: step .4s alternate-reverse infinite linear;
+        animation: step .4s alternate-reverse infinite linear;
     }
     .left-back {
         left: 75%;
-        // animation: step .4s alternate infinite linear;
+        animation: step .4s alternate infinite linear;
     }
 }
 
@@ -90,7 +90,7 @@
 
 ////////////////////////// Mink standing profile
 .mink-profile-lg {
-    // display: none;
+    display: none;
     position: relative;
     top: 400px;
     left: 200px;
@@ -371,6 +371,10 @@
         transform: rotate(-5deg)
     }
     100% {
-        transform: rotate(5deg)
+        transform: rotate(3deg)
     }
+}
+
+.active {
+    display: block;
 }
