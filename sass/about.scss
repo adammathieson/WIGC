@@ -27,10 +27,7 @@
         // display: none;
     }
 }
-// .animation-container {
-//     border: 1px solid blue;
-//     height: 100vh;
-    ////////////////////// Sheep
+
 .flock {
     position: relative;
     top: 650px;
@@ -85,31 +82,27 @@
 
 //////////////////////// Mink sitting (start)
 .mink-sit {
-    // display: none;
+    display: none;
     position: absolute;
     top: 558px;
     left: 195px;
-    // border: 1px solid red;
-    // display: none;
-    // height: 98px;
-    // width: 150px;
-
 }
 
 ////////////////////////// Mink standing profile
 .mink-profile-lg {
-    display: none;
+    // display: none;
     position: relative;
     top: 400px;
     left: 200px;
     width: 150px;
     height: 98px;
     // border: 1px solid red;
-    animation: walk-mink 4s linear;
+    animation: walk-mink 2s linear;
     
     .mplg-inner {
         position: inherit;
         height: inherit;
+        animation: bounce .5s alternate infinite;
     }
     .mplg-body {
         position: absolute;
@@ -127,22 +120,22 @@
         z-index: 0;
         left: 55%;
         top: 33%;
-        animation: step-mink .3s alternate infinite ease-in;
+        animation: step-mink 1s .05s infinite cubic-bezier(.66,.67,.27,1.04);
     }
     .mplg-FRL {
         position: absolute;
         z-index: 2;
         left: 59%;
         top: 35%;
-        animation: step-mink .3s alternate-reverse infinite ease-in;
+        animation: step-mink 1s infinite cubic-bezier(.66,.67,.27,1.04);
 
     }
     .mplg-BLL {
         position: absolute;
         z-index: 0;
-        left: 10%;
+        left: 15%;
         top: 17%;
-        animation: step-mink .3s alternate-reverse infinite ease-in;
+        animation: step-mink-reverse 1s .05s reverse infinite cubic-bezier(.66,.67,.27,1.04);
 
     }
     .mplg-BRL {
@@ -150,7 +143,7 @@
         z-index: 2;
         left: 10%;
         top: 17%;
-        animation: step-mink .3s alternate infinite ease-in;
+        animation: step-mink-reverse 1s reverse infinite cubic-bezier(.66,.67,.27,1.04);
 
     }
     
@@ -304,11 +297,8 @@
     0% {
         transform: translateX(0px)
     }
-    50% {
-        transform: translateX(400px);
-    }
     100% {
-        transform: translateX(0px);
+        transform: translateX(400px);
     }
 }
 
@@ -348,55 +338,39 @@
 
 @keyframes step-mink {
     0% {
-        transform: rotate(10deg);
+        transform: rotate(-12deg);
         transform-origin: top;
     }
     50% {
-        transform: rotate(0deg);
+        transform: rotate(14deg);
         transform-origin: top;
     }
     100% {
-        transform: rotate(-10deg);
+        transform: rotate(-12deg);
         transform-origin: top;
     }
 }
 
-// @keyframes hop {
-//     0% {
-//         transform: translateY(0px);
-//     }
+@keyframes step-mink-reverse {
+    0% {
+        transform: rotate(12deg);
+        transform-origin: top;
+    }
+    50% {
+        transform: rotate(-16deg);
+        transform-origin: top;
+    }
+    100% {
+        transform: rotate(12deg);
+        transform-origin: top;
+    }
+}
 
-//     50% {
-//         transform: translateY(-300px) rotate(180deg);
-//     }
-
-//     100% {
-//         transform: translateY(0px) rotate(360deg);
-//     }
-// }
-
-// @keyframes head-tilt {
-//     0% {
-//         transform: rotate(0deg);
-//     }
-//     15% {
-//         transform: translateX(5px) translateY(-3px);
-//     }
-//     25% {
-//         transform: rotate(10deg);
-//     }
-//     35% {
-//         transform: translateY(5px) translateX(-2px);
-//     }
-//     50% {
-//         transform: rotate(-30deg);
-//     }
-//     75% {
-//         transform: rotate(-7deg);
-//     }
-//     100% {
-//         transform: rotate(20deg);
-//     }
-// }
-
-// }
+@keyframes bounce {
+    0% {
+        transform: rotate(-5deg)
+    }
+    100% {
+        transform: rotate(5deg)
+    }
+}

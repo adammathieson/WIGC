@@ -421,23 +421,24 @@ header nav .burger div {
 }
 
 .mink-sit {
+  display: none;
   position: absolute;
   top: 558px;
   left: 195px;
 }
 
 .mink-profile-lg {
-  display: none;
   position: relative;
   top: 400px;
   left: 200px;
   width: 150px;
   height: 98px;
-  animation: walk-mink 4s linear;
+  animation: walk-mink 2s linear;
 }
 .mink-profile-lg .mplg-inner {
   position: inherit;
   height: inherit;
+  animation: bounce 0.5s alternate infinite;
 }
 .mink-profile-lg .mplg-body {
   position: absolute;
@@ -455,28 +456,28 @@ header nav .burger div {
   z-index: 0;
   left: 55%;
   top: 33%;
-  animation: step-mink 0.3s alternate infinite ease-in;
+  animation: step-mink 1s 0.05s infinite cubic-bezier(0.66, 0.67, 0.27, 1.04);
 }
 .mink-profile-lg .mplg-FRL {
   position: absolute;
   z-index: 2;
   left: 59%;
   top: 35%;
-  animation: step-mink 0.3s alternate-reverse infinite ease-in;
+  animation: step-mink 1s infinite cubic-bezier(0.66, 0.67, 0.27, 1.04);
 }
 .mink-profile-lg .mplg-BLL {
   position: absolute;
   z-index: 0;
-  left: 10%;
+  left: 15%;
   top: 17%;
-  animation: step-mink 0.3s alternate-reverse infinite ease-in;
+  animation: step-mink-reverse 1s 0.05s reverse infinite cubic-bezier(0.66, 0.67, 0.27, 1.04);
 }
 .mink-profile-lg .mplg-BRL {
   position: absolute;
   z-index: 2;
   left: 10%;
   top: 17%;
-  animation: step-mink 0.3s alternate infinite ease-in;
+  animation: step-mink-reverse 1s reverse infinite cubic-bezier(0.66, 0.67, 0.27, 1.04);
 }
 .mink-profile-lg .mplg-tail {
   position: absolute;
@@ -609,11 +610,8 @@ header nav .burger div {
   0% {
     transform: translateX(0px);
   }
-  50% {
-    transform: translateX(400px);
-  }
   100% {
-    transform: translateX(0px);
+    transform: translateX(400px);
   }
 }
 @keyframes creep {
@@ -649,16 +647,38 @@ header nav .burger div {
 }
 @keyframes step-mink {
   0% {
-    transform: rotate(10deg);
+    transform: rotate(-12deg);
     transform-origin: top;
   }
   50% {
-    transform: rotate(0deg);
+    transform: rotate(14deg);
     transform-origin: top;
   }
   100% {
-    transform: rotate(-10deg);
+    transform: rotate(-12deg);
     transform-origin: top;
+  }
+}
+@keyframes step-mink-reverse {
+  0% {
+    transform: rotate(12deg);
+    transform-origin: top;
+  }
+  50% {
+    transform: rotate(-16deg);
+    transform-origin: top;
+  }
+  100% {
+    transform: rotate(12deg);
+    transform-origin: top;
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
   }
 }
 
