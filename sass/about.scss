@@ -168,10 +168,11 @@
     // display: none;
     position: relative;
     top: 400px;
-    left: 200px;
+    left: 875px;
     width: 50px;
     height: 98px;
     // border: 1px solid red;
+    animation: walk-fv 2s linear;
 
     .mfv-inner {
         position: inherit;
@@ -186,35 +187,42 @@
     .mfv-head {
         position: absolute;
         left: 12%;
-        top: 20%;
+        top: 18%;
         z-index: 3;
     }
     .mfv-tail {
         position: absolute;
         top: 19%;
         left: 29%;
-        animation: wag_fv 1s infinite alternate ease-in-out;
+        animation: wag_fv .5s infinite alternate ease-in-out;
     }
     .mfv-BRL {
         position: absolute;
-        top: 35%;
+        top: 34%;
+        animation: step-fv .3s .225s infinite alternate linear;
+
     }
     .mfv-BLL {
         position: absolute;
-        top: 35%;
+        top: 34%;
         left: 45%;
+        animation: step-fv .3s .075s infinite alternate linear;
+
     }
     .mfv-FRL {
         position: absolute;
         z-index: 1;
-        top: 40%;
+        top: 39%;
         left: 18%;
+        animation: step-fv .3s infinite alternate linear;
     }
     .mfv-FLL {
         position: absolute;
         z-index: 1;
-        top: 40%;
+        top: 39%;
         left: 58%;
+        animation: step-fv .3s .15s infinite alternate linear;
+
     }
 }
 
@@ -308,10 +316,19 @@
 
 @keyframes walk-mink{
     0% {
-        transform: translateX(0px)
+        transform: translateX(0px);
     }
     100% {
         transform: translateX(600px);
+    }
+}
+
+@keyframes walk-fv {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(100px);
     }
 }
 
@@ -346,6 +363,15 @@
     100% {
         transform: rotate(-20deg);
         transform-origin: top left;
+    }
+}
+
+@keyframes step-fv {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(6px);
     }
 }
 

@@ -497,9 +497,10 @@ header nav .burger div {
 .mink-front-view {
   position: relative;
   top: 400px;
-  left: 200px;
+  left: 875px;
   width: 50px;
   height: 98px;
+  animation: walk-fv 2s linear;
 }
 .mink-front-view .mfv-inner {
   position: inherit;
@@ -514,35 +515,39 @@ header nav .burger div {
 .mink-front-view .mfv-head {
   position: absolute;
   left: 12%;
-  top: 20%;
+  top: 18%;
   z-index: 3;
 }
 .mink-front-view .mfv-tail {
   position: absolute;
   top: 19%;
   left: 29%;
-  animation: wag_fv 1s infinite alternate ease-in-out;
+  animation: wag_fv 0.5s infinite alternate ease-in-out;
 }
 .mink-front-view .mfv-BRL {
   position: absolute;
-  top: 35%;
+  top: 34%;
+  animation: step-fv 0.3s 0.225s infinite alternate linear;
 }
 .mink-front-view .mfv-BLL {
   position: absolute;
-  top: 35%;
+  top: 34%;
   left: 45%;
+  animation: step-fv 0.3s 0.075s infinite alternate linear;
 }
 .mink-front-view .mfv-FRL {
   position: absolute;
   z-index: 1;
-  top: 40%;
+  top: 39%;
   left: 18%;
+  animation: step-fv 0.3s infinite alternate linear;
 }
 .mink-front-view .mfv-FLL {
   position: absolute;
   z-index: 1;
-  top: 40%;
+  top: 39%;
   left: 58%;
+  animation: step-fv 0.3s 0.15s infinite alternate linear;
 }
 
 .mink-profile-crouch-lg {
@@ -626,6 +631,14 @@ header nav .burger div {
     transform: translateX(600px);
   }
 }
+@keyframes walk-fv {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(100px);
+  }
+}
 @keyframes creep {
   0% {
     transform: translate3d(0);
@@ -655,6 +668,14 @@ header nav .burger div {
   100% {
     transform: rotate(-20deg);
     transform-origin: top left;
+  }
+}
+@keyframes step-fv {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(6px);
   }
 }
 @keyframes step-mink {
