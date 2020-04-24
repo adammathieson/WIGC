@@ -3,16 +3,22 @@ const startBtn = document.querySelector('.start-btn button')
 const minkAnimation = async () => {
     const minkSit = document.querySelector('.mink-sit')
     const minkRunRight = document.querySelector('.mink-profile-lg')
-    const minkFrontViewRight = document.querySelector('.mink-front-view')
+    const minkFrontView = document.querySelector('.mink-front-view')
+    const minkCrouchLeft = document.querySelector('.mink-profile-crouch-lg')
 
     minkRunRight.addEventListener('animationend', () => {
         minkRunRight.classList.remove('active')
-        minkFrontViewRight.classList.add('active')
+        minkFrontView.classList.add('active')
+    })
+
+    minkFrontView.addEventListener('animationend', () => {
+        minkFrontView.classList.remove('active')
+        minkCrouchLeft.classList.add('active')
+
     })
 
     minkSit.classList.remove('active')
     minkRunRight.classList.add('active')
-
 }
 
 startBtn.addEventListener('click', () => {
@@ -38,7 +44,7 @@ const minkTurn = () => {
 }
 
 const about = () => {
-    sheepTurn()
+    // sheepTurn()
     // minkTurn()
 }
 

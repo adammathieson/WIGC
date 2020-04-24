@@ -495,6 +495,7 @@ header nav .burger div {
 }
 
 .mink-front-view {
+  display: none;
   position: relative;
   top: 400px;
   left: 875px;
@@ -554,54 +555,53 @@ header nav .burger div {
   display: none;
   position: relative;
   top: 575px;
-  left: 200px;
+  left: 800px;
   width: 150px;
   height: 98px;
-  border: 1px solid red;
 }
-.mink-profile-crouch-lg .mplg-inner {
+.mink-profile-crouch-lg .mpcrlg-inner {
   position: inherit;
   height: inherit;
 }
 .mink-profile-crouch-lg .mink-reverse {
   transform: scaleX(-1);
 }
-.mink-profile-crouch-lg .mplg-body {
+.mink-profile-crouch-lg .mpcrlg-body {
   position: absolute;
   left: 24px;
   z-index: 1;
 }
-.mink-profile-crouch-lg .mplg-head {
+.mink-profile-crouch-lg .mpcrlg-head, .mink-profile-crouch-lg .mpcrlg-head-left {
   position: absolute;
   z-index: 2;
   left: 65%;
   top: -6%;
 }
-.mink-profile-crouch-lg .mplg-FLL {
+.mink-profile-crouch-lg .mpcrlg-FLL {
   position: absolute;
   z-index: 0;
   left: 50%;
   top: 28%;
 }
-.mink-profile-crouch-lg .mplg-FRL {
+.mink-profile-crouch-lg .mpcrlg-FRL {
   position: absolute;
   z-index: 2;
   left: 50%;
   top: 28%;
 }
-.mink-profile-crouch-lg .mplg-BLL {
+.mink-profile-crouch-lg .mpcrlg-BLL {
   position: absolute;
   z-index: 0;
   left: 12%;
   top: 21%;
 }
-.mink-profile-crouch-lg .mplg-BRL {
+.mink-profile-crouch-lg .mpcrlg-BRL {
   position: absolute;
   z-index: 2;
   left: 12%;
   top: 21%;
 }
-.mink-profile-crouch-lg .mplg-tail {
+.mink-profile-crouch-lg .mpcrlg-tail {
   position: absolute;
   z-index: 1;
   top: 8%;
@@ -610,6 +610,10 @@ header nav .burger div {
 
 .active {
   display: block;
+}
+
+.hide {
+  display: none;
 }
 
 @keyframes walk {
@@ -636,7 +640,7 @@ header nav .burger div {
     transform: translateY(0px);
   }
   to {
-    transform: translateY(100px);
+    transform: translateY(150px);
   }
 }
 @keyframes creep {

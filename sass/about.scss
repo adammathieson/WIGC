@@ -165,7 +165,7 @@
 
 /////////////////////// Mink front view
 .mink-front-view {
-    // display: none;
+    display: none;
     position: relative;
     top: 400px;
     left: 875px;
@@ -231,13 +231,13 @@
     display: none;
     position: relative;
     top: 575px;
-    left: 200px;
+    left: 800px;
     width: 150px;
     height: 98px;
-    border: 1px solid red;
+    // border: 1px solid red;
     // animation: walk-mink 8s linear infinite;
 
-    .mplg-inner {
+    .mpcrlg-inner {
         position: inherit;
         height: inherit;
     }
@@ -246,25 +246,27 @@
         transform: scaleX(-1);
     }
 
-    .mplg-body {
+    .mpcrlg-body {
         position: absolute;
         left: 24px;
         z-index: 1;
     }
-    .mplg-head {
+    .mpcrlg-head, .mpcrlg-head-left {
+        // display: none;
         position: absolute;
         z-index: 2;
         left: 65%;
         top: -6%;
     }
-    .mplg-FLL {
+
+    .mpcrlg-FLL {
         position: absolute;
         z-index: 0;
         left: 50%;
         top: 28%;
         // animation: creep .5s infinite .25s linear;
     }
-    .mplg-FRL {
+    .mpcrlg-FRL {
         position: absolute;
         z-index: 2;
         left: 50%;
@@ -272,7 +274,7 @@
         // animation: creep .5s infinite linear;
 
     }
-    .mplg-BLL {
+    .mpcrlg-BLL {
         position: absolute;
         z-index: 0;
         left: 12%;
@@ -280,7 +282,7 @@
         // animation: step-mink .5s alternate-reverse infinite ease-in;
 
     }
-    .mplg-BRL {
+    .mpcrlg-BRL {
         position: absolute;
         z-index: 2;
         left: 12%;
@@ -289,7 +291,7 @@
 
     }
     
-    .mplg-tail {
+    .mpcrlg-tail {
         position: absolute;
         z-index: 1;
         top: 8%;
@@ -300,6 +302,9 @@
 // For active animation section
 .active {
     display: block;
+}
+.hide {
+    display: none;
 }
 
 @keyframes walk {
@@ -328,7 +333,7 @@
         transform: translateY(0px);
     }
     to {
-        transform: translateY(100px);
+        transform: translateY(150px);
     }
 }
 
