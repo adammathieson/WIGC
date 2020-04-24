@@ -2,7 +2,17 @@ const startBtn = document.querySelector('.start-btn button')
 
 const minkAnimation = async () => {
     const minkSit = document.querySelector('.mink-sit')
-    minkSit.classList.toggle('active')
+    const minkRunRight = document.querySelector('.mink-profile-lg')
+    const minkFrontViewRight = document.querySelector('.mink-front-view')
+
+    minkRunRight.addEventListener('animationend', () => {
+        minkRunRight.classList.remove('active')
+        minkFrontViewRight.classList.add('active')
+    })
+
+    minkSit.classList.remove('active')
+    minkRunRight.classList.add('active')
+
 }
 
 startBtn.addEventListener('click', () => {
