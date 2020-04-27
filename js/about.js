@@ -17,6 +17,10 @@ const minkAnimation = async () => {
 
     })
 
+    minkCrouchLeft.addEventListener('animationend', () => {
+        minkCrouchLeft.classList.remove('active')
+    })
+
     minkSit.classList.remove('active')
     minkRunRight.classList.add('active')
 }
@@ -27,10 +31,7 @@ startBtn.addEventListener('click', () => {
 
 const sheepTurn = () => {
     const sheep = document.querySelector('.sheep')
-    // console.log(sheep)
-    let count = 0
     setInterval(() => {
-        // console.log(count++)
         sheep.classList.toggle('reverse')
         
     }, 4000)

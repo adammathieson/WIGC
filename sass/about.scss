@@ -235,7 +235,7 @@
     width: 150px;
     height: 98px;
     // border: 1px solid red;
-    // animation: walk-mink 8s linear infinite;
+    animation: walk-mink-crouch 2s linear;
 
     .mpcrlg-inner {
         position: inherit;
@@ -264,14 +264,14 @@
         z-index: 0;
         left: 50%;
         top: 28%;
-        // animation: creep .5s infinite .25s linear;
+        animation: creep .5s infinite .25s linear;
     }
     .mpcrlg-FRL {
         position: absolute;
         z-index: 2;
         left: 50%;
         top: 28%;
-        // animation: creep .5s infinite linear;
+        animation: creep .5s infinite linear;
 
     }
     .mpcrlg-BLL {
@@ -279,7 +279,7 @@
         z-index: 0;
         left: 12%;
         top: 21%;
-        // animation: step-mink .5s alternate-reverse infinite ease-in;
+        animation: step-mink .5s alternate-reverse infinite ease-in;
 
     }
     .mpcrlg-BRL {
@@ -287,7 +287,7 @@
         z-index: 2;
         left: 12%;
         top: 21%;
-        // animation: step-mink .5s alternate infinite ease-in;
+        animation: step-mink .5s alternate infinite ease-in;
 
     }
     
@@ -325,6 +325,15 @@
     }
     100% {
         transform: translateX(600px);
+    }
+}
+
+@keyframes walk-mink-crouch {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-180px);
     }
 }
 
