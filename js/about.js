@@ -5,6 +5,7 @@ const minkAnimation = async () => {
     const minkRunRight = document.querySelector('.mink-profile-lg')
     const minkFrontView = document.querySelector('.mink-front-view')
     const minkCrouchLeft = document.querySelector('.mink-profile-crouch-lg')
+    const minkRearView = document.querySelector('.mink-rear-view')
 
     minkRunRight.addEventListener('animationend', () => {
         minkRunRight.classList.remove('active')
@@ -19,6 +20,7 @@ const minkAnimation = async () => {
 
     minkCrouchLeft.addEventListener('animationend', () => {
         minkCrouchLeft.classList.remove('active')
+        minkRearView.classList.add('active')
     })
 
     minkSit.classList.remove('active')

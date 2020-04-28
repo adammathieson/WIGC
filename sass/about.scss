@@ -226,6 +226,72 @@
     }
 }
 
+/////////////////////// Mink rear view
+.mink-rear-view {
+    display: none;
+    position: relative;
+    top: 400px;
+    left: 620px;
+    width: 50px;
+    height: 98px;
+    // border: 1px solid red;
+    animation: walk-fv reverse 2s linear;
+
+    .mrv-inner {
+        position: inherit;
+        height: inherit;
+    }
+    .mrv-body {
+        position: absolute;
+        left: 15%;
+        top: 18%;
+        z-index: 1;
+    }
+    .mrv-head {
+        position: absolute;
+        left: 10%;
+        top: 7%;
+        z-index: 0;
+    }
+    .mrv-tail {
+        position: absolute;
+        z-index: 2;
+        top: 30%;
+        left: 29%;
+        animation: wag_fv .5s infinite alternate ease-in-out;
+    }
+    .mrv-BRL {
+        position: absolute;
+        z-index: 1;
+        top: 34%;
+        left: 45%;
+        animation: step-fv .3s .225s infinite alternate linear;
+        
+    }
+    .mrv-BLL {
+        position: absolute;
+        z-index: 1;
+        top: 34%;
+        animation: step-fv .3s .075s infinite alternate linear;
+
+    }
+    .mrv-FRL {
+        position: absolute;
+        z-index: 0;
+        top: 25%;
+        left: 58%;
+        animation: step-fv .3s infinite alternate linear;
+    }
+    .mrv-FLL {
+        position: absolute;
+        z-index: 0;
+        top: 25%;
+        left: 18%;
+        animation: step-fv .3s .15s infinite alternate linear;
+
+    }
+}
+
 //////////////////////////// Mink Crouch profile
 .mink-profile-crouch-lg {
     display: none;

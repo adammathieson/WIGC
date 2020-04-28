@@ -551,6 +551,66 @@ header nav .burger div {
   animation: step-fv 0.3s 0.15s infinite alternate linear;
 }
 
+.mink-rear-view {
+  display: none;
+  position: relative;
+  top: 400px;
+  left: 620px;
+  width: 50px;
+  height: 98px;
+  animation: walk-fv reverse 2s linear;
+}
+.mink-rear-view .mrv-inner {
+  position: inherit;
+  height: inherit;
+}
+.mink-rear-view .mrv-body {
+  position: absolute;
+  left: 15%;
+  top: 18%;
+  z-index: 1;
+}
+.mink-rear-view .mrv-head {
+  position: absolute;
+  left: 10%;
+  top: 7%;
+  z-index: 0;
+}
+.mink-rear-view .mrv-tail {
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  left: 29%;
+  animation: wag_fv 0.5s infinite alternate ease-in-out;
+}
+.mink-rear-view .mrv-BRL {
+  position: absolute;
+  z-index: 1;
+  top: 34%;
+  left: 45%;
+  animation: step-fv 0.3s 0.225s infinite alternate linear;
+}
+.mink-rear-view .mrv-BLL {
+  position: absolute;
+  z-index: 1;
+  top: 34%;
+  animation: step-fv 0.3s 0.075s infinite alternate linear;
+}
+.mink-rear-view .mrv-FRL {
+  position: absolute;
+  z-index: 0;
+  top: 25%;
+  left: 58%;
+  animation: step-fv 0.3s infinite alternate linear;
+}
+.mink-rear-view .mrv-FLL {
+  position: absolute;
+  z-index: 0;
+  top: 25%;
+  left: 18%;
+  animation: step-fv 0.3s 0.15s infinite alternate linear;
+}
+
 .mink-profile-crouch-lg {
   display: none;
   position: relative;
