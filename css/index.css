@@ -443,55 +443,55 @@ header nav .burger div {
   height: 98px;
   animation: walk-mink 3s linear;
 }
-.mink-profile .mplg-bounce {
+.mink-profile .mp-bounce {
   position: inherit;
   height: inherit;
   animation: bounce 0.5s alternate infinite;
 }
-.mink-profile .mplg-inner {
+.mink-profile .mp-inner {
   position: inherit;
   height: inherit;
 }
-.mink-profile .mplg-body {
+.mink-profile .mp-body {
   position: absolute;
   left: 24px;
   z-index: 1;
 }
-.mink-profile .mplg-head, .mink-profile .mplg-head-left {
+.mink-profile .mp-head, .mink-profile .mp-head-left {
   position: absolute;
   z-index: 2;
   left: 64%;
   top: -7%;
 }
-.mink-profile .mplg-FLL {
+.mink-profile .mp-FLL {
   position: absolute;
   z-index: 0;
   left: 55%;
   top: 33%;
   animation: step-mink 1s 0.05s infinite cubic-bezier(0.66, 0.67, 0.27, 1.04);
 }
-.mink-profile .mplg-FRL {
+.mink-profile .mp-FRL {
   position: absolute;
   z-index: 2;
   left: 59%;
   top: 35%;
   animation: step-mink 1s infinite cubic-bezier(0.66, 0.67, 0.27, 1.04);
 }
-.mink-profile .mplg-BLL {
+.mink-profile .mp-BLL {
   position: absolute;
   z-index: 0;
   left: 15%;
   top: 17%;
   animation: step-mink-reverse 1s 0.05s reverse infinite cubic-bezier(0.66, 0.67, 0.27, 1.04);
 }
-.mink-profile .mplg-BRL {
+.mink-profile .mp-BRL {
   position: absolute;
   z-index: 2;
   left: 10%;
   top: 17%;
   animation: step-mink-reverse 1s reverse infinite cubic-bezier(0.66, 0.67, 0.27, 1.04);
 }
-.mink-profile .mplg-tail {
+.mink-profile .mp-tail {
   position: absolute;
   z-index: 1;
   top: 13%;
@@ -615,7 +615,7 @@ header nav .burger div {
   animation: step-fv 0.3s 0.15s infinite alternate linear;
 }
 
-.mink-profile-crouch-lg {
+.mink-crouch {
   display: none;
   position: relative;
   top: 575px;
@@ -624,50 +624,51 @@ header nav .burger div {
   height: 98px;
   animation: walk-mink-crouch 2s linear;
 }
-.mink-profile-crouch-lg .mpcrlg-inner {
+.mink-crouch .mcr-inner {
   position: inherit;
   height: inherit;
+  transform: scaleX(-1);
 }
-.mink-profile-crouch-lg .mpcrlg-body {
+.mink-crouch .mcr-body {
   position: absolute;
   left: 24px;
   z-index: 1;
 }
-.mink-profile-crouch-lg .mpcrlg-head, .mink-profile-crouch-lg .mpcrlg-head-left {
+.mink-crouch .mcr-head, .mink-crouch .mcr-head-left {
   position: absolute;
   z-index: 2;
   left: 65%;
   top: -6%;
 }
-.mink-profile-crouch-lg .mpcrlg-FLL {
+.mink-crouch .mcr-FLL {
   position: absolute;
   z-index: 0;
   left: 50%;
   top: 28%;
   animation: creep 0.5s infinite 0.25s linear;
 }
-.mink-profile-crouch-lg .mpcrlg-FRL {
+.mink-crouch .mcr-FRL {
   position: absolute;
   z-index: 2;
   left: 50%;
   top: 28%;
   animation: creep 0.5s infinite linear;
 }
-.mink-profile-crouch-lg .mpcrlg-BLL {
+.mink-crouch .mcr-BLL {
   position: absolute;
   z-index: 0;
   left: 12%;
   top: 21%;
   animation: step-mink 0.5s alternate-reverse infinite ease-in;
 }
-.mink-profile-crouch-lg .mpcrlg-BRL {
+.mink-crouch .mcr-BRL {
   position: absolute;
   z-index: 2;
   left: 12%;
   top: 21%;
   animation: step-mink 0.5s alternate infinite ease-in;
 }
-.mink-profile-crouch-lg .mpcrlg-tail {
+.mink-crouch .mcr-tail {
   position: absolute;
   z-index: 1;
   top: 8%;
@@ -678,12 +679,24 @@ header nav .burger div {
   animation: walk-mink-left 3s linear;
   left: 600px;
 }
-.mp-2 .mplg-inner {
+.mp-2 .mp-inner {
   transform: scaleX(-1);
 }
 
 .mfv-2 {
   left: 150px;
+}
+
+.mc-2 {
+  left: 200px;
+  animation: walk-mink-crouch reverse 2s linear;
+}
+.mc-2 .mcr-inner {
+  transform: scaleX(1);
+}
+
+.mrv-2 {
+  left: 300px;
 }
 
 .active {
@@ -692,19 +705,6 @@ header nav .burger div {
 
 .hide {
   display: none;
-}
-
-.mink-left-face {
-  transform: scaleX(-1);
-}
-
-.mink-right-face {
-  transform: scaleX(1);
-}
-
-.mink-run-left {
-  left: 620px;
-  animation: walk-mink-left 3s linear;
 }
 
 @keyframes walk {
