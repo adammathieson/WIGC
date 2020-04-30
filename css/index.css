@@ -431,29 +431,33 @@ header nav .burger div {
   display: none;
   position: absolute;
   top: 558px;
-  left: 195px;
+  left: 295px;
 }
 
 .mink-profile-lg {
   display: none;
   position: relative;
   top: 400px;
-  left: 200px;
+  left: 300px;
   width: 150px;
   height: 98px;
   animation: walk-mink 3s linear;
 }
-.mink-profile-lg .mplg-inner {
+.mink-profile-lg .mplg-bounce {
   position: inherit;
   height: inherit;
   animation: bounce 0.5s alternate infinite;
+}
+.mink-profile-lg .mplg-inner {
+  position: inherit;
+  height: inherit;
 }
 .mink-profile-lg .mplg-body {
   position: absolute;
   left: 24px;
   z-index: 1;
 }
-.mink-profile-lg .mplg-head {
+.mink-profile-lg .mplg-head, .mink-profile-lg .mplg-head-left {
   position: absolute;
   z-index: 2;
   left: 64%;
@@ -501,7 +505,7 @@ header nav .burger div {
   left: 875px;
   width: 50px;
   height: 98px;
-  animation: walk-fv 2s linear;
+  animation: walk-fv 1.5s linear;
 }
 .mink-front-view .mfv-inner {
   position: inherit;
@@ -555,10 +559,10 @@ header nav .burger div {
   display: none;
   position: relative;
   top: 400px;
-  left: 620px;
+  left: 720px;
   width: 50px;
   height: 98px;
-  animation: walk-fv reverse 2s linear;
+  animation: walk-fv reverse 1s linear;
 }
 .mink-rear-view .mrv-inner {
   position: inherit;
@@ -624,9 +628,6 @@ header nav .burger div {
   position: inherit;
   height: inherit;
 }
-.mink-profile-crouch-lg .mink-reverse {
-  transform: scaleX(-1);
-}
 .mink-profile-crouch-lg .mpcrlg-body {
   position: absolute;
   left: 24px;
@@ -681,6 +682,19 @@ header nav .burger div {
   display: none;
 }
 
+.mink-left-face {
+  transform: scaleX(-1);
+}
+
+.mink-right-face {
+  transform: scaleX(1);
+}
+
+.mink-run-left {
+  left: 620px;
+  animation: walk-mink-left 3s linear;
+}
+
 @keyframes walk {
   0% {
     transform: translateX(0px);
@@ -697,7 +711,15 @@ header nav .burger div {
     transform: translateX(0px);
   }
   100% {
-    transform: translateX(600px);
+    transform: translateX(500px);
+  }
+}
+@keyframes walk-mink-left {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-500px);
   }
 }
 @keyframes walk-mink-crouch {
@@ -705,7 +727,7 @@ header nav .burger div {
     transform: translateX(0px);
   }
   100% {
-    transform: translateX(-180px);
+    transform: translateX(-90px);
   }
 }
 @keyframes walk-fv {

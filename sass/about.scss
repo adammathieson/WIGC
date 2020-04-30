@@ -93,7 +93,7 @@
     display: none;
     position: absolute;
     top: 558px;
-    left: 195px;
+    left: 295px;
 }
 
 ////////////////////////// Mink standing profile
@@ -101,23 +101,28 @@
     display: none;
     position: relative;
     top: 400px;
-    left: 200px;
+    left: 300px;
     width: 150px;
     height: 98px;
     // border: 1px solid red;
     animation: walk-mink 3s linear;
+
+    .mplg-bounce {
+        position: inherit;
+        height: inherit;
+        animation: bounce .5s alternate infinite;
+    }
     
     .mplg-inner {
         position: inherit;
         height: inherit;
-        animation: bounce .5s alternate infinite;
     }
     .mplg-body {
         position: absolute;
         left: 24px;
         z-index: 1;
     }
-    .mplg-head {
+    .mplg-head, .mplg-head-left {
         position: absolute;
         z-index: 2;
         left: 64%;
@@ -172,7 +177,7 @@
     width: 50px;
     height: 98px;
     // border: 1px solid red;
-    animation: walk-fv 2s linear;
+    animation: walk-fv 1.5s linear;
 
     .mfv-inner {
         position: inherit;
@@ -231,11 +236,11 @@
     display: none;
     position: relative;
     top: 400px;
-    left: 620px;
+    left: 720px;
     width: 50px;
     height: 98px;
     // border: 1px solid red;
-    animation: walk-fv reverse 2s linear;
+    animation: walk-fv reverse 1s linear;
 
     .mrv-inner {
         position: inherit;
@@ -308,10 +313,6 @@
         height: inherit;
     }
 
-    .mink-reverse {
-        transform: scaleX(-1);
-    }
-
     .mpcrlg-body {
         position: absolute;
         left: 24px;
@@ -365,12 +366,22 @@
     }
 }
 
-// For active animation section
+// For animation changes
 .active {
     display: block;
 }
 .hide {
     display: none;
+}
+.mink-left-face {
+    transform: scaleX(-1);
+}
+.mink-right-face {
+    transform: scaleX(1);
+}
+.mink-run-left {
+    left: 620px;
+    animation: walk-mink-left 3s linear; 
 }
 
 @keyframes walk {
@@ -385,12 +396,21 @@
     }
 }
 
-@keyframes walk-mink{
+@keyframes walk-mink {
     0% {
         transform: translateX(0px);
     }
     100% {
-        transform: translateX(600px);
+        transform: translateX(500px);
+    }
+}
+
+@keyframes walk-mink-left {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-500px);
     }
 }
 
@@ -399,7 +419,7 @@
         transform: translateX(0px);
     }
     100% {
-        transform: translateX(-180px);
+        transform: translateX(-90px);
     }
 }
 
