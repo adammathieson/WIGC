@@ -434,7 +434,7 @@ header nav .burger div {
   left: 295px;
 }
 
-.mink-profile-lg {
+.mink-profile {
   display: none;
   position: relative;
   top: 400px;
@@ -443,55 +443,55 @@ header nav .burger div {
   height: 98px;
   animation: walk-mink 3s linear;
 }
-.mink-profile-lg .mplg-bounce {
+.mink-profile .mplg-bounce {
   position: inherit;
   height: inherit;
   animation: bounce 0.5s alternate infinite;
 }
-.mink-profile-lg .mplg-inner {
+.mink-profile .mplg-inner {
   position: inherit;
   height: inherit;
 }
-.mink-profile-lg .mplg-body {
+.mink-profile .mplg-body {
   position: absolute;
   left: 24px;
   z-index: 1;
 }
-.mink-profile-lg .mplg-head, .mink-profile-lg .mplg-head-left {
+.mink-profile .mplg-head, .mink-profile .mplg-head-left {
   position: absolute;
   z-index: 2;
   left: 64%;
   top: -7%;
 }
-.mink-profile-lg .mplg-FLL {
+.mink-profile .mplg-FLL {
   position: absolute;
   z-index: 0;
   left: 55%;
   top: 33%;
   animation: step-mink 1s 0.05s infinite cubic-bezier(0.66, 0.67, 0.27, 1.04);
 }
-.mink-profile-lg .mplg-FRL {
+.mink-profile .mplg-FRL {
   position: absolute;
   z-index: 2;
   left: 59%;
   top: 35%;
   animation: step-mink 1s infinite cubic-bezier(0.66, 0.67, 0.27, 1.04);
 }
-.mink-profile-lg .mplg-BLL {
+.mink-profile .mplg-BLL {
   position: absolute;
   z-index: 0;
   left: 15%;
   top: 17%;
   animation: step-mink-reverse 1s 0.05s reverse infinite cubic-bezier(0.66, 0.67, 0.27, 1.04);
 }
-.mink-profile-lg .mplg-BRL {
+.mink-profile .mplg-BRL {
   position: absolute;
   z-index: 2;
   left: 10%;
   top: 17%;
   animation: step-mink-reverse 1s reverse infinite cubic-bezier(0.66, 0.67, 0.27, 1.04);
 }
-.mink-profile-lg .mplg-tail {
+.mink-profile .mplg-tail {
   position: absolute;
   z-index: 1;
   top: 13%;
@@ -672,6 +672,14 @@ header nav .burger div {
   z-index: 1;
   top: 8%;
   left: -4%;
+}
+
+.mp-2 {
+  animation: walk-mink-left 3s linear;
+  left: 600px;
+}
+.mp-2 .mplg-inner {
+  transform: scaleX(-1);
 }
 
 .active {

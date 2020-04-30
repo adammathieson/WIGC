@@ -2,13 +2,11 @@ const startBtn = document.querySelector('.start-btn button')
 
 const minkAnimation = async () => {
     const minkSit = document.querySelector('.mink-sit')
-    const minkRun = document.querySelector('.mink-profile-lg')
-    const minkRunInner = document.querySelector('.mplg-inner')
+    const minkRun = document.querySelector('.mink-profile')
+    const minkRunReverse = document.querySelector('.mp-2')
     const minkFrontView = document.querySelector('.mink-front-view')
     const minkCrouchLeft = document.querySelector('.mink-profile-crouch-lg')
     const minkRearView = document.querySelector('.mink-rear-view')
-    const minkRunHeadRight = document.querySelector('.mplg-head')
-    const minkRunHeadLeft = document.querySelector('.mplg-head-left')
     
     minkRun.addEventListener('animationend', () => {
         minkRun.classList.remove('active')
@@ -28,22 +26,17 @@ const minkAnimation = async () => {
 
     minkRearView.addEventListener('animationend', () => {
         minkRearView.classList.remove('active')
-        minkRun.classList.add('active')
-        minkRun.classList.add('mink-run-left')
-        minkRunInner.classList.add('mink-left-face')
-        minkRunHeadRight.classList.add('hide')
-        minkRunHeadLeft.classList.remove('hide')
-
+        minkRunReverse.classList.add('active')
     })
 
-    minkRunInner.addEventListener('animationend', () => {
-        minkRunInner.classList.remove('mink-run-left')
-        minkRun.classList.remove('active')
+    minkRunReverse.addEventListener('animationend', () => {
+        minkRunReverse.classList.remove('active')
     })
 
 
     minkSit.classList.remove('active')
     minkRun.classList.add('active')
+    console.log(minkRun)
 }
 
 startBtn.addEventListener('click', () => {

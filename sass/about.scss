@@ -97,7 +97,7 @@
 }
 
 ////////////////////////// Mink standing profile
-.mink-profile-lg {
+.mink-profile {
     display: none;
     position: relative;
     top: 400px;
@@ -363,6 +363,17 @@
         z-index: 1;
         top: 8%;
         left: -4%;
+    }
+}
+
+////////////////////////// Mink standing profile - reverse 
+.mp-2 {
+    animation: walk-mink-left 3s linear;
+    left: 600px;
+
+    .mplg-inner {
+        transform: scaleX(-1);
+        
     }
 }
 
