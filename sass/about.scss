@@ -333,14 +333,14 @@
         z-index: 0;
         left: 50%;
         top: 28%;
-        animation: creep .5s infinite .25s linear;
+        animation: creep .8s infinite .25s linear;
     }
     .mcr-FRL {
         position: absolute;
         z-index: 2;
         left: 50%;
         top: 28%;
-        animation: creep .5s infinite linear;
+        animation: creep .8s infinite linear;
 
     }
     .mcr-BLL {
@@ -348,7 +348,7 @@
         z-index: 0;
         left: 12%;
         top: 21%;
-        animation: step-mink .5s alternate-reverse infinite ease-in;
+        animation: step-mink .8s .4s infinite linear;
 
     }
     .mcr-BRL {
@@ -356,7 +356,7 @@
         z-index: 2;
         left: 12%;
         top: 21%;
-        animation: step-mink .5s alternate infinite ease-in;
+        animation: step-mink .8s infinite linear;
 
     }
     

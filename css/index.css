@@ -645,28 +645,28 @@ header nav .burger div {
   z-index: 0;
   left: 50%;
   top: 28%;
-  animation: creep 0.5s infinite 0.25s linear;
+  animation: creep 0.8s infinite 0.25s linear;
 }
 .mink-crouch .mcr-FRL {
   position: absolute;
   z-index: 2;
   left: 50%;
   top: 28%;
-  animation: creep 0.5s infinite linear;
+  animation: creep 0.8s infinite linear;
 }
 .mink-crouch .mcr-BLL {
   position: absolute;
   z-index: 0;
   left: 12%;
   top: 21%;
-  animation: step-mink 0.5s alternate-reverse infinite ease-in;
+  animation: step-mink 0.8s 0.4s infinite linear;
 }
 .mink-crouch .mcr-BRL {
   position: absolute;
   z-index: 2;
   left: 12%;
   top: 21%;
-  animation: step-mink 0.5s alternate infinite ease-in;
+  animation: step-mink 0.8s infinite linear;
 }
 .mink-crouch .mcr-tail {
   position: absolute;
