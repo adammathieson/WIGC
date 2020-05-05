@@ -1,6 +1,6 @@
 const startBtn = document.querySelector('.start-btn button')
 
-const minkAnimation = async () => {
+export const minkAnimation = () => {
     const minkSit = document.querySelector('.mink-sit')
     const minkRun = document.querySelector('.mink-profile')
     const minkRunReverse = document.querySelector('.mp-2')
@@ -11,6 +11,7 @@ const minkAnimation = async () => {
     const minkRearView = document.querySelector('.mink-rear-view')
     const minkRearView2 = document.querySelector('.mrv-2')
     
+    
     minkRun.addEventListener('animationend', () => {
         minkRun.classList.remove('active')
         minkFrontView.classList.add('active')
@@ -19,7 +20,6 @@ const minkAnimation = async () => {
     minkFrontView.addEventListener('animationend', () => {
         minkFrontView.classList.remove('active')
         minkCrouch.classList.add('active')
-
     })
 
     minkCrouch.addEventListener('animationend', () => {
@@ -60,24 +60,3 @@ startBtn.addEventListener('click', () => {
     minkAnimation()
 })
 
-const sheepTurn = () => {
-    const sheep = document.querySelector('.sheep')
-    setInterval(() => {
-        sheep.classList.toggle('reverse')
-        
-    }, 4000)
-}
-
-const minkTurn = () => {
-    const mink = document.querySelector('.mplg-inner')
-    setInterval(() => {
-        mink.classList.toggle('mink-reverse')
-    }, 4000)
-}
-
-const about = () => {
-    // sheepTurn()
-    // minkTurn()
-}
-
-about()

@@ -40,22 +40,17 @@
 .flock {
     position: relative;
     top: 650px;
-    left: 600px;
+    left: 640px;
     width: 120px;
     height: 92px;
     // border: 1px solid blue;
-    // animation: walk 8s linear infinite;
     
     .sheep {
         position: inherit;
         height: inherit;
         // border: 1px solid yellow;
     }
-    
-    .reverse {
-        transform: scaleX(-1);
-    }
-    
+
     .sheep-body {
         position: absolute;
         z-index: 0;
@@ -73,19 +68,17 @@
     }
     .right-front {
         left: 28%;
-        // animation: step .4s alternate infinite linear;
+        
     }
     .left-front {
         left: 36%;
-        // animation: step .4s alternate-reverse infinite linear;
     }
     .right-back {
         left: 67%;
-        // animation: step .4s alternate-reverse infinite linear;
+        
     }
     .left-back {
         left: 75%;
-        // animation: step .4s alternate infinite linear;
     }
 }
 
@@ -406,26 +399,64 @@
 .hide {
     display: none;
 }
-// .mink-left-face {
-//     transform: scaleX(-1);
-// }
-// .mink-right-face {
-//     transform: scaleX(1);
-// }
-// .mink-run-left {
-//     left: 620px;
-//     animation: walk-mink-left 3s linear; 
-// }
+
+//////////////////// Sheep animation
+.active-flock {
+    animation: walk 6s linear;
+
+    .right-front {
+        animation: step .4s alternate infinite linear;
+    }
+    .left-front {
+        animation: step .4s alternate-reverse infinite linear;
+    }
+    .right-back {
+        animation: step .4s alternate-reverse infinite linear;
+    }
+    .left-back {
+        animation: step .4s alternate infinite linear;
+    }
+}
+
+.active-flock-left {
+    animation: walk-right 6s linear;
+    .right-front {
+        animation: step .4s alternate infinite linear;
+    }
+    .left-front {
+        animation: step .4s alternate-reverse infinite linear;
+    }
+    .right-back {
+        animation: step .4s alternate-reverse infinite linear;
+    }
+    .left-back {
+        animation: step .4s alternate infinite linear;
+    }
+}
+
+.flock-left {
+    left: 330px;
+}
+
+.reverse {
+    transform: scaleX(-1);
+}
 
 @keyframes walk {
     0% {
         transform: translateX(0px)
     }
-    50% {
-        transform: translateX(-600px);
+    100% {
+        transform: translateX(-310px);
+    }
+}
+
+@keyframes walk-right {
+    0% {
+        transform: translateX(0px)
     }
     100% {
-        transform: translateX(0px);
+        transform: translateX(310px);
     }
 }
 

@@ -388,16 +388,13 @@ header nav .burger div {
 .flock {
   position: relative;
   top: 650px;
-  left: 600px;
+  left: 640px;
   width: 120px;
   height: 92px;
 }
 .flock .sheep {
   position: inherit;
   height: inherit;
-}
-.flock .reverse {
-  transform: scaleX(-1);
 }
 .flock .sheep-body {
   position: absolute;
@@ -707,15 +704,60 @@ header nav .burger div {
   display: none;
 }
 
+.active-flock {
+  animation: walk 6s linear;
+}
+.active-flock .right-front {
+  animation: step 0.4s alternate infinite linear;
+}
+.active-flock .left-front {
+  animation: step 0.4s alternate-reverse infinite linear;
+}
+.active-flock .right-back {
+  animation: step 0.4s alternate-reverse infinite linear;
+}
+.active-flock .left-back {
+  animation: step 0.4s alternate infinite linear;
+}
+
+.active-flock-left {
+  animation: walk-right 6s linear;
+}
+.active-flock-left .right-front {
+  animation: step 0.4s alternate infinite linear;
+}
+.active-flock-left .left-front {
+  animation: step 0.4s alternate-reverse infinite linear;
+}
+.active-flock-left .right-back {
+  animation: step 0.4s alternate-reverse infinite linear;
+}
+.active-flock-left .left-back {
+  animation: step 0.4s alternate infinite linear;
+}
+
+.flock-left {
+  left: 330px;
+}
+
+.reverse {
+  transform: scaleX(-1);
+}
+
 @keyframes walk {
   0% {
     transform: translateX(0px);
   }
-  50% {
-    transform: translateX(-600px);
+  100% {
+    transform: translateX(-310px);
+  }
+}
+@keyframes walk-right {
+  0% {
+    transform: translateX(0px);
   }
   100% {
-    transform: translateX(0px);
+    transform: translateX(310px);
   }
 }
 @keyframes walk-mink {
