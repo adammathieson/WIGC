@@ -2,8 +2,6 @@ export const sheepAnimation = () => {
     const flock = document.querySelector('.flock')
     const flockLeft = document.querySelector('.flock-left')
     const flockRight = document.querySelector('.flock-right')
-    const flockAnimation1 = document.querySelector('.active-flock')
-    const flockAnimation2 = document.querySelector('.active-flock-left')
     const sheep = document.querySelector('.sheep')
     const sheepLeft = document.querySelector('.sheep-left')
 
