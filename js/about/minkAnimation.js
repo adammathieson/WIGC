@@ -58,5 +58,7 @@ export const minkAnimation = () => {
 
 startBtn.addEventListener('click', () => {
     minkAnimation()
+    // startBtn.disabled = true
+    startBtn.classList.add('hide')
 })
 
