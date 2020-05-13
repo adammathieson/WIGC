@@ -1,6 +1,6 @@
 import { minkAnimation } from './minkAnimation.js'
 import { sheepAnimation } from './sheepAnimation.js'
-import { contentBox } from './contentBox.js'
+import { contentBox } from '../Content-display/contentBox.js'
 
 const aboutScript = [
     "Welcome to Sauk Mountain Farm, a 20 acre working sheep farm nestled deep in the Cascade mountains...",
