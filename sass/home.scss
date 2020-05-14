@@ -11,8 +11,8 @@
     .goose{
         // display: none;
         position: relative;
-        top: 400px;
-        left: 220px;
+        top: 450px;
+        left: 500px;
         width: 111px;
         height: 130px;
         // border: 1px solid red;
@@ -133,8 +133,9 @@
     .car {
         // display: none;
         width: 175px;
-        position: relative;
-        top: 60px;
+        position: absolute;
+        z-index: 2;
+        top: 270px;
         left: 150px;
         animation: drive 3s ease-out;
 
@@ -199,6 +200,48 @@
         100% {
             transform-origin: right top;
             transform: rotate(0deg)
+        }
+    }
+
+    .luna {
+        // display: none;
+        position: absolute;
+        width: 80px;
+        height: 40px;
+        z-index: 1;
+        left: 190px;
+        top: 285px;
+
+        .luna-head-body-combo {
+            position: absolute;
+        }
+
+        .luna-frl {
+            position: absolute;
+            z-index: -1;
+            left: 20%;
+            top: 40%;
+        }
+
+        .luna-fll {
+            position: absolute;
+            z-index: 1;
+            left: 25%;
+            top: 40%;
+        }
+
+        .luna-brl {
+            position: absolute;
+            z-index: -1;
+            left: 50%;
+            top: 20%;
+        }
+
+        .luna-bll {
+            position: absolute;
+            z-index: 1;
+            left: 45%;
+            top: 20%;
         }
     }
 }
