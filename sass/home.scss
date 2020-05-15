@@ -137,7 +137,7 @@
         z-index: 2;
         top: 270px;
         left: 150px;
-        animation: drive 3s ease-out;
+        // animation: drive 3s ease-out;
 
         .car-body {
             z-index: 1;
@@ -148,7 +148,7 @@
             width: 27.2px;
             top: 128%;
             text-align: center;
-            animation: rotate 3s ease-out;
+            // animation: rotate 3s ease-out;
             // border: 1px solid red;
         }
         .front {
@@ -162,7 +162,7 @@
             width: 43.5px;
             top: 8px;
             left: 2px;
-            animation: hatch-open 4s 4s cubic-bezier(0,.32,.82,1.1);
+            // animation: hatch-open 4s 4s cubic-bezier(0,.32,.82,1.1);
 
         }
     }
@@ -211,6 +211,13 @@
         z-index: 1;
         left: 190px;
         top: 285px;
+        animation: luna-car-walk 2s;
+
+        .luna-inner {
+            animation: luna-car-jump-rotate 2s;
+            // position: inherit;
+            height: inherit;
+        }
 
         .luna-head-body-combo {
             position: absolute;
@@ -242,6 +249,69 @@
             z-index: 1;
             left: 45%;
             top: 20%;
+        }
+
+        .luna-frl, .luna-fll {
+            animation: luna-car-front-leg-stride 2s;
+        }
+
+        .luna-brl, .luna-bll {
+            animation: luna-car-back-leg-stride 2s;
+        }
+    }
+
+    @keyframes luna-car-walk {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-130px);
+        }
+    }
+
+    @keyframes luna-car-front-leg-stride {
+        0% {
+            transform-origin: top center;
+            transform: rotate(0deg)
+        }
+        50% {
+            transform-origin: top center;
+            transform: rotate(45deg)
+        }
+        100% {
+            transform-origin: top center;
+            transform: rotate(0deg)
+        }
+    }
+    @keyframes luna-car-back-leg-stride {
+        0% {
+            transform-origin: top center;
+            transform: rotate(0deg)
+        }
+        50% {
+            transform-origin: top center;
+            transform: rotate(-50deg)
+        }
+        100% {
+            transform-origin: top center;
+            transform: rotate(0deg)
+        }
+    }
+    @keyframes luna-car-jump-rotate {
+        0% {
+            transform: rotate(0deg) translateY(0px)
+        }
+        25% {
+            transform: rotate(10deg) 
+        }
+        50% {
+            transform: translateY(-20px)
+        }
+        75% {
+            transform: rotate(-10deg) 
+        }
+        100% {
+            transform: rotate(0deg) translateY(0px)
         }
     }
 }

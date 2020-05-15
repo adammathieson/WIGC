@@ -338,7 +338,6 @@ header nav .burger div {
   z-index: 2;
   top: 270px;
   left: 150px;
-  animation: drive 3s ease-out;
 }
 .home-scene-container .car .car-body {
   z-index: 1;
@@ -349,7 +348,6 @@ header nav .burger div {
   width: 27.2px;
   top: 128%;
   text-align: center;
-  animation: rotate 3s ease-out;
 }
 .home-scene-container .car .front {
   left: 73%;
@@ -362,7 +360,6 @@ header nav .burger div {
   width: 43.5px;
   top: 8px;
   left: 2px;
-  animation: hatch-open 4s 4s cubic-bezier(0, 0.32, 0.82, 1.1);
 }
 @keyframes drive {
   from {
@@ -405,6 +402,11 @@ header nav .burger div {
   z-index: 1;
   left: 190px;
   top: 285px;
+  animation: luna-car-walk 2s;
+}
+.home-scene-container .luna .luna-inner {
+  animation: luna-car-jump-rotate 2s;
+  height: inherit;
 }
 .home-scene-container .luna .luna-head-body-combo {
   position: absolute;
@@ -432,6 +434,65 @@ header nav .burger div {
   z-index: 1;
   left: 45%;
   top: 20%;
+}
+.home-scene-container .luna .luna-frl, .home-scene-container .luna .luna-fll {
+  animation: luna-car-front-leg-stride 2s;
+}
+.home-scene-container .luna .luna-brl, .home-scene-container .luna .luna-bll {
+  animation: luna-car-back-leg-stride 2s;
+}
+@keyframes luna-car-walk {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-130px);
+  }
+}
+@keyframes luna-car-front-leg-stride {
+  0% {
+    transform-origin: top center;
+    transform: rotate(0deg);
+  }
+  50% {
+    transform-origin: top center;
+    transform: rotate(45deg);
+  }
+  100% {
+    transform-origin: top center;
+    transform: rotate(0deg);
+  }
+}
+@keyframes luna-car-back-leg-stride {
+  0% {
+    transform-origin: top center;
+    transform: rotate(0deg);
+  }
+  50% {
+    transform-origin: top center;
+    transform: rotate(-50deg);
+  }
+  100% {
+    transform-origin: top center;
+    transform: rotate(0deg);
+  }
+}
+@keyframes luna-car-jump-rotate {
+  0% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0px);
+  }
 }
 
 .about-scene-container {
