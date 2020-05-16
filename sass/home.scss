@@ -137,7 +137,7 @@
         z-index: 2;
         top: 270px;
         left: 150px;
-        // animation: drive 3s ease-out;
+        animation: drive 3s ease-out;
 
         .car-body {
             z-index: 1;
@@ -148,7 +148,7 @@
             width: 27.2px;
             top: 128%;
             text-align: center;
-            // animation: rotate 3s ease-out;
+            animation: rotate 3s ease-out;
             // border: 1px solid red;
         }
         .front {
@@ -162,7 +162,7 @@
             width: 43.5px;
             top: 8px;
             left: 2px;
-            // animation: hatch-open 4s 4s cubic-bezier(0,.32,.82,1.1);
+            animation: hatch-open 4s 4s cubic-bezier(0,.32,.82,1.1);
 
         }
     }

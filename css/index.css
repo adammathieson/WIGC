@@ -338,6 +338,7 @@ header nav .burger div {
   z-index: 2;
   top: 270px;
   left: 150px;
+  animation: drive 3s ease-out;
 }
 .home-scene-container .car .car-body {
   z-index: 1;
@@ -348,6 +349,7 @@ header nav .burger div {
   width: 27.2px;
   top: 128%;
   text-align: center;
+  animation: rotate 3s ease-out;
 }
 .home-scene-container .car .front {
   left: 73%;
@@ -360,6 +362,7 @@ header nav .burger div {
   width: 43.5px;
   top: 8px;
   left: 2px;
+  animation: hatch-open 4s 4s cubic-bezier(0, 0.32, 0.82, 1.1);
 }
 @keyframes drive {
   from {
