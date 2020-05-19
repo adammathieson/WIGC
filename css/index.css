@@ -497,6 +497,48 @@ header nav .burger div {
     transform: rotate(0deg) translateY(0px);
   }
 }
+.home-scene-container .luna-fv {
+  position: absolute;
+  width: 20px;
+  height: 42px;
+  left: 50px;
+  top: 285px;
+  z-index: 0;
+}
+.home-scene-container .luna-fv .luna-fv-inner {
+  position: relative;
+  height: inherit;
+}
+.home-scene-container .luna-fv .luna-fv-body {
+  position: absolute;
+}
+.home-scene-container .luna-fv .luna-fv-head {
+  position: absolute;
+  z-index: 1;
+  top: -15%;
+}
+.home-scene-container .luna-fv .luna-fv-frl {
+  position: absolute;
+  left: 8%;
+  top: 27%;
+}
+.home-scene-container .luna-fv .luna-fv-fll {
+  position: absolute;
+  left: 60%;
+  top: 27%;
+}
+.home-scene-container .luna-fv .luna-fv-brl {
+  position: absolute;
+  z-index: -1;
+  left: 18%;
+  top: 20%;
+}
+.home-scene-container .luna-fv .luna-fv-bll {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 20%;
+}
 
 .about-scene-container {
   background-image: url(../img/scenes/backgrounds/WIGC_homescape_about.png);

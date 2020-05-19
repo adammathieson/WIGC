@@ -314,4 +314,49 @@
             transform: rotate(0deg) translateY(0px)
         }
     }
+
+    .luna-fv {
+        // display: none;
+        position: absolute;
+        width: 20px;
+        height: 42px;
+        left: 50px;
+        top: 285px;
+        z-index: 0;
+
+        .luna-fv-inner {
+            position: relative;
+            height: inherit;
+        }
+        .luna-fv-body {
+            position: absolute;
+        }
+        .luna-fv-head {
+            position: absolute;
+            z-index: 1;
+            top: -15%;
+        }
+        .luna-fv-frl {
+            position: absolute;
+            left: 8%;
+            top: 27%;
+        }
+        .luna-fv-fll {
+            position: absolute;
+            left: 60%;
+            top: 27%;
+        }
+        .luna-fv-brl {
+            position: absolute;
+            z-index: -1;
+            left: 18%;
+            top: 20%;
+        }
+        .luna-fv-bll {
+            position: absolute;
+            z-index: -1;
+            left: 50%;
+            top: 20%;
+        }
+    }
 }
