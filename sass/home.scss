@@ -399,4 +399,68 @@
             transform: translateY(7px)
         }
     }
+
+
+    .luna-ang {
+        // display: none;
+        position: absolute;
+        width: 168px;
+        height: 100x;
+        left: 40px;
+        top: 500px;
+        z-index: 0;
+        // animation: luna-ang-walk 3s linear;
+
+        .luna-ang-inner {
+            position: relative;
+            height: inherit;
+        }
+        .luna-ang-body {
+            position: absolute;
+        }
+        .luna-ang-head {
+            position: absolute;
+            z-index: 1;
+            top: 45%;
+            left: 45%;
+            // animation: luna-ang-head-drop .3s alternate infinite linear;
+        }
+        .luna-ang-frl {
+            position: absolute;
+            left: 30%;
+            top: 90%;
+            // border: 1px solid red;
+            // animation: luna-ang-stride .5s infinite linear;
+        }
+        .luna-ang-fll {
+            position: absolute;
+            left: 37%;
+            top: 80%;
+            z-index: -1;
+            // border: 1px solid red;
+            // animation: luna-ang-stride .5s infinite linear;
+        }
+        .luna-ang-brl {
+            position: absolute;
+            z-index: 1;
+            left: -8%;
+            top: 50%;
+            // animation: luna-ang-stride .5s .25s infinite linear;
+
+        }
+        .luna-ang-bll {
+            position: absolute;
+            z-index: -1;
+            left: 2%;
+            top: 40%;
+            // animation: luna-ang-stride .5s .3s infinite linear;
+        }
+        .luna-ang-tail {
+            position: relative;
+            z-index: 1;
+            left: -25%;
+            top: -7px;
+            // animation: luna-ang-stride .5s .3s infinite linear;
+        }
+    }
 }
