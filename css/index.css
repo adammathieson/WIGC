@@ -499,11 +499,12 @@ header nav .burger div {
 }
 .home-scene-container .luna-fv {
   position: absolute;
-  width: 20px;
-  height: 42px;
+  width: 49px;
+  height: 105px;
   left: 50px;
-  top: 285px;
+  top: 500px;
   z-index: 0;
+  animation: luna-fv-walk 3s infinite linear;
 }
 .home-scene-container .luna-fv .luna-fv-inner {
   position: relative;
@@ -516,28 +517,60 @@ header nav .burger div {
   position: absolute;
   z-index: 1;
   top: -15%;
+  animation: luna-fv-head-drop 0.3s alternate infinite linear;
 }
 .home-scene-container .luna-fv .luna-fv-frl {
   position: absolute;
-  left: 8%;
-  top: 27%;
+  left: 6%;
+  top: 20%;
+  animation: luna-fv-stride 0.5s infinite linear;
 }
 .home-scene-container .luna-fv .luna-fv-fll {
   position: absolute;
-  left: 60%;
-  top: 27%;
+  left: 54%;
+  top: 20%;
+  animation: luna-fv-stride 0.5s infinite linear;
 }
 .home-scene-container .luna-fv .luna-fv-brl {
   position: absolute;
   z-index: -1;
-  left: 18%;
-  top: 20%;
+  left: 10%;
+  top: 5%;
+  animation: luna-fv-stride 0.5s 0.25s infinite linear;
 }
 .home-scene-container .luna-fv .luna-fv-bll {
   position: absolute;
   z-index: -1;
-  left: 50%;
-  top: 20%;
+  left: 43%;
+  top: 5%;
+  animation: luna-fv-stride 0.5s 0.3s infinite linear;
+}
+@keyframes luna-fv-walk {
+  from {
+    transform: translateY(-250px) scale(0.3);
+  }
+  to {
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes luna-fv-stride {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes luna-fv-head-drop {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(7px);
+  }
 }
 
 .about-scene-container {
