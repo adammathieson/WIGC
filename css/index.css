@@ -449,7 +449,7 @@ header nav .burger div {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-130px);
+    transform: translateX(-135px);
   }
 }
 @keyframes luna-car-front-leg-stride {
