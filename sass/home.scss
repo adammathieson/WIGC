@@ -4,17 +4,41 @@
     background-repeat: no-repeat;
     width: 100%;
     min-height: 900px;
-    position: relative;
+    position: absolute;
     // border-radius: 20px;
     // margin-bottom: 2em;
 
+    .goose-zone1 {
+        position: absolute;
+        width: 33%;
+        top: 500px;
+        height: 140px;
+        border: 1px solid red
+    }
+    .goose-zone2 {
+        position: absolute;
+        width: 33%;
+        top: 530px;
+        height: 180px;
+        left: 33%;
+        border: 1px solid blue
+    }
+    .goose-zone3 {
+        position: absolute;
+        width: 28%;
+        top: 500px;
+        height: 250px;
+        left: 66%;
+        border: 1px solid yellow
+    }
     .goose{
         // display: none;
         position: relative;
-        top: 450px;
-        left: 500px;
+        // top: 450px;
+        // left: 500px;
         width: 111px;
         height: 130px;
+        transform: scale(.7);
         // border: 1px solid red;
 
         // .goose {

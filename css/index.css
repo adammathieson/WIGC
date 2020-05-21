@@ -223,14 +223,36 @@ header nav .burger div {
   background-repeat: no-repeat;
   width: 100%;
   min-height: 900px;
-  position: relative;
+  position: absolute;
+}
+.home-scene-container .goose-zone1 {
+  position: absolute;
+  width: 33%;
+  top: 500px;
+  height: 140px;
+  border: 1px solid red;
+}
+.home-scene-container .goose-zone2 {
+  position: absolute;
+  width: 33%;
+  top: 530px;
+  height: 180px;
+  left: 33%;
+  border: 1px solid blue;
+}
+.home-scene-container .goose-zone3 {
+  position: absolute;
+  width: 28%;
+  top: 500px;
+  height: 250px;
+  left: 66%;
+  border: 1px solid yellow;
 }
 .home-scene-container .goose {
   position: relative;
-  top: 450px;
-  left: 500px;
   width: 111px;
   height: 130px;
+  transform: scale(0.7);
 }
 .home-scene-container .goose .goose-body {
   position: absolute;
