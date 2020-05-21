@@ -6,7 +6,9 @@ import { goose } from './goose.js'
 const home = () => {
     carAnimation()
     lunaAnimation()
+    goose(1)
     goose(2)
+    goose(3)
 }
 
 home()

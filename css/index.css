@@ -612,31 +612,31 @@ header nav .burger div {
 .home-scene-container .luna-ang .luna-ang-head {
   position: absolute;
   z-index: 1;
-  top: 45%;
+  top: 55%;
   left: 45%;
 }
 .home-scene-container .luna-ang .luna-ang-frl {
   position: absolute;
   left: 30%;
-  top: 90%;
+  top: 80%;
 }
 .home-scene-container .luna-ang .luna-ang-fll {
   position: absolute;
   left: 37%;
-  top: 80%;
+  top: 70%;
   z-index: -1;
 }
 .home-scene-container .luna-ang .luna-ang-brl {
   position: absolute;
   z-index: 1;
   left: -8%;
-  top: 50%;
+  top: 40%;
 }
 .home-scene-container .luna-ang .luna-ang-bll {
   position: absolute;
   z-index: -1;
   left: 2%;
-  top: 40%;
+  top: 30%;
 }
 .home-scene-container .luna-ang .luna-ang-tail {
   position: relative;

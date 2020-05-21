@@ -445,21 +445,21 @@
         .luna-ang-head {
             position: absolute;
             z-index: 1;
-            top: 45%;
+            top: 55%;
             left: 45%;
             // animation: luna-ang-head-drop .3s alternate infinite linear;
         }
         .luna-ang-frl {
             position: absolute;
             left: 30%;
-            top: 90%;
+            top: 80%;
             // border: 1px solid red;
             // animation: luna-ang-stride .5s infinite linear;
         }
         .luna-ang-fll {
             position: absolute;
             left: 37%;
-            top: 80%;
+            top: 70%;
             z-index: -1;
             // border: 1px solid red;
             // animation: luna-ang-stride .5s infinite linear;
@@ -468,7 +468,7 @@
             position: absolute;
             z-index: 1;
             left: -8%;
-            top: 50%;
+            top: 40%;
             // animation: luna-ang-stride .5s .25s infinite linear;
 
         }
@@ -476,7 +476,7 @@
             position: absolute;
             z-index: -1;
             left: 2%;
-            top: 40%;
+            top: 30%;
             // animation: luna-ang-stride .5s .3s infinite linear;
         }
         .luna-ang-tail {
