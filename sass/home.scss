@@ -109,29 +109,6 @@
         }
     }
 
-    .fly {
-        animation: fly 3s infinite ease-in;
-        .goose-head-neck-stand {
-            display: none;
-        }
-        .goose-head-neck-fly {
-            display: block;
-        }
-        .front-foot, .back-foot {
-            display: none;
-        }
-        .goose-wing-stand {
-            display: none;
-        }
-        .goose-wing-fly-R, .goose-wing-fly-L {
-            display: block;
-            animation: flap .3s infinite;
-        }
-        .goose-tail {
-            transform-origin: bottom right;
-            transform: rotate(-25deg)
-        }
-    }
     .pre-fly-zone1 {
         transform: scale(.7);
         animation: goose-walk 2s cubic-bezier(.74,.27,.93,.54);
@@ -160,6 +137,30 @@
         }
         .back-foot {
             animation: goose-step 1s 2s infinite linear;
+        }
+    }
+
+    .fly {
+        animation: fly 3s ease-in;
+        .goose-head-neck-stand {
+            display: none;
+        }
+        .goose-head-neck-fly {
+            display: block;
+        }
+        .front-foot, .back-foot {
+            display: none;
+        }
+        .goose-wing-stand {
+            display: none;
+        }
+        .goose-wing-fly-R, .goose-wing-fly-L {
+            display: block;
+            animation: flap .3s infinite;
+        }
+        .goose-tail {
+            transform-origin: bottom right;
+            transform: rotate(-25deg)
         }
     }
 

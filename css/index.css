@@ -309,29 +309,6 @@ header nav .burger div {
   top: 65%;
   left: 60%;
 }
-.home-scene-container .fly {
-  animation: fly 3s infinite ease-in;
-}
-.home-scene-container .fly .goose-head-neck-stand {
-  display: none;
-}
-.home-scene-container .fly .goose-head-neck-fly {
-  display: block;
-}
-.home-scene-container .fly .front-foot, .home-scene-container .fly .back-foot {
-  display: none;
-}
-.home-scene-container .fly .goose-wing-stand {
-  display: none;
-}
-.home-scene-container .fly .goose-wing-fly-R, .home-scene-container .fly .goose-wing-fly-L {
-  display: block;
-  animation: flap 0.3s infinite;
-}
-.home-scene-container .fly .goose-tail {
-  transform-origin: bottom right;
-  transform: rotate(-25deg);
-}
 .home-scene-container .pre-fly-zone1 {
   transform: scale(0.7);
   animation: goose-walk 2s cubic-bezier(0.74, 0.27, 0.93, 0.54);
@@ -361,6 +338,29 @@ header nav .burger div {
 }
 .home-scene-container .pre-fly-zone3 .back-foot {
   animation: goose-step 1s 2s infinite linear;
+}
+.home-scene-container .fly {
+  animation: fly 3s ease-in;
+}
+.home-scene-container .fly .goose-head-neck-stand {
+  display: none;
+}
+.home-scene-container .fly .goose-head-neck-fly {
+  display: block;
+}
+.home-scene-container .fly .front-foot, .home-scene-container .fly .back-foot {
+  display: none;
+}
+.home-scene-container .fly .goose-wing-stand {
+  display: none;
+}
+.home-scene-container .fly .goose-wing-fly-R, .home-scene-container .fly .goose-wing-fly-L {
+  display: block;
+  animation: flap 0.3s infinite;
+}
+.home-scene-container .fly .goose-tail {
+  transform-origin: bottom right;
+  transform: rotate(-25deg);
 }
 @keyframes flap {
   0% {

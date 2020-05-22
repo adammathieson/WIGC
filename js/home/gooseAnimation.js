@@ -24,5 +24,14 @@ export const gooseAnimation = () => {
         })
     })
 
+    geese.forEach(goose => {
+        goose.addEventListener('animationend', () => {
+            goose.classList.add('fly')
+            goose.addEventListener('animationend', () => {
+                goose.classList.add('hide')
+            })
+        })
+    })
+
 
 }
