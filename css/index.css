@@ -223,7 +223,7 @@ header nav .burger div {
   background-repeat: no-repeat;
   width: 100%;
   min-height: 900px;
-  position: absolute;
+  position: relative;
 }
 .home-scene-container .goose-zone1 {
   position: absolute;
@@ -332,6 +332,36 @@ header nav .burger div {
   transform-origin: bottom right;
   transform: rotate(-25deg);
 }
+.home-scene-container .pre-fly-zone1 {
+  transform: scale(0.7);
+  animation: goose-walk 2s cubic-bezier(0.74, 0.27, 0.93, 0.54);
+}
+.home-scene-container .pre-fly-zone1 .front-foot {
+  animation: goose-step 1s reverse infinite linear;
+}
+.home-scene-container .pre-fly-zone1 .back-foot {
+  animation: goose-step 1s infinite linear;
+}
+.home-scene-container .pre-fly-zone2 {
+  transform: scale(0.7);
+  animation: goose-walk 2s 1s cubic-bezier(0.74, 0.27, 0.93, 0.54);
+}
+.home-scene-container .pre-fly-zone2 .front-foot {
+  animation: goose-step 1s 1s reverse infinite linear;
+}
+.home-scene-container .pre-fly-zone2 .back-foot {
+  animation: goose-step 1s 1s infinite linear;
+}
+.home-scene-container .pre-fly-zone3 {
+  transform: scale(0.7);
+  animation: goose-walk 2s 2s cubic-bezier(0.74, 0.27, 0.93, 0.54);
+}
+.home-scene-container .pre-fly-zone3 .front-foot {
+  animation: goose-step 1s 2s reverse infinite linear;
+}
+.home-scene-container .pre-fly-zone3 .back-foot {
+  animation: goose-step 1s 2s infinite linear;
+}
 @keyframes flap {
   0% {
     transform-origin: 0% 90%;
@@ -352,6 +382,36 @@ header nav .burger div {
   }
   to {
     transform: translateY(-800px) translateX(1600px) scale(3);
+  }
+}
+@keyframes goose-step {
+  0% {
+    transform-origin: top center;
+    transform: rotate(0);
+  }
+  25% {
+    transform-origin: top center;
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform-origin: top center;
+    transform: rotate(0);
+  }
+  75% {
+    transform-origin: top center;
+    transform: rotate(20deg);
+  }
+  100% {
+    transform-origin: top center;
+    transform: rotate(0);
+  }
+}
+@keyframes goose-walk {
+  from {
+    transform: translateX(0) scale(0.7);
+  }
+  to {
+    transform: translateX(100px) scale(0.7);
   }
 }
 .home-scene-container .car {
@@ -420,7 +480,7 @@ header nav .burger div {
     transform: rotate(0deg);
   }
 }
-.home-scene-container .luna {
+.home-scene-container .luna-sv {
   position: absolute;
   width: 80px;
   height: 40px;
@@ -429,41 +489,41 @@ header nav .burger div {
   top: 285px;
   animation: luna-car-walk 2s;
 }
-.home-scene-container .luna .luna-inner {
+.home-scene-container .luna-sv .luna-sv-inner {
   animation: luna-car-jump-rotate 2s;
   height: inherit;
 }
-.home-scene-container .luna .luna-head-body-combo {
+.home-scene-container .luna-sv .luna-sv-head-body-combo {
   position: absolute;
 }
-.home-scene-container .luna .luna-frl {
+.home-scene-container .luna-sv .luna-sv-frl {
   position: absolute;
   z-index: -1;
   left: 20%;
   top: 40%;
 }
-.home-scene-container .luna .luna-fll {
+.home-scene-container .luna-sv .luna-sv-fll {
   position: absolute;
   z-index: 1;
   left: 25%;
   top: 40%;
 }
-.home-scene-container .luna .luna-brl {
+.home-scene-container .luna-sv .luna-sv-brl {
   position: absolute;
   z-index: -1;
   left: 50%;
   top: 20%;
 }
-.home-scene-container .luna .luna-bll {
+.home-scene-container .luna-sv .luna-sv-bll {
   position: absolute;
   z-index: 1;
   left: 45%;
   top: 20%;
 }
-.home-scene-container .luna .luna-frl, .home-scene-container .luna .luna-fll {
+.home-scene-container .luna-sv .luna-sv-frl, .home-scene-container .luna-sv .luna-sv-fll {
   animation: luna-car-front-leg-stride 2s;
 }
-.home-scene-container .luna .luna-brl, .home-scene-container .luna .luna-bll {
+.home-scene-container .luna-sv .luna-sv-brl, .home-scene-container .luna-sv .luna-sv-bll {
   animation: luna-car-back-leg-stride 2s;
 }
 @keyframes luna-car-walk {

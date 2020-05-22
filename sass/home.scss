@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     width: 100%;
     min-height: 900px;
-    position: absolute;
+    position: relative;
     // border-radius: 20px;
     // margin-bottom: 2em;
 
@@ -31,7 +31,7 @@
         left: 66%;
         border: 1px solid yellow
     }
-    .goose{
+    .goose {
         // display: none;
         position: relative;
         // top: 450px;
@@ -39,6 +39,7 @@
         width: 111px;
         height: 130px;
         transform: scale(.7);
+        // animation: goose-walk 2s infinite cubic-bezier(.74,.27,.93,.54);
         // border: 1px solid red;
 
         // .goose {
@@ -97,12 +98,14 @@
             z-index: 0;
             top: 65%;
             left: 40%;
+            // animation: goose-step 1s infinite linear;
         }
         .front-foot {
             position: absolute;
             z-index: 0;
             top: 65%;
             left: 60%;
+            // animation: goose-step 1s reverse infinite linear;
         }
     }
 
@@ -129,6 +132,36 @@
             transform: rotate(-25deg)
         }
     }
+    .pre-fly-zone1 {
+        transform: scale(.7);
+        animation: goose-walk 2s cubic-bezier(.74,.27,.93,.54);
+        .front-foot {
+            animation: goose-step 1s reverse infinite linear;
+        }
+        .back-foot {
+            animation: goose-step 1s infinite linear;
+        }
+    }
+    .pre-fly-zone2 {
+        transform: scale(.7);
+        animation: goose-walk 2s 1s cubic-bezier(.74,.27,.93,.54);
+        .front-foot {
+            animation: goose-step 1s 1s reverse infinite linear;
+        }
+        .back-foot {
+            animation: goose-step 1s 1s infinite linear;
+        }
+    }
+    .pre-fly-zone3 {
+        transform: scale(.7);
+        animation: goose-walk 2s 2s cubic-bezier(.74,.27,.93,.54);
+        .front-foot {
+            animation: goose-step 1s 2s reverse infinite linear;
+        }
+        .back-foot {
+            animation: goose-step 1s 2s infinite linear;
+        }
+    }
 
     @keyframes flap {
         0% {
@@ -151,6 +184,38 @@
         }
         to {
             transform: translateY(-800px) translateX(1600px) scale(3)
+        }
+    }
+
+    @keyframes goose-step {
+        0% {
+            transform-origin: top center;
+            transform: rotate(0)
+        }
+        25% {
+            transform-origin: top center;
+            transform: rotate(-20deg)
+        }
+        50% {
+            transform-origin: top center;
+            transform: rotate(0)
+        }
+        75% {
+            transform-origin: top center;
+            transform: rotate(20deg)
+        }
+        100% {
+            transform-origin: top center;
+            transform: rotate(0)
+        }
+    }
+
+    @keyframes goose-walk {
+        from {
+            transform: translateX(0) scale(.7)
+        }
+        to {
+            transform: translateX(100px) scale(.7)
         }
     }
 
@@ -227,7 +292,7 @@
         }
     }
 
-    .luna {
+    .luna-sv {
         // display: none;
         position: absolute;
         width: 80px;
@@ -237,49 +302,49 @@
         top: 285px;
         animation: luna-car-walk 2s;
 
-        .luna-inner {
+        .luna-sv-inner {
             animation: luna-car-jump-rotate 2s;
             // position: inherit;
             height: inherit;
         }
 
-        .luna-head-body-combo {
+        .luna-sv-head-body-combo {
             position: absolute;
         }
 
-        .luna-frl {
+        .luna-sv-frl {
             position: absolute;
             z-index: -1;
             left: 20%;
             top: 40%;
         }
 
-        .luna-fll {
+        .luna-sv-fll {
             position: absolute;
             z-index: 1;
             left: 25%;
             top: 40%;
         }
 
-        .luna-brl {
+        .luna-sv-brl {
             position: absolute;
             z-index: -1;
             left: 50%;
             top: 20%;
         }
 
-        .luna-bll {
+        .luna-sv-bll {
             position: absolute;
             z-index: 1;
             left: 45%;
             top: 20%;
         }
 
-        .luna-frl, .luna-fll {
+        .luna-sv-frl, .luna-sv-fll {
             animation: luna-car-front-leg-stride 2s;
         }
 
-        .luna-brl, .luna-bll {
+        .luna-sv-brl, .luna-sv-bll {
             animation: luna-car-back-leg-stride 2s;
         }
     }

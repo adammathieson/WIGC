@@ -1,7 +1,7 @@
 
 export const lunaAnimation = () => {
     const hatch = document.querySelector('.car-hatch')
-    const luna = document.querySelector('.luna')
+    const luna = document.querySelector('.luna-sv')
     const lunaFaceView = document.querySelector('.luna-fv')
     const lunaAngle = document.querySelector('.luna-ang')
 

@@ -1,7 +1,6 @@
 
 export const goose = (z) => {
     const container = document.querySelector(`.goose-zone${z}`)
-    // const container = document.querySelector('.home-scene-container')
     const goose = document.createElement("div")
     goose.classList.add('goose')
 
@@ -77,8 +76,6 @@ export const goose = (z) => {
     frontFoot.append(frontFootImg)
     goose.append(frontFoot)
 
-
-    console.log(goose)
     container.append(goose)
 }
 
