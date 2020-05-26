@@ -33,5 +33,7 @@ export const gooseAnimation = () => {
         })
     })
 
-
+    const goose = document.querySelector('.goose')
+    let height = window.getComputedStyle(goose).getPropertyValue('height')
+    console.log(height)
 }

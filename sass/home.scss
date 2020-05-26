@@ -499,7 +499,7 @@
         left: 40px;
         top: 500px;
         z-index: 0;
-        // animation: luna-ang-walk 3s linear;
+        // animation: luna-ang-walk infinite 3s linear;
 
         .luna-ang-inner {
             position: relative;
@@ -519,8 +519,8 @@
             position: absolute;
             left: 30%;
             top: 80%;
-            // border: 1px solid red;
-            // animation: luna-ang-stride .5s infinite linear;
+            border: 1px solid red;
+            animation: luna-ang-creep 2s infinite linear;
         }
         .luna-ang-fll {
             position: absolute;
@@ -551,6 +551,33 @@
             left: -25%;
             top: -7px;
             // animation: luna-ang-stride .5s .3s infinite linear;
+        }
+    }
+
+    @keyframes luna-ang-walk {
+        from {
+            transform: translate3d(0, 0, 0);
+        }
+        to {
+            transform: translate3d(800px, 60px, 0px);
+        }
+    }
+    @keyframes luna-ang-creep {
+        0% {
+            transform-origin: top;
+            transform: translate3d(0) rotate(0);
+        }
+        25% {
+            transform: translate3d(4px, -2px, 0) rotate(-20deg);
+        }
+        50% {
+            transform: translate3d(8px, 0px, 0) rotate(0);
+        }
+        75% {
+            transform: translate3d(4px, 2px, 0) rotate(20deg);
+        }
+        100% {
+            transform: translate3d(0) rotate(0); 
         }
     }
 }

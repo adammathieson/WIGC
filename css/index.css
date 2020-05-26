@@ -679,6 +679,8 @@ header nav .burger div {
   position: absolute;
   left: 30%;
   top: 80%;
+  border: 1px solid red;
+  animation: luna-ang-creep 2s infinite linear;
 }
 .home-scene-container .luna-ang .luna-ang-fll {
   position: absolute;
@@ -703,6 +705,32 @@ header nav .burger div {
   z-index: 1;
   left: -25%;
   top: -7px;
+}
+@keyframes luna-ang-walk {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(800px, 60px, 0px);
+  }
+}
+@keyframes luna-ang-creep {
+  0% {
+    transform-origin: top;
+    transform: translate3d(0) rotate(0);
+  }
+  25% {
+    transform: translate3d(4px, -2px, 0) rotate(-20deg);
+  }
+  50% {
+    transform: translate3d(8px, 0px, 0) rotate(0);
+  }
+  75% {
+    transform: translate3d(4px, 2px, 0) rotate(20deg);
+  }
+  100% {
+    transform: translate3d(0) rotate(0);
+  }
 }
 
 .about-scene-container {
