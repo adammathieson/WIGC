@@ -499,7 +499,7 @@
         left: 40px;
         top: 500px;
         z-index: 0;
-        animation: luna-ang-walk infinite 6s linear;
+        animation: luna-ang-walk 3s linear;
 
         .luna-ang-inner {
             position: relative;
@@ -511,39 +511,39 @@
         .luna-ang-head {
             position: absolute;
             z-index: 1;
-            top: 55%;
+            top: 40%;
             left: 45%;
             // animation: luna-ang-head-drop .3s alternate infinite linear;
         }
         .luna-ang-frl {
             position: absolute;
             left: 30%;
-            top: 75%;
+            top: 55%;
             // border: 1px solid red;
-            animation: luna-ang-creep 2s infinite linear;
+            animation: luna-ang-creep .8s infinite linear;
         }
         .luna-ang-fll {
             position: absolute;
             left: 37%;
-            top: 65%;
+            top: 45%;
             z-index: -1;
             // border: 1px solid red;
-            animation: luna-ang-creep 2s .1s infinite linear;
+            animation: luna-ang-creep .8s .05s infinite linear;
         }
         .luna-ang-brl {
             position: absolute;
             z-index: 1;
             left: -8%;
-            top: 40%;
-            animation: luna-ang-creep 2s .9s infinite linear;
+            top: 23%;
+            animation: luna-ang-creep .8s .4s infinite linear;
 
         }
         .luna-ang-bll {
             position: absolute;
             z-index: -1;
             left: 2%;
-            top: 30%;
-            animation: luna-ang-creep 2s .8s infinite linear;
+            top: 18%;
+            animation: luna-ang-creep .8s .35s infinite linear;
         }
         .luna-ang-tail {
             // border: 1px solid red;
@@ -551,7 +551,7 @@
             z-index: 1;
             max-width: 70px;
             left: -25%;
-            top: -7px;
+            top: -15px;
             animation: luna-ang-wag 2s infinite linear;
         }
     }

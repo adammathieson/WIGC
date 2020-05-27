@@ -661,7 +661,7 @@ header nav .burger div {
   left: 40px;
   top: 500px;
   z-index: 0;
-  animation: luna-ang-walk infinite 6s linear;
+  animation: luna-ang-walk 3s linear;
 }
 .home-scene-container .luna-ang .luna-ang-inner {
   position: relative;
@@ -673,42 +673,42 @@ header nav .burger div {
 .home-scene-container .luna-ang .luna-ang-head {
   position: absolute;
   z-index: 1;
-  top: 55%;
+  top: 40%;
   left: 45%;
 }
 .home-scene-container .luna-ang .luna-ang-frl {
   position: absolute;
   left: 30%;
-  top: 75%;
-  animation: luna-ang-creep 2s infinite linear;
+  top: 55%;
+  animation: luna-ang-creep 0.8s infinite linear;
 }
 .home-scene-container .luna-ang .luna-ang-fll {
   position: absolute;
   left: 37%;
-  top: 65%;
+  top: 45%;
   z-index: -1;
-  animation: luna-ang-creep 2s 0.1s infinite linear;
+  animation: luna-ang-creep 0.8s 0.05s infinite linear;
 }
 .home-scene-container .luna-ang .luna-ang-brl {
   position: absolute;
   z-index: 1;
   left: -8%;
-  top: 40%;
-  animation: luna-ang-creep 2s 0.9s infinite linear;
+  top: 23%;
+  animation: luna-ang-creep 0.8s 0.4s infinite linear;
 }
 .home-scene-container .luna-ang .luna-ang-bll {
   position: absolute;
   z-index: -1;
   left: 2%;
-  top: 30%;
-  animation: luna-ang-creep 2s 0.8s infinite linear;
+  top: 18%;
+  animation: luna-ang-creep 0.8s 0.35s infinite linear;
 }
 .home-scene-container .luna-ang .luna-ang-tail {
   position: relative;
   z-index: 1;
   max-width: 70px;
   left: -25%;
-  top: -7px;
+  top: -15px;
   animation: luna-ang-wag 2s infinite linear;
 }
 @keyframes luna-ang-walk {
