@@ -499,7 +499,7 @@
         left: 40px;
         top: 500px;
         z-index: 0;
-        // animation: luna-ang-walk infinite 3s linear;
+        animation: luna-ang-walk infinite 6s linear;
 
         .luna-ang-inner {
             position: relative;
@@ -518,24 +518,24 @@
         .luna-ang-frl {
             position: absolute;
             left: 30%;
-            top: 80%;
-            border: 1px solid red;
+            top: 75%;
+            // border: 1px solid red;
             animation: luna-ang-creep 2s infinite linear;
         }
         .luna-ang-fll {
             position: absolute;
             left: 37%;
-            top: 70%;
+            top: 65%;
             z-index: -1;
             // border: 1px solid red;
-            // animation: luna-ang-stride .5s infinite linear;
+            animation: luna-ang-creep 2s .1s infinite linear;
         }
         .luna-ang-brl {
             position: absolute;
             z-index: 1;
             left: -8%;
             top: 40%;
-            // animation: luna-ang-stride .5s .25s infinite linear;
+            animation: luna-ang-creep 2s .9s infinite linear;
 
         }
         .luna-ang-bll {
@@ -543,14 +543,16 @@
             z-index: -1;
             left: 2%;
             top: 30%;
-            // animation: luna-ang-stride .5s .3s infinite linear;
+            animation: luna-ang-creep 2s .8s infinite linear;
         }
         .luna-ang-tail {
+            // border: 1px solid red;
             position: relative;
             z-index: 1;
+            max-width: 70px;
             left: -25%;
             top: -7px;
-            // animation: luna-ang-stride .5s .3s infinite linear;
+            animation: luna-ang-wag 2s infinite linear;
         }
     }
 
@@ -565,19 +567,38 @@
     @keyframes luna-ang-creep {
         0% {
             transform-origin: top;
-            transform: translate3d(0) rotate(0);
+            transform: translate3d(0) rotate(0deg);
         }
         25% {
-            transform: translate3d(4px, -2px, 0) rotate(-20deg);
+            transform: translate3d(4px, 4px, 0) rotate(-15deg);
         }
         50% {
-            transform: translate3d(8px, 0px, 0) rotate(0);
+            transform: translate3d(0px, 4px, 0) rotate(0deg);
         }
         75% {
-            transform: translate3d(4px, 2px, 0) rotate(20deg);
+            transform: translate3d(-4px, 4px, 0) rotate(15deg);
         }
         100% {
-            transform: translate3d(0) rotate(0); 
+            transform: translate3d(0) rotate(0deg); 
+        }
+    }
+
+    @keyframes luna-ang-wag {
+        0% {
+            transform-origin: right;
+            transform: rotate(0deg)
+        }
+        25% {
+            transform: rotate(8deg)
+        }
+        50% {
+            transform: rotate(0deg)
+        }
+        75% {
+            transform: rotate(-8deg)
+        }
+        100% {
+            transform: rotate(0deg)
         }
     }
 }
