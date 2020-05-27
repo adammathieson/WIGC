@@ -21,9 +21,7 @@ export const lunaAnimation = () => {
     })
 
     lunaAngle.addEventListener('animationend', (e) => {
-        // console.log(e)
         let name = e.animationName
-        console.log(name)
         if (name === 'luna-ang-walk') {
             lunaAngle.classList.add('luna-ang-2')
         }

@@ -632,7 +632,7 @@ header nav .burger div {
     transform: translateY(-250px) scale(0.3);
   }
   to {
-    transform: translateY(0) scale(1);
+    transform: translateY(0) scale(0.9);
   }
 }
 @keyframes luna-fv-stride {
@@ -713,7 +713,7 @@ header nav .burger div {
   animation: luna-ang-wag 2s infinite linear;
 }
 .home-scene-container .luna-ang-2 {
-  left: 1000px;
+  left: 900px;
   top: 600px;
   animation: luna-ang-walk-2 3s linear;
 }
@@ -725,7 +725,7 @@ header nav .burger div {
     transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translate3d(1000px, 100px, 0px);
+    transform: translate3d(900px, 100px, 0px);
   }
 }
 @keyframes luna-ang-walk-2 {
@@ -733,7 +733,7 @@ header nav .burger div {
     transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translate3d(-300px, 400px, 0px);
+    transform: translate3d(-400px, 400px, 0px);
   }
 }
 @keyframes luna-ang-creep {

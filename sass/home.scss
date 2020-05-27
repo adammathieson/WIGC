@@ -463,7 +463,7 @@
             transform: translateY(-250px) scale(.3)
         }
         to {
-            transform: translateY(0) scale(1)
+            transform: translateY(0) scale(.9)
         }
     }
 
@@ -557,7 +557,7 @@
 
 
     .luna-ang-2 {
-        left: 1000px;
+        left: 900px;
         top: 600px;
         animation: luna-ang-walk-2 3s linear;
         
@@ -571,7 +571,7 @@
             transform: translate3d(0, 0, 0);
         }
         to {
-            transform: translate3d(1000px, 100px, 0px);
+            transform: translate3d(900px, 100px, 0px);
         }
     }
     @keyframes luna-ang-walk-2 {
@@ -579,7 +579,7 @@
             transform: translate3d(0, 0, 0);
         }
         to {
-            transform: translate3d(-300px, 400px, 0px);
+            transform: translate3d(-400px, 400px, 0px);
         }
     }
     @keyframes luna-ang-creep {
