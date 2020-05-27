@@ -4,6 +4,7 @@ export const lunaAnimation = () => {
     const luna = document.querySelector('.luna-sv')
     const lunaFaceView = document.querySelector('.luna-fv')
     const lunaAngle = document.querySelector('.luna-ang')
+    const lunaAngleTwo = document.querySelector('.luna-ang-2')
 
     hatch.addEventListener('animationstart', () => {
         luna.classList.remove('hide')
@@ -17,5 +18,17 @@ export const lunaAnimation = () => {
     lunaFaceView.addEventListener('animationend', () => {
         lunaFaceView.classList.add('hide')
         lunaAngle.classList.remove('hide')
+    })
+
+    lunaAngle.addEventListener('animationend', (e) => {
+        // console.log(e)
+        let name = e.animationName
+        console.log(name)
+        if (name === 'luna-ang-walk') {
+            lunaAngle.classList.add('luna-ang-2')
+        }
+        if (name === 'luna-ang-walk-2') {
+            lunaAngle.classList.add('hide')
+        }
     })
 }

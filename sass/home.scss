@@ -448,7 +448,6 @@
             left: 10%;
             top: 5%;
             animation: luna-fv-stride .5s .25s infinite linear;
-
         }
         .luna-fv-bll {
             position: absolute;
@@ -456,7 +455,6 @@
             left: 43%;
             top: 5%;
             animation: luna-fv-stride .5s .3s infinite linear;
-
         }
     }
 
@@ -507,11 +505,12 @@
         }
         .luna-ang-body {
             position: absolute;
+            transform: rotate(-10deg);
         }
         .luna-ang-head {
             position: absolute;
             z-index: 1;
-            top: 40%;
+            top: 20%;
             left: 45%;
             // animation: luna-ang-head-drop .3s alternate infinite linear;
         }
@@ -550,9 +549,20 @@
             position: relative;
             z-index: 1;
             max-width: 70px;
-            left: -25%;
+            left: -23%;
             top: -15px;
             animation: luna-ang-wag 2s infinite linear;
+        }
+    }
+
+
+    .luna-ang-2 {
+        left: 1000px;
+        top: 600px;
+        animation: luna-ang-walk-2 3s linear;
+        
+        .luna-ang-inner {
+            transform: scaleX(-1);
         }
     }
 
@@ -561,7 +571,15 @@
             transform: translate3d(0, 0, 0);
         }
         to {
-            transform: translate3d(800px, 60px, 0px);
+            transform: translate3d(1000px, 100px, 0px);
+        }
+    }
+    @keyframes luna-ang-walk-2 {
+        from {
+            transform: translate3d(0, 0, 0);
+        }
+        to {
+            transform: translate3d(-300px, 400px, 0px);
         }
     }
     @keyframes luna-ang-creep {
