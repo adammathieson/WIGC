@@ -8,10 +8,10 @@ export const gooseAnimation = () => {
     // geese.forEach(goose => goose.classList.add('pre-fly-zone1'))
 
     lunaFV.addEventListener('animationstart', () => {
-        console.log('here')
+        // console.log('here')
         geese.forEach(goose => {
             let zone = goose.parentElement.classList.value
-            console.log(goose)
+            // console.log(goose)
             if (zone === 'goose-zone1') {
                 goose.classList.add('pre-fly-zone1')
             }
@@ -35,5 +35,5 @@ export const gooseAnimation = () => {
 
     const goose = document.querySelector('.goose')
     let height = window.getComputedStyle(goose).getPropertyValue('height')
-    console.log(height)
+    // console.log(height)
 }
