@@ -598,7 +598,8 @@ header nav .burger div {
 .home-scene-container .luna-fv .luna-fv-head {
   position: absolute;
   z-index: 1;
-  top: -15%;
+  top: -12%;
+  left: -5%;
   animation: luna-fv-head-drop 0.3s alternate infinite linear;
 }
 .home-scene-container .luna-fv .luna-fv-frl {
