@@ -612,7 +612,7 @@ header nav .burger div {
   position: absolute;
   left: 54%;
   top: 20%;
-  animation: luna-fv-stride 0.5s infinite linear;
+  animation: luna-fv-stride 0.5s 0.08s infinite linear;
 }
 .home-scene-container .luna-fv .luna-fv-brl {
   position: absolute;
@@ -626,7 +626,7 @@ header nav .burger div {
   z-index: -1;
   left: 43%;
   top: 5%;
-  animation: luna-fv-stride 0.5s 0.3s infinite linear;
+  animation: luna-fv-stride 0.5s 0.33s infinite linear;
 }
 @keyframes luna-fv-walk {
   from {
