@@ -425,7 +425,8 @@
         .luna-fv-head {
             position: absolute;
             z-index: 1;
-            top: -15%;
+            top: -12%;
+            left: -5%;
             animation: luna-fv-head-drop .3s alternate infinite linear;
         }
         .luna-fv-frl {
@@ -440,7 +441,7 @@
             left: 54%;
             top: 20%;
             // border: 1px solid red;
-            animation: luna-fv-stride .5s infinite linear;
+            animation: luna-fv-stride .5s .08s infinite linear;
         }
         .luna-fv-brl {
             position: absolute;
@@ -454,7 +455,7 @@
             z-index: -1;
             left: 43%;
             top: 5%;
-            animation: luna-fv-stride .5s .3s infinite linear;
+            animation: luna-fv-stride .5s .33s infinite linear;
         }
     }
 
