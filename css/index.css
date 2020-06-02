@@ -246,6 +246,14 @@ header nav .burger div {
   left: 66%;
   border: 1px solid yellow;
 }
+.home-scene-container .goose-zone3 {
+  position: absolute;
+  width: 28%;
+  top: 500px;
+  height: 250px;
+  left: 66%;
+  border: 1px solid orange;
+}
 .home-scene-container .goose {
   position: relative;
   width: 111px;
