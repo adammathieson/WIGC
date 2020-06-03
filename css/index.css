@@ -357,6 +357,7 @@ header nav .burger div {
   animation: goose-step 1s 4s infinite linear;
 }
 .home-scene-container .fly {
+  left: 100px;
   animation: fly 3s ease-in;
 }
 .home-scene-container .fly .goose-head-neck-stand {
