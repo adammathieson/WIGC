@@ -682,6 +682,7 @@ header nav .burger div {
 .home-scene-container .luna-ang .luna-ang-inner {
   position: relative;
   height: inherit;
+  animation: luna-ang-oscillate 0.4s alternate-reverse infinite linear;
 }
 .home-scene-container .luna-ang .luna-ang-body {
   position: absolute;
@@ -734,7 +735,7 @@ header nav .burger div {
   animation: luna-ang-walk-2 3s linear;
 }
 .home-scene-container .luna-ang-2 .luna-ang-inner {
-  transform: scaleX(-1);
+  animation: luna-ang-oscillate-rev 0.4s alternate-reverse infinite linear;
 }
 @keyframes luna-ang-walk {
   from {
@@ -786,6 +787,22 @@ header nav .burger div {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+@keyframes luna-ang-oscillate {
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-5deg);
+  }
+}
+@keyframes luna-ang-oscillate-rev {
+  from {
+    transform: rotate(5deg) scaleX(-1);
+  }
+  to {
+    transform: rotate(-5deg) scaleX(-1);
   }
 }
 

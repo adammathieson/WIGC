@@ -522,6 +522,7 @@
         .luna-ang-inner {
             position: relative;
             height: inherit;
+            animation: luna-ang-oscillate .4s alternate-reverse infinite linear;
         }
         .luna-ang-body {
             position: absolute;
@@ -582,7 +583,8 @@
         animation: luna-ang-walk-2 3s linear;
         
         .luna-ang-inner {
-            transform: scaleX(-1);
+            // transform: scaleX(-1);
+            animation: luna-ang-oscillate-rev .4s alternate-reverse infinite linear;
         }
     }
 
@@ -637,6 +639,22 @@
         }
         100% {
             transform: rotate(0deg)
+        }
+    }
+    @keyframes luna-ang-oscillate {
+        from {
+            transform: rotate(5deg)
+        }
+        to {
+            transform: rotate(-5deg)
+        }
+    }
+    @keyframes luna-ang-oscillate-rev {
+        from {
+            transform: rotate(5deg) scaleX(-1)
+        }
+        to {
+            transform: rotate(-5deg) scaleX(-1)
         }
     }
 }
