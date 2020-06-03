@@ -31,12 +31,12 @@
         left: 66%;
         border: 1px solid yellow
     }
-    .goose-zone3 {
+    .goose-zone4 {
         position: absolute;
         width: 28%;
-        top: 500px;
-        height: 250px;
-        left: 66%;
+        top: 750px;
+        height: 150px;
+        left: 50%;
         border: 1px solid orange;
     }
     .goose {
@@ -149,12 +149,12 @@
     }
     .pre-fly-goose-zone4 {
         transform: scale(.7);
-        // animation: goose-walk 2s 2s cubic-bezier(.74,.27,.93,.54);
+        animation: goose-walk 2s 4s cubic-bezier(.74,.27,.93,.54);
         .front-foot {
-            animation: goose-step 1s 2s reverse infinite linear;
+            animation: goose-step 1s 4s reverse infinite linear;
         }
         .back-foot {
-            animation: goose-step 1s 2s infinite linear;
+            animation: goose-step 1s 4s infinite linear;
         }
     }
 

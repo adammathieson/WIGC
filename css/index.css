@@ -246,12 +246,12 @@ header nav .burger div {
   left: 66%;
   border: 1px solid yellow;
 }
-.home-scene-container .goose-zone3 {
+.home-scene-container .goose-zone4 {
   position: absolute;
   width: 28%;
-  top: 500px;
-  height: 250px;
-  left: 66%;
+  top: 750px;
+  height: 150px;
+  left: 50%;
   border: 1px solid orange;
 }
 .home-scene-container .goose {
@@ -347,12 +347,13 @@ header nav .burger div {
 }
 .home-scene-container .pre-fly-goose-zone4 {
   transform: scale(0.7);
+  animation: goose-walk 2s 4s cubic-bezier(0.74, 0.27, 0.93, 0.54);
 }
 .home-scene-container .pre-fly-goose-zone4 .front-foot {
-  animation: goose-step 1s 2s reverse infinite linear;
+  animation: goose-step 1s 4s reverse infinite linear;
 }
 .home-scene-container .pre-fly-goose-zone4 .back-foot {
-  animation: goose-step 1s 2s infinite linear;
+  animation: goose-step 1s 4s infinite linear;
 }
 .home-scene-container .fly {
   animation: fly 3s ease-in;
