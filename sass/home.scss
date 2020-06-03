@@ -117,7 +117,7 @@
         }
     }
 
-    .pre-fly-zone1 {
+    .pre-fly-goose-zone1 {
         transform: scale(.7);
         animation: goose-walk 2s cubic-bezier(.74,.27,.93,.54);
         .front-foot {
@@ -127,7 +127,7 @@
             animation: goose-step 1s infinite linear;
         }
     }
-    .pre-fly-zone2 {
+    .pre-fly-goose-zone2 {
         transform: scale(.7);
         animation: goose-walk 2s 1s cubic-bezier(.74,.27,.93,.54);
         .front-foot {
@@ -137,7 +137,7 @@
             animation: goose-step 1s 1s infinite linear;
         }
     }
-    .pre-fly-zone3 {
+    .pre-fly-goose-zone3 {
         transform: scale(.7);
         animation: goose-walk 2s 2s cubic-bezier(.74,.27,.93,.54);
         .front-foot {
@@ -147,6 +147,17 @@
             animation: goose-step 1s 2s infinite linear;
         }
     }
+    .pre-fly-goose-zone4 {
+        transform: scale(.7);
+        // animation: goose-walk 2s 2s cubic-bezier(.74,.27,.93,.54);
+        .front-foot {
+            animation: goose-step 1s 2s reverse infinite linear;
+        }
+        .back-foot {
+            animation: goose-step 1s 2s infinite linear;
+        }
+    }
+
 
     .fly {
         animation: fly 3s ease-in;

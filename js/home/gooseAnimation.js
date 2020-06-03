@@ -12,15 +12,16 @@ export const gooseAnimation = () => {
         geese.forEach(goose => {
             let zone = goose.parentElement.classList.value
             // console.log(goose)
-            if (zone === 'goose-zone1') {
-                goose.classList.add('pre-fly-zone1')
-            }
-            if (zone === 'goose-zone2') {
-                goose.classList.add('pre-fly-zone2')
-            }
-            if (zone === 'goose-zone3') {
-                goose.classList.add('pre-fly-zone3')
-            }
+            goose.classList.add(`pre-fly-${zone}`)
+            // if (zone === 'goose-zone1') {
+            //     goose.classList.add('pre-fly-zone1')
+            // }
+            // if (zone === 'goose-zone2') {
+            //     goose.classList.add('pre-fly-zone2')
+            // }
+            // if (zone === 'goose-zone3') {
+            //     goose.classList.add('pre-fly-zone3')
+            // }
         })
     })
 
