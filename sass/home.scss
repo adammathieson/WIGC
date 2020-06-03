@@ -13,7 +13,7 @@
         width: 33%;
         top: 500px;
         height: 140px;
-        border: 1px solid red
+        // border: 1px solid red
     }
     .goose-zone2 {
         position: absolute;
@@ -21,7 +21,7 @@
         top: 530px;
         height: 180px;
         left: 33%;
-        border: 1px solid blue
+        // border: 1px solid blue
     }
     .goose-zone3 {
         position: absolute;
@@ -29,7 +29,7 @@
         top: 500px;
         height: 250px;
         left: 66%;
-        border: 1px solid yellow
+        // border: 1px solid yellow
     }
     .goose-zone4 {
         position: absolute;
@@ -37,7 +37,7 @@
         top: 750px;
         height: 150px;
         left: 50%;
-        border: 1px solid orange;
+        // border: 1px solid orange;
     }
     .goose {
         // display: none;
@@ -385,7 +385,7 @@
             transform-origin: top center;
             transform: rotate(0deg)
         }
-        50% {
+        60% {
             transform-origin: top center;
             transform: rotate(45deg)
         }
@@ -412,7 +412,7 @@
         0% {
             transform: rotate(0deg) translateY(0px)
         }
-        25% {
+        28% {
             transform: rotate(10deg) 
         }
         50% {
