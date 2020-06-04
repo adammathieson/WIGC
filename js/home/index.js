@@ -12,6 +12,7 @@ const home = () => {
     goose(3)
     goose(4)
     gooseAnimation()
+    contentBox()
 }
 
 home()
