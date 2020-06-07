@@ -217,165 +217,175 @@ header nav .burger div {
 
 .home-scene-container {
   background-image: url(../img/scenes/backgrounds/Cityscape-1440x900.png);
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
   width: 100%;
   min-height: 900px;
-  position: relative;
 }
-.home-scene-container .goose-zone1 {
+
+.goose-zone1 {
   position: absolute;
   width: 33%;
   top: 500px;
   height: 140px;
 }
-.home-scene-container .goose-zone2 {
+
+.goose-zone2 {
   position: absolute;
   width: 33%;
   top: 530px;
   height: 180px;
   left: 33%;
 }
-.home-scene-container .goose-zone3 {
+
+.goose-zone3 {
   position: absolute;
   width: 28%;
   top: 500px;
   height: 250px;
   left: 66%;
 }
-.home-scene-container .goose-zone4 {
+
+.goose-zone4 {
   position: absolute;
   width: 28%;
   top: 750px;
   height: 150px;
   left: 50%;
 }
-.home-scene-container .goose {
+
+.goose {
   position: relative;
   z-index: 1;
   width: 111px;
   height: 130px;
   transform: scale(0.7);
 }
-.home-scene-container .goose .goose-body {
+.goose .goose-body {
   position: absolute;
   z-index: 1;
   top: 30%;
   left: 10%;
 }
-.home-scene-container .goose .goose-head-neck-stand {
+.goose .goose-head-neck-stand {
   position: absolute;
   top: 0%;
   left: 56%;
 }
-.home-scene-container .goose .goose-head-neck-fly {
+.goose .goose-head-neck-fly {
   display: none;
   position: absolute;
   top: 33%;
   right: -40%;
 }
-.home-scene-container .goose .goose-wing-stand {
+.goose .goose-wing-stand {
   position: absolute;
   z-index: 2;
   top: 42%;
   left: 25%;
 }
-.home-scene-container .goose .goose-wing-fly-R {
+.goose .goose-wing-fly-R {
   position: absolute;
   z-index: 2;
   top: -8%;
   left: 35%;
   display: none;
 }
-.home-scene-container .goose .goose-wing-fly-L {
+.goose .goose-wing-fly-L {
   position: absolute;
   z-index: 0;
   top: 3%;
   left: 20%;
   display: none;
 }
-.home-scene-container .goose .goose-tail {
+.goose .goose-tail {
   position: absolute;
   z-index: 0;
   top: 34%;
   left: 1%;
 }
-.home-scene-container .goose .back-foot {
+.goose .back-foot {
   position: absolute;
   z-index: 0;
   top: 65%;
   left: 40%;
 }
-.home-scene-container .goose .front-foot {
+.goose .front-foot {
   position: absolute;
   z-index: 0;
   top: 65%;
   left: 60%;
 }
-.home-scene-container .pre-fly-goose-zone1 {
+
+.pre-fly-goose-zone1 {
   transform: scale(0.7);
   animation: goose-walk 2s cubic-bezier(0.74, 0.27, 0.93, 0.54);
 }
-.home-scene-container .pre-fly-goose-zone1 .front-foot {
+.pre-fly-goose-zone1 .front-foot {
   animation: goose-step 1s reverse infinite linear;
 }
-.home-scene-container .pre-fly-goose-zone1 .back-foot {
+.pre-fly-goose-zone1 .back-foot {
   animation: goose-step 1s infinite linear;
 }
-.home-scene-container .pre-fly-goose-zone2 {
+
+.pre-fly-goose-zone2 {
   transform: scale(0.7);
   animation: goose-walk 2s 1s cubic-bezier(0.74, 0.27, 0.93, 0.54);
 }
-.home-scene-container .pre-fly-goose-zone2 .front-foot {
+.pre-fly-goose-zone2 .front-foot {
   animation: goose-step 1s 1s reverse infinite linear;
 }
-.home-scene-container .pre-fly-goose-zone2 .back-foot {
+.pre-fly-goose-zone2 .back-foot {
   animation: goose-step 1s 1s infinite linear;
 }
-.home-scene-container .pre-fly-goose-zone3 {
+
+.pre-fly-goose-zone3 {
   transform: scale(0.7);
   animation: goose-walk 2s 2s cubic-bezier(0.74, 0.27, 0.93, 0.54);
 }
-.home-scene-container .pre-fly-goose-zone3 .front-foot {
+.pre-fly-goose-zone3 .front-foot {
   animation: goose-step 1s 2s reverse infinite linear;
 }
-.home-scene-container .pre-fly-goose-zone3 .back-foot {
+.pre-fly-goose-zone3 .back-foot {
   animation: goose-step 1s 2s infinite linear;
 }
-.home-scene-container .pre-fly-goose-zone4 {
+
+.pre-fly-goose-zone4 {
   transform: scale(0.7);
   animation: goose-walk 2s 4s cubic-bezier(0.74, 0.27, 0.93, 0.54);
 }
-.home-scene-container .pre-fly-goose-zone4 .front-foot {
+.pre-fly-goose-zone4 .front-foot {
   animation: goose-step 1s 4s reverse infinite linear;
 }
-.home-scene-container .pre-fly-goose-zone4 .back-foot {
+.pre-fly-goose-zone4 .back-foot {
   animation: goose-step 1s 4s infinite linear;
 }
-.home-scene-container .fly {
+
+.fly {
   left: 100px;
   animation: fly 3s ease-in;
 }
-.home-scene-container .fly .goose-head-neck-stand {
+.fly .goose-head-neck-stand {
   display: none;
 }
-.home-scene-container .fly .goose-head-neck-fly {
+.fly .goose-head-neck-fly {
   display: block;
 }
-.home-scene-container .fly .front-foot, .home-scene-container .fly .back-foot {
+.fly .front-foot, .fly .back-foot {
   display: none;
 }
-.home-scene-container .fly .goose-wing-stand {
+.fly .goose-wing-stand {
   display: none;
 }
-.home-scene-container .fly .goose-wing-fly-R, .home-scene-container .fly .goose-wing-fly-L {
+.fly .goose-wing-fly-R, .fly .goose-wing-fly-L {
   display: block;
   animation: flap 0.3s infinite;
 }
-.home-scene-container .fly .goose-tail {
+.fly .goose-tail {
   transform-origin: bottom right;
   transform: rotate(-25deg);
 }
+
 @keyframes flap {
   0% {
     transform-origin: 0% 90%;
@@ -428,7 +438,7 @@ header nav .burger div {
     transform: translateX(100px) scale(0.7);
   }
 }
-.home-scene-container .car {
+.car {
   width: 175px;
   position: absolute;
   z-index: 2;
@@ -436,30 +446,31 @@ header nav .burger div {
   left: 150px;
   animation: drive 3s ease-out;
 }
-.home-scene-container .car .car-body {
+.car .car-body {
   z-index: 1;
   position: absolute;
 }
-.home-scene-container .car .car-wheel {
+.car .car-wheel {
   position: absolute;
   width: 27.2px;
   top: 128%;
   text-align: center;
   animation: rotate 3s ease-out;
 }
-.home-scene-container .car .front {
+.car .front {
   left: 73%;
 }
-.home-scene-container .car .back {
+.car .back {
   left: 9%;
 }
-.home-scene-container .car .car-hatch {
+.car .car-hatch {
   position: relative;
   width: 43.5px;
   top: 8px;
   left: 2px;
   animation: hatch-open 4s 4s cubic-bezier(0, 0.32, 0.82, 1.1);
 }
+
 @keyframes drive {
   from {
     transform: translateX(-400px);
@@ -494,7 +505,7 @@ header nav .burger div {
     transform: rotate(0deg);
   }
 }
-.home-scene-container .luna-sv {
+.luna-sv {
   position: absolute;
   width: 80px;
   height: 40px;
@@ -503,43 +514,44 @@ header nav .burger div {
   top: 285px;
   animation: luna-car-walk 2s;
 }
-.home-scene-container .luna-sv .luna-sv-inner {
+.luna-sv .luna-sv-inner {
   animation: luna-car-jump-rotate 2s;
   height: inherit;
 }
-.home-scene-container .luna-sv .luna-sv-head-body-combo {
+.luna-sv .luna-sv-head-body-combo {
   position: absolute;
 }
-.home-scene-container .luna-sv .luna-sv-frl {
+.luna-sv .luna-sv-frl {
   position: absolute;
   z-index: -1;
   left: 20%;
   top: 40%;
 }
-.home-scene-container .luna-sv .luna-sv-fll {
+.luna-sv .luna-sv-fll {
   position: absolute;
   z-index: 1;
   left: 25%;
   top: 40%;
 }
-.home-scene-container .luna-sv .luna-sv-brl {
+.luna-sv .luna-sv-brl {
   position: absolute;
   z-index: -1;
   left: 50%;
   top: 20%;
 }
-.home-scene-container .luna-sv .luna-sv-bll {
+.luna-sv .luna-sv-bll {
   position: absolute;
   z-index: 1;
   left: 45%;
   top: 20%;
 }
-.home-scene-container .luna-sv .luna-sv-frl, .home-scene-container .luna-sv .luna-sv-fll {
+.luna-sv .luna-sv-frl, .luna-sv .luna-sv-fll {
   animation: luna-car-front-leg-stride 2s;
 }
-.home-scene-container .luna-sv .luna-sv-brl, .home-scene-container .luna-sv .luna-sv-bll {
+.luna-sv .luna-sv-brl, .luna-sv .luna-sv-bll {
   animation: luna-car-back-leg-stride 2s;
 }
+
 @keyframes luna-car-walk {
   from {
     transform: translateX(0);
@@ -593,7 +605,7 @@ header nav .burger div {
     transform: rotate(0deg) translateY(0px);
   }
 }
-.home-scene-container .luna-fv {
+.luna-fv {
   position: absolute;
   width: 49px;
   height: 105px;
@@ -602,46 +614,47 @@ header nav .burger div {
   z-index: 0;
   animation: luna-fv-walk 3s linear;
 }
-.home-scene-container .luna-fv .luna-fv-inner {
+.luna-fv .luna-fv-inner {
   position: relative;
   height: inherit;
 }
-.home-scene-container .luna-fv .luna-fv-body {
+.luna-fv .luna-fv-body {
   position: absolute;
 }
-.home-scene-container .luna-fv .luna-fv-head {
+.luna-fv .luna-fv-head {
   position: absolute;
   z-index: 1;
   top: -12%;
   left: -5%;
   animation: luna-fv-head-drop 0.3s alternate infinite linear;
 }
-.home-scene-container .luna-fv .luna-fv-frl {
+.luna-fv .luna-fv-frl {
   position: absolute;
   left: 6%;
   top: 20%;
   animation: luna-fv-stride 0.5s infinite linear;
 }
-.home-scene-container .luna-fv .luna-fv-fll {
+.luna-fv .luna-fv-fll {
   position: absolute;
   left: 54%;
   top: 20%;
   animation: luna-fv-stride 0.5s 0.08s infinite linear;
 }
-.home-scene-container .luna-fv .luna-fv-brl {
+.luna-fv .luna-fv-brl {
   position: absolute;
   z-index: -1;
   left: 10%;
   top: 5%;
   animation: luna-fv-stride 0.5s 0.25s infinite linear;
 }
-.home-scene-container .luna-fv .luna-fv-bll {
+.luna-fv .luna-fv-bll {
   position: absolute;
   z-index: -1;
   left: 43%;
   top: 5%;
   animation: luna-fv-stride 0.5s 0.33s infinite linear;
 }
+
 @keyframes luna-fv-walk {
   from {
     transform: translateY(-250px) scale(0.3);
@@ -669,7 +682,7 @@ header nav .burger div {
     transform: translateY(7px);
   }
 }
-.home-scene-container .luna-ang {
+.luna-ang {
   position: absolute;
   width: 168px;
   height: 100x;
@@ -678,49 +691,49 @@ header nav .burger div {
   z-index: 0;
   animation: luna-ang-walk 3s linear;
 }
-.home-scene-container .luna-ang .luna-ang-inner {
+.luna-ang .luna-ang-inner {
   position: relative;
   height: inherit;
   animation: luna-ang-oscillate 0.4s alternate-reverse infinite linear;
 }
-.home-scene-container .luna-ang .luna-ang-body {
+.luna-ang .luna-ang-body {
   position: absolute;
   transform: rotate(-10deg);
 }
-.home-scene-container .luna-ang .luna-ang-head {
+.luna-ang .luna-ang-head {
   position: absolute;
   z-index: 1;
   top: 20%;
   left: 45%;
 }
-.home-scene-container .luna-ang .luna-ang-frl {
+.luna-ang .luna-ang-frl {
   position: absolute;
   left: 30%;
   top: 55%;
   animation: luna-ang-creep 0.8s infinite linear;
 }
-.home-scene-container .luna-ang .luna-ang-fll {
+.luna-ang .luna-ang-fll {
   position: absolute;
   left: 37%;
   top: 45%;
   z-index: -1;
   animation: luna-ang-creep 0.8s 0.05s infinite linear;
 }
-.home-scene-container .luna-ang .luna-ang-brl {
+.luna-ang .luna-ang-brl {
   position: absolute;
   z-index: 1;
   left: -8%;
   top: 23%;
   animation: luna-ang-creep 0.8s 0.4s infinite linear;
 }
-.home-scene-container .luna-ang .luna-ang-bll {
+.luna-ang .luna-ang-bll {
   position: absolute;
   z-index: -1;
   left: 2%;
   top: 18%;
   animation: luna-ang-creep 0.8s 0.35s infinite linear;
 }
-.home-scene-container .luna-ang .luna-ang-tail {
+.luna-ang .luna-ang-tail {
   position: relative;
   z-index: 1;
   max-width: 70px;
@@ -728,14 +741,16 @@ header nav .burger div {
   top: -15px;
   animation: luna-ang-wag 2s infinite linear;
 }
-.home-scene-container .luna-ang-2 {
+
+.luna-ang-2 {
   left: 900px;
   top: 600px;
   animation: luna-ang-walk-2 3s linear;
 }
-.home-scene-container .luna-ang-2 .luna-ang-inner {
+.luna-ang-2 .luna-ang-inner {
   animation: luna-ang-oscillate-rev 0.4s alternate-reverse infinite linear;
 }
+
 @keyframes luna-ang-walk {
   from {
     transform: translate3d(0, 0, 0);
@@ -804,14 +819,12 @@ header nav .burger div {
     transform: rotate(-5deg) scaleX(-1);
   }
 }
-
 .about-scene-container {
   background-image: url(../img/scenes/backgrounds/WIGC_homescape_about.png);
   background-size: auto;
   background-repeat: no-repeat;
   width: 100%;
   min-height: 900px;
-  margin-bottom: 2em;
 }
 
 .flock {

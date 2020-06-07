@@ -1,662 +1,661 @@
 .home-scene-container {
     background-image: url(../img/scenes/backgrounds/Cityscape-1440x900.png);
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
     width: 100%;
     min-height: 900px;
-    position: relative;
+    // position: relative;
     // border-radius: 20px;
     // margin-bottom: 2em;
+}
+.goose-zone1 {
+    position: absolute;
+    width: 33%;
+    top: 500px;
+    height: 140px;
+    // border: 1px solid red
+}
+.goose-zone2 {
+    position: absolute;
+    width: 33%;
+    top: 530px;
+    height: 180px;
+    left: 33%;
+    // border: 1px solid blue
+}
+.goose-zone3 {
+    position: absolute;
+    width: 28%;
+    top: 500px;
+    height: 250px;
+    left: 66%;
+    // border: 1px solid yellow
+}
+.goose-zone4 {
+    position: absolute;
+    width: 28%;
+    top: 750px;
+    height: 150px;
+    left: 50%;
+    // border: 1px solid orange;
+}
+.goose {
+    // display: none;
+    position: relative;
+    z-index: 1;
+    // top: 450px;
+    // left: 500px;
+    width: 111px;
+    height: 130px;
+    transform: scale(.7);
+    // animation: goose-walk 2s infinite cubic-bezier(.74,.27,.93,.54);
+    // border: 1px solid red;
 
-    .goose-zone1 {
+    // .goose {
+    //     position: inherit;
+    //     height: inherit;
+    //     border: 1px solid yellow;
+    // }
+    .goose-body {
         position: absolute;
-        width: 33%;
-        top: 500px;
-        height: 140px;
-        // border: 1px solid red
-    }
-    .goose-zone2 {
-        position: absolute;
-        width: 33%;
-        top: 530px;
-        height: 180px;
-        left: 33%;
-        // border: 1px solid blue
-    }
-    .goose-zone3 {
-        position: absolute;
-        width: 28%;
-        top: 500px;
-        height: 250px;
-        left: 66%;
-        // border: 1px solid yellow
-    }
-    .goose-zone4 {
-        position: absolute;
-        width: 28%;
-        top: 750px;
-        height: 150px;
-        left: 50%;
-        // border: 1px solid orange;
-    }
-    .goose {
-        // display: none;
-        position: relative;
         z-index: 1;
-        // top: 450px;
-        // left: 500px;
-        width: 111px;
-        height: 130px;
-        transform: scale(.7);
-        // animation: goose-walk 2s infinite cubic-bezier(.74,.27,.93,.54);
-        // border: 1px solid red;
-
-        // .goose {
-        //     position: inherit;
-        //     height: inherit;
-        //     border: 1px solid yellow;
-        // }
-        .goose-body {
-            position: absolute;
-            z-index: 1;
-            top: 30%;
-            left: 10%;
-        }
-        .goose-head-neck-stand {
-            position: absolute;
-            // border: 1px solid blue;
-            top: 0%;
-            left: 56%;
-        }
-        .goose-head-neck-fly {
-            display: none;
-            position: absolute;
-            top: 33%;
-            right: -40%;
-        }
-        .goose-wing-stand {
-            position: absolute;
-            z-index: 2;
-            top: 42%;
-            left: 25%;
-            // display: none;
-        }
-        .goose-wing-fly-R {
-            position: absolute;
-            z-index: 2;
-            top: -8%;
-            left: 35%;
-            display: none;
-        }
-        .goose-wing-fly-L {
-            position: absolute;
-            z-index: 0;
-            top: 3%;
-            left: 20%;
-            display: none;
-        }
-        .goose-tail {
-            position: absolute;
-            z-index: 0;
-            top: 34%;
-            left: 1%;
-            // display: none;
-        }
-        .back-foot {
-            position: absolute;
-            z-index: 0;
-            top: 65%;
-            left: 40%;
-            // animation: goose-step 1s infinite linear;
-        }
-        .front-foot {
-            position: absolute;
-            z-index: 0;
-            top: 65%;
-            left: 60%;
-            // animation: goose-step 1s reverse infinite linear;
-        }
+        top: 30%;
+        left: 10%;
     }
-
-    .pre-fly-goose-zone1 {
-        transform: scale(.7);
-        animation: goose-walk 2s cubic-bezier(.74,.27,.93,.54);
-        .front-foot {
-            animation: goose-step 1s reverse infinite linear;
-        }
-        .back-foot {
-            animation: goose-step 1s infinite linear;
-        }
+    .goose-head-neck-stand {
+        position: absolute;
+        // border: 1px solid blue;
+        top: 0%;
+        left: 56%;
     }
-    .pre-fly-goose-zone2 {
-        transform: scale(.7);
-        animation: goose-walk 2s 1s cubic-bezier(.74,.27,.93,.54);
-        .front-foot {
-            animation: goose-step 1s 1s reverse infinite linear;
-        }
-        .back-foot {
-            animation: goose-step 1s 1s infinite linear;
-        }
+    .goose-head-neck-fly {
+        display: none;
+        position: absolute;
+        top: 33%;
+        right: -40%;
     }
-    .pre-fly-goose-zone3 {
-        transform: scale(.7);
-        animation: goose-walk 2s 2s cubic-bezier(.74,.27,.93,.54);
-        .front-foot {
-            animation: goose-step 1s 2s reverse infinite linear;
-        }
-        .back-foot {
-            animation: goose-step 1s 2s infinite linear;
-        }
-    }
-    .pre-fly-goose-zone4 {
-        transform: scale(.7);
-        animation: goose-walk 2s 4s cubic-bezier(.74,.27,.93,.54);
-        .front-foot {
-            animation: goose-step 1s 4s reverse infinite linear;
-        }
-        .back-foot {
-            animation: goose-step 1s 4s infinite linear;
-        }
-    }
-
-
-    .fly {
-        left: 100px;
-        animation: fly 3s ease-in;
-        .goose-head-neck-stand {
-            display: none;
-        }
-        .goose-head-neck-fly {
-            display: block;
-        }
-        .front-foot, .back-foot {
-            display: none;
-        }
-        .goose-wing-stand {
-            display: none;
-        }
-        .goose-wing-fly-R, .goose-wing-fly-L {
-            display: block;
-            animation: flap .3s infinite;
-        }
-        .goose-tail {
-            transform-origin: bottom right;
-            transform: rotate(-25deg)
-        }
-    }
-
-    @keyframes flap {
-        0% {
-            transform-origin: 0% 90%;
-            transform: scaleY(1)
-        }
-        50% {
-            transform-origin: 0% 90%;
-            transform: scaleY(-1)
-        }
-        100% {
-            transform-origin: 0% 90%;
-            transform: scaleY(1)
-        }
-    }
-    
-    @keyframes fly {
-        from {
-            transform: translateY(0px) translateX(0px) scale(1)
-        }
-        to {
-            transform: translateY(-800px) translateX(1600px) scale(3)
-        }
-    }
-
-    @keyframes goose-step {
-        0% {
-            transform-origin: top center;
-            transform: rotate(0)
-        }
-        25% {
-            transform-origin: top center;
-            transform: rotate(-20deg)
-        }
-        50% {
-            transform-origin: top center;
-            transform: rotate(0)
-        }
-        75% {
-            transform-origin: top center;
-            transform: rotate(20deg)
-        }
-        100% {
-            transform-origin: top center;
-            transform: rotate(0)
-        }
-    }
-
-    @keyframes goose-walk {
-        from {
-            transform: translateX(0) scale(.7)
-        }
-        to {
-            transform: translateX(100px) scale(.7)
-        }
-    }
-
-    .car {
-        // display: none;
-        width: 175px;
+    .goose-wing-stand {
         position: absolute;
         z-index: 2;
-        top: 270px;
-        left: 150px;
-        animation: drive 3s ease-out;
-
-        .car-body {
-            z-index: 1;
-            position: absolute;
-        }
-        .car-wheel {
-            position: absolute;
-            width: 27.2px;
-            top: 128%;
-            text-align: center;
-            animation: rotate 3s ease-out;
-            // border: 1px solid red;
-        }
-        .front {
-            left: 73%;
-        }
-        .back {
-            left: 9%;
-        }
-        .car-hatch {
-            position: relative;
-            width: 43.5px;
-            top: 8px;
-            left: 2px;
-            animation: hatch-open 4s 4s cubic-bezier(0,.32,.82,1.1);
-
-        }
-    }
-    @keyframes drive {
-        from {
-            transform: translateX(-400px)
-        }
-        to {
-            transform: translateX(0px);
-        }
-    }
-
-    @keyframes rotate {
-        from {
-            transform: rotate(0deg)
-        }
-        to {
-            transform: rotate(1080deg)
-        }
-    }
-
-    @keyframes hatch-open {
-        0% {
-            transform-origin: right top;
-            transform: rotate(0deg)
-        }
-        20% {
-            transform-origin: right top;
-            transform: rotate(70deg)
-        }
-        60% {
-            transform-origin: right top;
-            transform: rotate(70deg)
-        }
-        100% {
-            transform-origin: right top;
-            transform: rotate(0deg)
-        }
-    }
-
-    .luna-sv {
+        top: 42%;
+        left: 25%;
         // display: none;
+    }
+    .goose-wing-fly-R {
         position: absolute;
-        width: 80px;
-        height: 40px;
+        z-index: 2;
+        top: -8%;
+        left: 35%;
+        display: none;
+    }
+    .goose-wing-fly-L {
+        position: absolute;
+        z-index: 0;
+        top: 3%;
+        left: 20%;
+        display: none;
+    }
+    .goose-tail {
+        position: absolute;
+        z-index: 0;
+        top: 34%;
+        left: 1%;
+        // display: none;
+    }
+    .back-foot {
+        position: absolute;
+        z-index: 0;
+        top: 65%;
+        left: 40%;
+        // animation: goose-step 1s infinite linear;
+    }
+    .front-foot {
+        position: absolute;
+        z-index: 0;
+        top: 65%;
+        left: 60%;
+        // animation: goose-step 1s reverse infinite linear;
+    }
+}
+
+.pre-fly-goose-zone1 {
+    transform: scale(.7);
+    animation: goose-walk 2s cubic-bezier(.74,.27,.93,.54);
+    .front-foot {
+        animation: goose-step 1s reverse infinite linear;
+    }
+    .back-foot {
+        animation: goose-step 1s infinite linear;
+    }
+}
+.pre-fly-goose-zone2 {
+    transform: scale(.7);
+    animation: goose-walk 2s 1s cubic-bezier(.74,.27,.93,.54);
+    .front-foot {
+        animation: goose-step 1s 1s reverse infinite linear;
+    }
+    .back-foot {
+        animation: goose-step 1s 1s infinite linear;
+    }
+}
+.pre-fly-goose-zone3 {
+    transform: scale(.7);
+    animation: goose-walk 2s 2s cubic-bezier(.74,.27,.93,.54);
+    .front-foot {
+        animation: goose-step 1s 2s reverse infinite linear;
+    }
+    .back-foot {
+        animation: goose-step 1s 2s infinite linear;
+    }
+}
+.pre-fly-goose-zone4 {
+    transform: scale(.7);
+    animation: goose-walk 2s 4s cubic-bezier(.74,.27,.93,.54);
+    .front-foot {
+        animation: goose-step 1s 4s reverse infinite linear;
+    }
+    .back-foot {
+        animation: goose-step 1s 4s infinite linear;
+    }
+}
+
+
+.fly {
+    left: 100px;
+    animation: fly 3s ease-in;
+    .goose-head-neck-stand {
+        display: none;
+    }
+    .goose-head-neck-fly {
+        display: block;
+    }
+    .front-foot, .back-foot {
+        display: none;
+    }
+    .goose-wing-stand {
+        display: none;
+    }
+    .goose-wing-fly-R, .goose-wing-fly-L {
+        display: block;
+        animation: flap .3s infinite;
+    }
+    .goose-tail {
+        transform-origin: bottom right;
+        transform: rotate(-25deg)
+    }
+}
+
+@keyframes flap {
+    0% {
+        transform-origin: 0% 90%;
+        transform: scaleY(1)
+    }
+    50% {
+        transform-origin: 0% 90%;
+        transform: scaleY(-1)
+    }
+    100% {
+        transform-origin: 0% 90%;
+        transform: scaleY(1)
+    }
+}
+
+@keyframes fly {
+    from {
+        transform: translateY(0px) translateX(0px) scale(1)
+    }
+    to {
+        transform: translateY(-800px) translateX(1600px) scale(3)
+    }
+}
+
+@keyframes goose-step {
+    0% {
+        transform-origin: top center;
+        transform: rotate(0)
+    }
+    25% {
+        transform-origin: top center;
+        transform: rotate(-20deg)
+    }
+    50% {
+        transform-origin: top center;
+        transform: rotate(0)
+    }
+    75% {
+        transform-origin: top center;
+        transform: rotate(20deg)
+    }
+    100% {
+        transform-origin: top center;
+        transform: rotate(0)
+    }
+}
+
+@keyframes goose-walk {
+    from {
+        transform: translateX(0) scale(.7)
+    }
+    to {
+        transform: translateX(100px) scale(.7)
+    }
+}
+
+.car {
+    // display: none;
+    width: 175px;
+    position: absolute;
+    z-index: 2;
+    top: 270px;
+    left: 150px;
+    animation: drive 3s ease-out;
+
+    .car-body {
         z-index: 1;
-        left: 190px;
-        top: 285px;
-        animation: luna-car-walk 2s;
-
-        .luna-sv-inner {
-            animation: luna-car-jump-rotate 2s;
-            // position: inherit;
-            height: inherit;
-        }
-
-        .luna-sv-head-body-combo {
-            position: absolute;
-        }
-
-        .luna-sv-frl {
-            position: absolute;
-            z-index: -1;
-            left: 20%;
-            top: 40%;
-        }
-
-        .luna-sv-fll {
-            position: absolute;
-            z-index: 1;
-            left: 25%;
-            top: 40%;
-        }
-
-        .luna-sv-brl {
-            position: absolute;
-            z-index: -1;
-            left: 50%;
-            top: 20%;
-        }
-
-        .luna-sv-bll {
-            position: absolute;
-            z-index: 1;
-            left: 45%;
-            top: 20%;
-        }
-
-        .luna-sv-frl, .luna-sv-fll {
-            animation: luna-car-front-leg-stride 2s;
-        }
-
-        .luna-sv-brl, .luna-sv-bll {
-            animation: luna-car-back-leg-stride 2s;
-        }
-    }
-
-    @keyframes luna-car-walk {
-        from {
-            transform: translateX(0);
-        }
-        to {
-            transform: translateX(-135px);
-        }
-    }
-
-    @keyframes luna-car-front-leg-stride {
-        0% {
-            transform-origin: top center;
-            transform: rotate(0deg)
-        }
-        60% {
-            transform-origin: top center;
-            transform: rotate(45deg)
-        }
-        100% {
-            transform-origin: top center;
-            transform: rotate(0deg)
-        }
-    }
-    @keyframes luna-car-back-leg-stride {
-        0% {
-            transform-origin: top center;
-            transform: rotate(0deg)
-        }
-        50% {
-            transform-origin: top center;
-            transform: rotate(-50deg)
-        }
-        100% {
-            transform-origin: top center;
-            transform: rotate(0deg)
-        }
-    }
-    @keyframes luna-car-jump-rotate {
-        0% {
-            transform: rotate(0deg) translateY(0px)
-        }
-        28% {
-            transform: rotate(10deg) 
-        }
-        50% {
-            transform: translateY(-20px)
-        }
-        75% {
-            transform: rotate(-10deg) 
-        }
-        100% {
-            transform: rotate(0deg) translateY(0px)
-        }
-    }
-
-    .luna-fv {
-        // display: none;
         position: absolute;
-        width: 49px;
-        height: 105px;
-        left: 50px;
-        top: 500px;
-        z-index: 0;
-        animation: luna-fv-walk 3s linear;
+    }
+    .car-wheel {
+        position: absolute;
+        width: 27.2px;
+        top: 128%;
+        text-align: center;
+        animation: rotate 3s ease-out;
+        // border: 1px solid red;
+    }
+    .front {
+        left: 73%;
+    }
+    .back {
+        left: 9%;
+    }
+    .car-hatch {
+        position: relative;
+        width: 43.5px;
+        top: 8px;
+        left: 2px;
+        animation: hatch-open 4s 4s cubic-bezier(0,.32,.82,1.1);
 
-        .luna-fv-inner {
-            position: relative;
-            height: inherit;
-        }
-        .luna-fv-body {
-            position: absolute;
-        }
-        .luna-fv-head {
-            position: absolute;
-            z-index: 1;
-            top: -12%;
-            left: -5%;
-            animation: luna-fv-head-drop .3s alternate infinite linear;
-        }
-        .luna-fv-frl {
-            position: absolute;
-            left: 6%;
-            top: 20%;
-            // border: 1px solid red;
-            animation: luna-fv-stride .5s infinite linear;
-        }
-        .luna-fv-fll {
-            position: absolute;
-            left: 54%;
-            top: 20%;
-            // border: 1px solid red;
-            animation: luna-fv-stride .5s .08s infinite linear;
-        }
-        .luna-fv-brl {
-            position: absolute;
-            z-index: -1;
-            left: 10%;
-            top: 5%;
-            animation: luna-fv-stride .5s .25s infinite linear;
-        }
-        .luna-fv-bll {
-            position: absolute;
-            z-index: -1;
-            left: 43%;
-            top: 5%;
-            animation: luna-fv-stride .5s .33s infinite linear;
-        }
+    }
+}
+@keyframes drive {
+    from {
+        transform: translateX(-400px)
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(1080deg)
+    }
+}
+
+@keyframes hatch-open {
+    0% {
+        transform-origin: right top;
+        transform: rotate(0deg)
+    }
+    20% {
+        transform-origin: right top;
+        transform: rotate(70deg)
+    }
+    60% {
+        transform-origin: right top;
+        transform: rotate(70deg)
+    }
+    100% {
+        transform-origin: right top;
+        transform: rotate(0deg)
+    }
+}
+
+.luna-sv {
+    // display: none;
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    z-index: 1;
+    left: 190px;
+    top: 285px;
+    animation: luna-car-walk 2s;
+
+    .luna-sv-inner {
+        animation: luna-car-jump-rotate 2s;
+        // position: inherit;
+        height: inherit;
     }
 
-    @keyframes luna-fv-walk {
-        from {
-            transform: translateY(-250px) scale(.3)
-        }
-        to {
-            transform: translateY(0) scale(.9)
-        }
+    .luna-sv-head-body-combo {
+        position: absolute;
     }
 
-    @keyframes luna-fv-stride {
-        0% {
-            transform: translateY(0)
-        }
-        50% {
-            transform: translateY(15px)
-        }
-        100% {
-            transform: translateY(0)
-        }
+    .luna-sv-frl {
+        position: absolute;
+        z-index: -1;
+        left: 20%;
+        top: 40%;
     }
+
+    .luna-sv-fll {
+        position: absolute;
+        z-index: 1;
+        left: 25%;
+        top: 40%;
+    }
+
+    .luna-sv-brl {
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        top: 20%;
+    }
+
+    .luna-sv-bll {
+        position: absolute;
+        z-index: 1;
+        left: 45%;
+        top: 20%;
+    }
+
+    .luna-sv-frl, .luna-sv-fll {
+        animation: luna-car-front-leg-stride 2s;
+    }
+
+    .luna-sv-brl, .luna-sv-bll {
+        animation: luna-car-back-leg-stride 2s;
+    }
+}
+
+@keyframes luna-car-walk {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-135px);
+    }
+}
+
+@keyframes luna-car-front-leg-stride {
+    0% {
+        transform-origin: top center;
+        transform: rotate(0deg)
+    }
+    60% {
+        transform-origin: top center;
+        transform: rotate(45deg)
+    }
+    100% {
+        transform-origin: top center;
+        transform: rotate(0deg)
+    }
+}
+@keyframes luna-car-back-leg-stride {
+    0% {
+        transform-origin: top center;
+        transform: rotate(0deg)
+    }
+    50% {
+        transform-origin: top center;
+        transform: rotate(-50deg)
+    }
+    100% {
+        transform-origin: top center;
+        transform: rotate(0deg)
+    }
+}
+@keyframes luna-car-jump-rotate {
+    0% {
+        transform: rotate(0deg) translateY(0px)
+    }
+    28% {
+        transform: rotate(10deg) 
+    }
+    50% {
+        transform: translateY(-20px)
+    }
+    75% {
+        transform: rotate(-10deg) 
+    }
+    100% {
+        transform: rotate(0deg) translateY(0px)
+    }
+}
+
+.luna-fv {
+    // display: none;
+    position: absolute;
+    width: 49px;
+    height: 105px;
+    left: 50px;
+    top: 500px;
+    z-index: 0;
+    animation: luna-fv-walk 3s linear;
+
+    .luna-fv-inner {
+        position: relative;
+        height: inherit;
+    }
+    .luna-fv-body {
+        position: absolute;
+    }
+    .luna-fv-head {
+        position: absolute;
+        z-index: 1;
+        top: -12%;
+        left: -5%;
+        animation: luna-fv-head-drop .3s alternate infinite linear;
+    }
+    .luna-fv-frl {
+        position: absolute;
+        left: 6%;
+        top: 20%;
+        // border: 1px solid red;
+        animation: luna-fv-stride .5s infinite linear;
+    }
+    .luna-fv-fll {
+        position: absolute;
+        left: 54%;
+        top: 20%;
+        // border: 1px solid red;
+        animation: luna-fv-stride .5s .08s infinite linear;
+    }
+    .luna-fv-brl {
+        position: absolute;
+        z-index: -1;
+        left: 10%;
+        top: 5%;
+        animation: luna-fv-stride .5s .25s infinite linear;
+    }
+    .luna-fv-bll {
+        position: absolute;
+        z-index: -1;
+        left: 43%;
+        top: 5%;
+        animation: luna-fv-stride .5s .33s infinite linear;
+    }
+}
+
+@keyframes luna-fv-walk {
+    from {
+        transform: translateY(-250px) scale(.3)
+    }
+    to {
+        transform: translateY(0) scale(.9)
+    }
+}
+
+@keyframes luna-fv-stride {
+    0% {
+        transform: translateY(0)
+    }
+    50% {
+        transform: translateY(15px)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@keyframes luna-fv-head-drop {
+    from {
+        transform: translateY(0)
+    }
+    to {
+        transform: translateY(7px)
+    }
+}
+
+
+.luna-ang {
+    // display: none;
+    position: absolute;
+    width: 168px;
+    height: 100x;
+    left: 40px;
+    top: 500px;
+    z-index: 0;
+    animation: luna-ang-walk 3s linear;
+
+    .luna-ang-inner {
+        position: relative;
+        height: inherit;
+        animation: luna-ang-oscillate .4s alternate-reverse infinite linear;
+    }
+    .luna-ang-body {
+        position: absolute;
+        transform: rotate(-10deg);
+    }
+    .luna-ang-head {
+        position: absolute;
+        z-index: 1;
+        top: 20%;
+        left: 45%;
+        // animation: luna-ang-head-drop .3s alternate infinite linear;
+    }
+    .luna-ang-frl {
+        position: absolute;
+        left: 30%;
+        top: 55%;
+        // border: 1px solid red;
+        animation: luna-ang-creep .8s infinite linear;
+    }
+    .luna-ang-fll {
+        position: absolute;
+        left: 37%;
+        top: 45%;
+        z-index: -1;
+        // border: 1px solid red;
+        animation: luna-ang-creep .8s .05s infinite linear;
+    }
+    .luna-ang-brl {
+        position: absolute;
+        z-index: 1;
+        left: -8%;
+        top: 23%;
+        animation: luna-ang-creep .8s .4s infinite linear;
+
+    }
+    .luna-ang-bll {
+        position: absolute;
+        z-index: -1;
+        left: 2%;
+        top: 18%;
+        animation: luna-ang-creep .8s .35s infinite linear;
+    }
+    .luna-ang-tail {
+        // border: 1px solid red;
+        position: relative;
+        z-index: 1;
+        max-width: 70px;
+        left: -23%;
+        top: -15px;
+        animation: luna-ang-wag 2s infinite linear;
+    }
+}
+
+
+.luna-ang-2 {
+    left: 900px;
+    top: 600px;
+    animation: luna-ang-walk-2 3s linear;
     
-    @keyframes luna-fv-head-drop {
-        from {
-            transform: translateY(0)
-        }
-        to {
-            transform: translateY(7px)
-        }
+    .luna-ang-inner {
+        // transform: scaleX(-1);
+        animation: luna-ang-oscillate-rev .4s alternate-reverse infinite linear;
     }
+}
 
-
-    .luna-ang {
-        // display: none;
-        position: absolute;
-        width: 168px;
-        height: 100x;
-        left: 40px;
-        top: 500px;
-        z-index: 0;
-        animation: luna-ang-walk 3s linear;
-
-        .luna-ang-inner {
-            position: relative;
-            height: inherit;
-            animation: luna-ang-oscillate .4s alternate-reverse infinite linear;
-        }
-        .luna-ang-body {
-            position: absolute;
-            transform: rotate(-10deg);
-        }
-        .luna-ang-head {
-            position: absolute;
-            z-index: 1;
-            top: 20%;
-            left: 45%;
-            // animation: luna-ang-head-drop .3s alternate infinite linear;
-        }
-        .luna-ang-frl {
-            position: absolute;
-            left: 30%;
-            top: 55%;
-            // border: 1px solid red;
-            animation: luna-ang-creep .8s infinite linear;
-        }
-        .luna-ang-fll {
-            position: absolute;
-            left: 37%;
-            top: 45%;
-            z-index: -1;
-            // border: 1px solid red;
-            animation: luna-ang-creep .8s .05s infinite linear;
-        }
-        .luna-ang-brl {
-            position: absolute;
-            z-index: 1;
-            left: -8%;
-            top: 23%;
-            animation: luna-ang-creep .8s .4s infinite linear;
-
-        }
-        .luna-ang-bll {
-            position: absolute;
-            z-index: -1;
-            left: 2%;
-            top: 18%;
-            animation: luna-ang-creep .8s .35s infinite linear;
-        }
-        .luna-ang-tail {
-            // border: 1px solid red;
-            position: relative;
-            z-index: 1;
-            max-width: 70px;
-            left: -23%;
-            top: -15px;
-            animation: luna-ang-wag 2s infinite linear;
-        }
+@keyframes luna-ang-walk {
+    from {
+        transform: translate3d(0, 0, 0);
     }
+    to {
+        transform: translate3d(900px, 100px, 0px);
+    }
+}
+@keyframes luna-ang-walk-2 {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(-400px, 400px, 0px);
+    }
+}
+@keyframes luna-ang-creep {
+    0% {
+        transform-origin: top;
+        transform: translate3d(0) rotate(0deg);
+    }
+    25% {
+        transform: translate3d(4px, 4px, 0) rotate(-15deg);
+    }
+    50% {
+        transform: translate3d(0px, 4px, 0) rotate(0deg);
+    }
+    75% {
+        transform: translate3d(-4px, 4px, 0) rotate(15deg);
+    }
+    100% {
+        transform: translate3d(0) rotate(0deg); 
+    }
+}
 
-
-    .luna-ang-2 {
-        left: 900px;
-        top: 600px;
-        animation: luna-ang-walk-2 3s linear;
-        
-        .luna-ang-inner {
-            // transform: scaleX(-1);
-            animation: luna-ang-oscillate-rev .4s alternate-reverse infinite linear;
-        }
+@keyframes luna-ang-wag {
+    0% {
+        transform-origin: right;
+        transform: rotate(0deg)
     }
-
-    @keyframes luna-ang-walk {
-        from {
-            transform: translate3d(0, 0, 0);
-        }
-        to {
-            transform: translate3d(900px, 100px, 0px);
-        }
+    25% {
+        transform: rotate(8deg)
     }
-    @keyframes luna-ang-walk-2 {
-        from {
-            transform: translate3d(0, 0, 0);
-        }
-        to {
-            transform: translate3d(-400px, 400px, 0px);
-        }
+    50% {
+        transform: rotate(0deg)
     }
-    @keyframes luna-ang-creep {
-        0% {
-            transform-origin: top;
-            transform: translate3d(0) rotate(0deg);
-        }
-        25% {
-            transform: translate3d(4px, 4px, 0) rotate(-15deg);
-        }
-        50% {
-            transform: translate3d(0px, 4px, 0) rotate(0deg);
-        }
-        75% {
-            transform: translate3d(-4px, 4px, 0) rotate(15deg);
-        }
-        100% {
-            transform: translate3d(0) rotate(0deg); 
-        }
+    75% {
+        transform: rotate(-8deg)
     }
-
-    @keyframes luna-ang-wag {
-        0% {
-            transform-origin: right;
-            transform: rotate(0deg)
-        }
-        25% {
-            transform: rotate(8deg)
-        }
-        50% {
-            transform: rotate(0deg)
-        }
-        75% {
-            transform: rotate(-8deg)
-        }
-        100% {
-            transform: rotate(0deg)
-        }
+    100% {
+        transform: rotate(0deg)
     }
-    @keyframes luna-ang-oscillate {
-        from {
-            transform: rotate(5deg)
-        }
-        to {
-            transform: rotate(-5deg)
-        }
+}
+@keyframes luna-ang-oscillate {
+    from {
+        transform: rotate(5deg)
     }
-    @keyframes luna-ang-oscillate-rev {
-        from {
-            transform: rotate(5deg) scaleX(-1)
-        }
-        to {
-            transform: rotate(-5deg) scaleX(-1)
-        }
+    to {
+        transform: rotate(-5deg)
+    }
+}
+@keyframes luna-ang-oscillate-rev {
+    from {
+        transform: rotate(5deg) scaleX(-1)
+    }
+    to {
+        transform: rotate(-5deg) scaleX(-1)
     }
 }
