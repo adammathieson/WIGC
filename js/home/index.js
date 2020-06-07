@@ -10,7 +10,9 @@ const home = () => {
     goose(1)
     goose(2)
     goose(3)
+    goose(4)
     gooseAnimation()
+    contentBox()
 }
 
 home()
