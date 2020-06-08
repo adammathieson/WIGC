@@ -1,5 +1,5 @@
 # WIGC
-Website for WIngin' It Goose Control
+Website for Wingin' It Goose Control
 
 **Style**
 
