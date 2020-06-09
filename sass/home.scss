@@ -10,6 +10,9 @@
     @media screen and ($tablet) {
         background-image: url(../img/scenes/backgrounds/CityScape_1024x900.png)
     }
+    @media screen and ($mobile) {
+        background-image: url(../img/scenes/backgrounds/CityScape_414x896.png)
+    }
 }
 
 .goose-zone1 {

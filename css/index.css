@@ -127,7 +127,7 @@ header nav ul {
   align-items: center;
   width: 50%;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 414px) {
   header nav ul {
     position: absolute;
     flex-direction: column;
@@ -143,7 +143,7 @@ header nav ul li a {
   color: rgba(255, 255, 255, 0.651);
   transition: transform 0.2s ease-in-out;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 414px) {
   header nav ul li a {
     font-size: 3.5rem;
   }
@@ -225,6 +225,11 @@ header nav .burger div {
 @media screen and (max-width: 1024px) {
   .home-scene-container {
     background-image: url(../img/scenes/backgrounds/CityScape_1024x900.png);
+  }
+}
+@media screen and (max-width: 414px) {
+  .home-scene-container {
+    background-image: url(../img/scenes/backgrounds/CityScape_414x896.png);
   }
 }
 
