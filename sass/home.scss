@@ -255,7 +255,7 @@
     z-index: 2;
     top: 270px;
     left: 150px;
-    // animation: drive 3s ease-out;s
+    animation: drive 3s ease-out;
     @media screen and ($tablet) {
         transform: scale(.8);
         top: 340px;
@@ -344,6 +344,11 @@
     left: 190px;
     top: 285px;
     animation: luna-car-walk 2s;
+    @media screen and ($tablet) {
+        top: 355px;
+        left: 125px;
+        animation: luna-car-walk-tablet 2s;
+    }
 
     .luna-sv-inner {
         animation: luna-car-jump-rotate 2s;
@@ -398,6 +403,14 @@
     }
     to {
         transform: translateX(-135px);
+    }
+}
+@keyframes luna-car-walk-tablet {
+    from {
+        transform: translateX(0) scale(.8);
+    }
+    to {
+        transform: translateX(-100px) scale(.8);
     }
 }
 
