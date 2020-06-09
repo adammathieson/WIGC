@@ -454,7 +454,14 @@ header nav .burger div {
   z-index: 2;
   top: 270px;
   left: 150px;
-  animation: drive 3s ease-out;
+}
+@media screen and (max-width: 1024px) {
+  .car {
+    transform: scale(0.8);
+    top: 340px;
+    left: 85px;
+    animation: drive-tablet 3s ease-out;
+  }
 }
 .car .car-body {
   z-index: 1;
@@ -487,6 +494,14 @@ header nav .burger div {
   }
   to {
     transform: translateX(0px);
+  }
+}
+@keyframes drive-tablet {
+  from {
+    transform: translateX(-300px) scale(0.8);
+  }
+  to {
+    transform: translateX(0px) scale(0.8);
   }
 }
 @keyframes rotate {

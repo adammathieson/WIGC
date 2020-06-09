@@ -255,7 +255,13 @@
     z-index: 2;
     top: 270px;
     left: 150px;
-    animation: drive 3s ease-out;
+    // animation: drive 3s ease-out;s
+    @media screen and ($tablet) {
+        transform: scale(.8);
+        top: 340px;
+        left: 85px;
+        animation: drive-tablet 3s ease-out;
+    }
 
     .car-body {
         z-index: 1;
@@ -290,6 +296,14 @@
     }
     to {
         transform: translateX(0px);
+    }
+}
+@keyframes drive-tablet {
+    from {
+        transform: translateX(-300px) scale(.8)
+    }
+    to {
+        transform: translateX(0px) scale(.8)
     }
 }
 
