@@ -216,11 +216,16 @@ header nav .burger div {
 }
 
 .home-scene-container {
-  background-image: url(../img/scenes/backgrounds/Cityscape-1440x900.png);
+  background-image: url(../img/scenes/backgrounds/CityScape_1440x900.png);
   background-size: auto;
   background-repeat: no-repeat;
   width: 100%;
   min-height: 900px;
+}
+@media screen and (max-width: 1024px) {
+  .home-scene-container {
+    background-image: url(../img/scenes/backgrounds/CityScape_1024x900.png);
+  }
 }
 
 .goose-zone1 {
