@@ -461,7 +461,6 @@ header nav .burger div {
     transform: scale(0.8);
     top: 340px;
     left: 85px;
-    animation: drive-tablet 3s ease-out;
   }
 }
 .car .car-body {
@@ -497,12 +496,14 @@ header nav .burger div {
     transform: translateX(0px);
   }
 }
-@keyframes drive-tablet {
-  from {
-    transform: translateX(-300px) scale(0.8);
-  }
-  to {
-    transform: translateX(0px) scale(0.8);
+@media screen and (max-width: 1024px) {
+  @keyframes drive {
+    from {
+      transform: translateX(-300px) scale(0.8);
+    }
+    to {
+      transform: translateX(0px) scale(0.8);
+    }
   }
 }
 @keyframes rotate {
@@ -544,7 +545,6 @@ header nav .burger div {
   .luna-sv {
     top: 355px;
     left: 125px;
-    animation: luna-car-walk-tablet 2s;
   }
 }
 .luna-sv .luna-sv-inner {
@@ -593,12 +593,14 @@ header nav .burger div {
     transform: translateX(-135px);
   }
 }
-@keyframes luna-car-walk-tablet {
-  from {
-    transform: translateX(0) scale(0.8);
-  }
-  to {
-    transform: translateX(-100px) scale(0.8);
+@media screen and (max-width: 1024px) {
+  @keyframes luna-car-walk {
+    from {
+      transform: translateX(0) scale(0.8);
+    }
+    to {
+      transform: translateX(-100px) scale(0.8);
+    }
   }
 }
 @keyframes luna-car-front-leg-stride {
@@ -655,6 +657,12 @@ header nav .burger div {
   z-index: 0;
   animation: luna-fv-walk 3s linear;
 }
+@media screen and (max-width: 1024px) {
+  .luna-fv {
+    top: 520px;
+    left: 30px;
+  }
+}
 .luna-fv .luna-fv-inner {
   position: relative;
   height: inherit;
@@ -702,6 +710,16 @@ header nav .burger div {
   }
   to {
     transform: translateY(0) scale(0.9);
+  }
+}
+@media screen and (max-width: 1024px) {
+  @keyframes luna-fv-walk {
+    from {
+      transform: translateY(-190px) scale(0.3);
+    }
+    to {
+      transform: translateY(0) scale(0.7);
+    }
   }
 }
 @keyframes luna-fv-stride {

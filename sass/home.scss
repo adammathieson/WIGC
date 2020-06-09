@@ -260,7 +260,6 @@
         transform: scale(.8);
         top: 340px;
         left: 85px;
-        animation: drive-tablet 3s ease-out;
     }
 
     .car-body {
@@ -298,12 +297,14 @@
         transform: translateX(0px);
     }
 }
-@keyframes drive-tablet {
-    from {
-        transform: translateX(-300px) scale(.8)
-    }
-    to {
-        transform: translateX(0px) scale(.8)
+@media screen and ($tablet) {
+    @keyframes drive {
+        from {
+            transform: translateX(-300px) scale(.8)
+        }
+        to {
+            transform: translateX(0px) scale(.8)
+        }
     }
 }
 
@@ -347,7 +348,6 @@
     @media screen and ($tablet) {
         top: 355px;
         left: 125px;
-        animation: luna-car-walk-tablet 2s;
     }
 
     .luna-sv-inner {
@@ -405,12 +405,14 @@
         transform: translateX(-135px);
     }
 }
-@keyframes luna-car-walk-tablet {
-    from {
-        transform: translateX(0) scale(.8);
-    }
-    to {
-        transform: translateX(-100px) scale(.8);
+@media screen and ($tablet) {
+    @keyframes luna-car-walk {
+        from {
+            transform: translateX(0) scale(.8);
+        }
+        to {
+            transform: translateX(-100px) scale(.8);
+        }
     }
 }
 
@@ -469,6 +471,10 @@
     top: 500px;
     z-index: 0;
     animation: luna-fv-walk 3s linear;
+    @media screen and ($tablet) {
+        top: 520px;
+        left: 30px;
+    }
 
     .luna-fv-inner {
         position: relative;
@@ -514,12 +520,23 @@
     }
 }
 
+
 @keyframes luna-fv-walk {
     from {
         transform: translateY(-250px) scale(.3)
     }
     to {
         transform: translateY(0) scale(.9)
+    }
+}
+@media screen and ($tablet) {
+        @keyframes luna-fv-walk {
+            from {
+                transform: translateY(-190px) scale(.3)
+            }
+            to {
+                transform: translateY(0) scale(.7)
+            }
     }
 }
 
