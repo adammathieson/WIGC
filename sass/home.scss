@@ -54,7 +54,7 @@
     // left: 500px;
     width: 111px;
     height: 130px;
-    transform: scale(.7);
+    // transform: scale(1);
     // animation: goose-walk 2s infinite cubic-bezier(.74,.27,.93,.54);
     // border: 1px solid red;
 
@@ -126,7 +126,7 @@
 }
 
 .pre-fly-goose-zone1 {
-    transform: scale(.7);
+    // transform: scale(.7);
     animation: goose-walk 2s cubic-bezier(.74,.27,.93,.54);
     .front-foot {
         animation: goose-step 1s reverse infinite linear;
@@ -136,7 +136,7 @@
     }
 }
 .pre-fly-goose-zone2 {
-    transform: scale(.7);
+    // transform: scale(.7);
     animation: goose-walk 2s 1s cubic-bezier(.74,.27,.93,.54);
     .front-foot {
         animation: goose-step 1s 1s reverse infinite linear;
@@ -146,7 +146,7 @@
     }
 }
 .pre-fly-goose-zone3 {
-    transform: scale(.7);
+    // transform: scale(.7);
     animation: goose-walk 2s 2s cubic-bezier(.74,.27,.93,.54);
     .front-foot {
         animation: goose-step 1s 2s reverse infinite linear;
@@ -156,7 +156,7 @@
     }
 }
 .pre-fly-goose-zone4 {
-    transform: scale(.7);
+    // transform: scale(.7);
     animation: goose-walk 2s 4s cubic-bezier(.74,.27,.93,.54);
     .front-foot {
         animation: goose-step 1s 4s reverse infinite linear;
@@ -241,10 +241,10 @@
 
 @keyframes goose-walk {
     from {
-        transform: translateX(0) scale(.7)
+        transform: translateX(0)
     }
     to {
-        transform: translateX(100px) scale(.7)
+        transform: translateX(100px)
     }
 }
 

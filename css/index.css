@@ -269,7 +269,6 @@ header nav .burger div {
   z-index: 1;
   width: 111px;
   height: 130px;
-  transform: scale(0.7);
 }
 .goose .goose-body {
   position: absolute;
@@ -328,7 +327,6 @@ header nav .burger div {
 }
 
 .pre-fly-goose-zone1 {
-  transform: scale(0.7);
   animation: goose-walk 2s cubic-bezier(0.74, 0.27, 0.93, 0.54);
 }
 .pre-fly-goose-zone1 .front-foot {
@@ -339,7 +337,6 @@ header nav .burger div {
 }
 
 .pre-fly-goose-zone2 {
-  transform: scale(0.7);
   animation: goose-walk 2s 1s cubic-bezier(0.74, 0.27, 0.93, 0.54);
 }
 .pre-fly-goose-zone2 .front-foot {
@@ -350,7 +347,6 @@ header nav .burger div {
 }
 
 .pre-fly-goose-zone3 {
-  transform: scale(0.7);
   animation: goose-walk 2s 2s cubic-bezier(0.74, 0.27, 0.93, 0.54);
 }
 .pre-fly-goose-zone3 .front-foot {
@@ -361,7 +357,6 @@ header nav .burger div {
 }
 
 .pre-fly-goose-zone4 {
-  transform: scale(0.7);
   animation: goose-walk 2s 4s cubic-bezier(0.74, 0.27, 0.93, 0.54);
 }
 .pre-fly-goose-zone4 .front-foot {
@@ -442,10 +437,10 @@ header nav .burger div {
 }
 @keyframes goose-walk {
   from {
-    transform: translateX(0) scale(0.7);
+    transform: translateX(0);
   }
   to {
-    transform: translateX(100px) scale(0.7);
+    transform: translateX(100px);
   }
 }
 .car {
