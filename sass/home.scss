@@ -572,6 +572,9 @@
     top: 500px;
     z-index: 0;
     animation: luna-ang-walk 3s linear;
+    @media screen and ($tablet) {
+        top: 550px;
+    }
 
     .luna-ang-inner {
         position: relative;
@@ -640,6 +643,10 @@
         // transform: scaleX(-1);
         animation: luna-ang-oscillate-rev .4s alternate-reverse infinite linear;
     }
+    @media screen and ($tablet) {
+        left: 700px;
+        top: 650px;
+    }
 }
 
 @keyframes luna-ang-walk {
@@ -650,12 +657,32 @@
         transform: translate3d(900px, 100px, 0px);
     }
 }
+@media screen and ($tablet) {
+    @keyframes luna-ang-walk {
+        from {
+            transform: translate3d(0, 0, 0) scale(.9);
+        }
+        to {
+            transform: translate3d(700px, 100px, 0px) scale(.9);
+        }
+    }
+}
 @keyframes luna-ang-walk-2 {
     from {
         transform: translate3d(0, 0, 0);
     }
     to {
         transform: translate3d(-400px, 400px, 0px);
+    }
+}
+@media screen and ($tablet) {
+    @keyframes luna-ang-walk-2 {
+        from {
+            transform: translate3d(0, 0, 0) scale(.9);
+        }
+        to {
+            transform: translate3d(-400px, 400px, 0px) scale(1);
+        }
     }
 }
 @keyframes luna-ang-creep {

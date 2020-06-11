@@ -745,6 +745,11 @@ header nav .burger div {
   z-index: 0;
   animation: luna-ang-walk 3s linear;
 }
+@media screen and (max-width: 1024px) {
+  .luna-ang {
+    top: 550px;
+  }
+}
 .luna-ang .luna-ang-inner {
   position: relative;
   height: inherit;
@@ -804,6 +809,12 @@ header nav .burger div {
 .luna-ang-2 .luna-ang-inner {
   animation: luna-ang-oscillate-rev 0.4s alternate-reverse infinite linear;
 }
+@media screen and (max-width: 1024px) {
+  .luna-ang-2 {
+    left: 700px;
+    top: 650px;
+  }
+}
 
 @keyframes luna-ang-walk {
   from {
@@ -813,12 +824,32 @@ header nav .burger div {
     transform: translate3d(900px, 100px, 0px);
   }
 }
+@media screen and (max-width: 1024px) {
+  @keyframes luna-ang-walk {
+    from {
+      transform: translate3d(0, 0, 0) scale(0.9);
+    }
+    to {
+      transform: translate3d(700px, 100px, 0px) scale(0.9);
+    }
+  }
+}
 @keyframes luna-ang-walk-2 {
   from {
     transform: translate3d(0, 0, 0);
   }
   to {
     transform: translate3d(-400px, 400px, 0px);
+  }
+}
+@media screen and (max-width: 1024px) {
+  @keyframes luna-ang-walk-2 {
+    from {
+      transform: translate3d(0, 0, 0) scale(0.9);
+    }
+    to {
+      transform: translate3d(-400px, 400px, 0px) scale(1);
+    }
   }
 }
 @keyframes luna-ang-creep {
