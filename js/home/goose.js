@@ -38,17 +38,17 @@ export const goose = (z) => {
 
     // Wing Fly - Right
     const wingFlyR = document.createElement("div")
-    wingFlyR.classList.add('goose-wing-fly-R')
+    wingFlyR.classList.add('goose-wing-R')
     const wingFlyRImg = document.createElement("img")
-    wingFlyRImg.src = '../../img/scenes/goose/wing-R-fly.png'
+    wingFlyRImg.src = '../../img/scenes/goose/wing-R.png'
     wingFlyR.append(wingFlyRImg)
     goose.append(wingFlyR)
 
     // WIng Fly - Left
     const wingFlyL = document.createElement("div")
-    wingFlyL.classList.add('goose-wing-fly-L')
+    wingFlyL.classList.add('goose-wing-L')
     const wingFlyLImg = document.createElement("img")
-    wingFlyLImg.src = '../../img/scenes/goose/wing-L-fly.png'
+    wingFlyLImg.src = '../../img/scenes/goose/wing-L.png'
     wingFlyL.append(wingFlyLImg)
     goose.append(wingFlyL)
 

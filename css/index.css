@@ -293,18 +293,18 @@ header nav .burger div {
   top: 33%;
   left: 33%;
 }
-.goose .goose-wing-fly-R {
+.goose .goose-wing-R {
   position: absolute;
   z-index: 2;
-  top: -15%;
-  left: 35%;
+  top: 4%;
+  left: 40%;
   display: none;
 }
-.goose .goose-wing-fly-L {
+.goose .goose-wing-L {
   position: absolute;
   z-index: 0;
-  top: -10%;
-  left: 20%;
+  top: 0%;
+  left: 40%;
   display: none;
 }
 .goose .goose-tail {
@@ -382,7 +382,7 @@ header nav .burger div {
 .fly .goose-wing-stand {
   display: none;
 }
-.fly .goose-wing-fly-R, .fly .goose-wing-fly-L {
+.fly .goose-wing-R, .fly .goose-wing-L {
   display: block;
   animation: flap 0.3s infinite;
 }
