@@ -67,60 +67,61 @@
         position: absolute;
         z-index: 1;
         top: 30%;
-        left: 10%;
+        left: 25%;
+        // border: 1px solid red;
     }
     .goose-head-neck-stand {
         position: absolute;
         // border: 1px solid blue;
         top: 0%;
-        left: 56%;
+        left: 52%;
     }
     .goose-head-neck-fly {
         display: none;
         position: absolute;
-        top: 33%;
-        right: -40%;
+        top: 26%;
+        right: -20%;
     }
     .goose-wing-stand {
         position: absolute;
         z-index: 2;
-        top: 42%;
-        left: 25%;
+        top: 33%;
+        left: 33%;
         // display: none;
     }
     .goose-wing-fly-R {
         position: absolute;
         z-index: 2;
-        top: -8%;
+        top: -15%;
         left: 35%;
         display: none;
     }
     .goose-wing-fly-L {
         position: absolute;
         z-index: 0;
-        top: 3%;
+        top: -10%;
         left: 20%;
         display: none;
     }
     .goose-tail {
         position: absolute;
         z-index: 0;
-        top: 34%;
-        left: 1%;
+        top: 28%;
+        left: 17%;
         // display: none;
     }
     .back-foot {
         position: absolute;
         z-index: 0;
-        top: 65%;
+        top: 50%;
         left: 40%;
         // animation: goose-step 1s infinite linear;
     }
     .front-foot {
         position: absolute;
         z-index: 0;
-        top: 65%;
-        left: 60%;
+        top: 50%;
+        left: 54%;
         // animation: goose-step 1s reverse infinite linear;
     }
 }
