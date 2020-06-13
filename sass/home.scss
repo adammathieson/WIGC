@@ -19,33 +19,45 @@
 .goose-zone1 {
     position: absolute;
     width: 33%;
-    top: 500px;
+    top: 60%;
     height: 140px;
-    border: 1px solid red
+    // border: 1px solid red;
+    @media screen and ($mobile) {
+        top: 52%;
+    }
 }
 .goose-zone2 {
     position: absolute;
     width: 33%;
-    top: 530px;
     height: 180px;
+    top: 62%;
     left: 33%;
-    border: 1px solid blue
+    // border: 1px solid blue;
+    @media screen and ($mobile) {
+        top: 55%;
+    }
 }
 .goose-zone3 {
     position: absolute;
     width: 28%;
-    top: 500px;
     height: 250px;
+    top: 62%;
     left: 66%;
-    border: 1px solid yellow
+    // border: 1px solid yellow;
+    @media screen and ($mobile) {
+        top: 58%;
+    }
 }
 .goose-zone4 {
     position: absolute;
-    width: 28%;
-    top: 750px;
+    width: 33%;
     height: 150px;
+    bottom: 0%;
     left: 50%;
-    border: 1px solid orange;
+    // border: 1px solid orange;
+    @media screen and ($mobile) {
+        bottom: 5%;
+    }
 }
 .goose {
     // display: none;
@@ -55,7 +67,7 @@
     // left: 500px;
     width: 111px;
     height: 130px;
-    transform: scale(.7);
+    
     // animation: goose-walk 2s infinite cubic-bezier(.74,.27,.93,.54);
     // border: 1px solid red;
 
@@ -63,6 +75,9 @@
     //     position: inherit;
     //     height: inherit;
     //     border: 1px solid yellow;
+    @media screen and ($mobile) {
+        transform: scale(.7);
+    }
     // }
     .goose-body {
         position: absolute;

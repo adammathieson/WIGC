@@ -237,32 +237,52 @@ header nav .burger div {
 .goose-zone1 {
   position: absolute;
   width: 33%;
-  top: 500px;
+  top: 60%;
   height: 140px;
+}
+@media screen and (max-width: 414px) {
+  .goose-zone1 {
+    top: 52%;
+  }
 }
 
 .goose-zone2 {
   position: absolute;
   width: 33%;
-  top: 530px;
   height: 180px;
+  top: 62%;
   left: 33%;
+}
+@media screen and (max-width: 414px) {
+  .goose-zone2 {
+    top: 55%;
+  }
 }
 
 .goose-zone3 {
   position: absolute;
   width: 28%;
-  top: 500px;
   height: 250px;
+  top: 62%;
   left: 66%;
+}
+@media screen and (max-width: 414px) {
+  .goose-zone3 {
+    top: 58%;
+  }
 }
 
 .goose-zone4 {
   position: absolute;
-  width: 28%;
-  top: 750px;
+  width: 33%;
   height: 150px;
+  bottom: 0%;
   left: 50%;
+}
+@media screen and (max-width: 414px) {
+  .goose-zone4 {
+    bottom: 5%;
+  }
 }
 
 .goose {
@@ -270,7 +290,11 @@ header nav .burger div {
   z-index: 1;
   width: 111px;
   height: 130px;
-  transform: scale(0.7);
+}
+@media screen and (max-width: 414px) {
+  .goose {
+    transform: scale(0.7);
+  }
 }
 .goose .goose-body {
   position: absolute;
