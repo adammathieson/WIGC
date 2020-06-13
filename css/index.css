@@ -220,7 +220,7 @@ header nav .burger div {
   background-size: auto;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 900px;
+  height: 900px;
 }
 @media screen and (max-width: 1024px) {
   .home-scene-container {
@@ -229,7 +229,8 @@ header nav .burger div {
 }
 @media screen and (max-width: 414px) {
   .home-scene-container {
-    background-image: url(../img/scenes/backgrounds/CityScape_414x896.png);
+    background-image: url(../img/scenes/backgrounds/CityScape_375x812.png);
+    height: 812px;
   }
 }
 
@@ -269,6 +270,7 @@ header nav .burger div {
   z-index: 1;
   width: 111px;
   height: 130px;
+  transform: scale(0.7);
 }
 .goose .goose-body {
   position: absolute;
