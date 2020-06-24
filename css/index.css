@@ -484,6 +484,13 @@ header nav .burger div {
     left: 85px;
   }
 }
+@media screen and (max-width: 414px) {
+  .car {
+    transform: scale(0.6);
+    top: 180px;
+    left: 20px;
+  }
+}
 .car .car-body {
   z-index: 1;
   position: absolute;
