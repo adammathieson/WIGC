@@ -77,4 +77,5 @@ export const goose = (z) => {
     goose.append(frontFoot)
 
     container.append(goose)
+
 }
