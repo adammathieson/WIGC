@@ -951,17 +951,22 @@ header nav .burger div {
   height: 100vh;
 }
 .about-scene-container .animation-container {
-  margin: 0 3em;
-  border: 1px solid red;
   position: relative;
   top: 12%;
-  height: 78vh;
 }
-.about-scene-container .animation-container #obj-barn {
+.about-scene-container .animation-container .building-container {
+  display: flex;
+  justify-content: space-around;
+}
+.about-scene-container .animation-container .building-container #obj-barn {
   width: 20%;
   max-width: 150px;
-  position: relative;
   top: 30px;
+}
+.about-scene-container .animation-container .building-container #obj-house {
+  width: 40%;
+  max-width: 350px;
+  top: 40px;
 }
 
 .flock {
