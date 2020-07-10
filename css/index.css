@@ -944,29 +944,25 @@ header nav .burger div {
 
 .about-container {
   background-color: green;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: fixed;
-  width: 100%;
-}
-.about-container .animation-container-top {
-  background-image: url(../img/scenes/about/bg/home_bg_features_250.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  min-height: 200px;
-}
-.about-container .animation-container {
   height: 100vh;
 }
+.about-container .animation-container-top {
+  width: 100%;
+}
+.about-container .animation-container {
+  position: relative;
+}
 .about-container .animation-container .building-container {
+  z-index: 1;
   position: relative;
   display: flex;
+  top: -20px;
   justify-content: space-around;
 }
 @media screen and (min-width: 501px) {
   .about-container .animation-container .building-container {
-    top: -10%;
+    top: -80px;
+    border: 1px solid red;
   }
 }
 .about-container .animation-container .building-container #obj-barn {
