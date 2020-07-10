@@ -161,7 +161,7 @@ header nav .burger {
   cursor: pointer;
   padding-right: 3em;
 }
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 1024px) {
   header nav .burger {
     display: none;
   }
@@ -222,7 +222,7 @@ header nav .burger div {
   width: 100%;
   height: 900px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 500px) {
   .home-scene-container {
     background-image: url(../img/scenes/backgrounds/CityScape_1024x900.png);
   }
@@ -477,7 +477,7 @@ header nav .burger div {
   left: 150px;
   animation: drive 3s ease-out;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 500px) {
   .car {
     transform: scale(0.8);
     top: 340px;
@@ -524,7 +524,7 @@ header nav .burger div {
     transform: translateX(0px);
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 500px) {
   @keyframes drive {
     from {
       transform: translateX(-300px) scale(0.8);
@@ -569,7 +569,7 @@ header nav .burger div {
   top: 285px;
   animation: luna-car-walk 2s;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 500px) {
   .luna-sv {
     top: 355px;
     left: 125px;
@@ -621,7 +621,7 @@ header nav .burger div {
     transform: translateX(-135px);
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 500px) {
   @keyframes luna-car-walk {
     from {
       transform: translateX(0) scale(0.8);
@@ -685,7 +685,7 @@ header nav .burger div {
   z-index: 0;
   animation: luna-fv-walk 3s linear;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 500px) {
   .luna-fv {
     top: 520px;
     left: 30px;
@@ -740,7 +740,7 @@ header nav .burger div {
     transform: translateY(0) scale(0.9);
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 500px) {
   @keyframes luna-fv-walk {
     from {
       transform: translateY(-190px) scale(0.3);
@@ -778,7 +778,7 @@ header nav .burger div {
   z-index: 0;
   animation: luna-ang-walk 3s linear;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 500px) {
   .luna-ang {
     top: 550px;
   }
@@ -842,7 +842,7 @@ header nav .burger div {
 .luna-ang-2 .luna-ang-inner {
   animation: luna-ang-oscillate-rev 0.4s alternate-reverse infinite linear;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 500px) {
   .luna-ang-2 {
     left: 700px;
     top: 650px;
@@ -857,7 +857,7 @@ header nav .burger div {
     transform: translate3d(900px, 100px, 0px);
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 500px) {
   @keyframes luna-ang-walk {
     from {
       transform: translate3d(0, 0, 0) scale(0.9);
@@ -875,7 +875,7 @@ header nav .burger div {
     transform: translate3d(-400px, 400px, 0px);
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 500px) {
   @keyframes luna-ang-walk-2 {
     from {
       transform: translate3d(0, 0, 0) scale(0.9);
@@ -946,9 +946,6 @@ header nav .burger div {
   background-color: green;
   height: 100vh;
 }
-.about-container .animation-container-top {
-  width: 100%;
-}
 .about-container .animation-container {
   position: relative;
 }
@@ -956,14 +953,8 @@ header nav .burger div {
   z-index: 1;
   position: relative;
   display: flex;
-  top: -20px;
+  transform: translateY(-50%);
   justify-content: space-around;
-}
-@media screen and (min-width: 501px) {
-  .about-container .animation-container .building-container {
-    top: -80px;
-    border: 1px solid red;
-  }
 }
 .about-container .animation-container .building-container #obj-barn {
   width: 20%;

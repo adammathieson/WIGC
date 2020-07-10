@@ -20,7 +20,7 @@
         // background-size: cover;
         // background-repeat: no-repeat;
         // background-position: fixed;
-        width: 100%;
+        // width: 100%;
         // min-height: 200px;
         // height: 35vh;
     }
@@ -38,24 +38,17 @@
             z-index: 1;
             position: relative;
             display: flex;
-            top: -20px;
+            transform: translateY(-50%);
             justify-content: space-around;
-            
-            @media screen and ($desktop) {
-                top: -80px;
-                border: 1px solid red;
-            }
             
             #obj-barn {
                 width: 20%;
                 max-width: 150px;
-                // top: 30px;
             }
     
             #obj-house {
                 width: 40%;
                 max-width: 350px;
-                // top: 40px;
             }
         }
     }
