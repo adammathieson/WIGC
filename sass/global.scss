@@ -9,12 +9,15 @@
   html, body {
     font-family: 'Roboto', sans-serif;
     color: rgba(245, 239, 239, 0.993);
+    // overflow-x: hidden;
+    // height: 100%;
+    // width: 100%;
+    // margin: 0;
   }
   
   body {
-    max-width: 1440px;
-    margin: 0 auto;
-    // background-image: url(../img/webb-dark/webb-dark.png);
+    max-width: 2000px;
+    // margin: 0 auto;
   }
   
   h1, h2, h3, h4, h5 {
