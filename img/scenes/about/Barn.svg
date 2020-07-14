@@ -1,7 +1,7 @@
 <svg viewBox="0 0 168 179" vfill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="barn">
-        <path id="Back_wall" fill-rule="evenodd" clip-rule="evenodd" d="M134.903 66.395H33.901v86.334h21.374v-47.777h59.931v47.777h19.697V66.395z" fill="#2F0606"/>
-        <path id="Front_face_wall" fill-rule="evenodd" clip-rule="evenodd" d="M153.164 50.786H15.641v117.551h29.102v-65.052h81.601v65.052h26.82V50.787z" fill="#781C1C"/>
+        <path id="back-wall" fill-rule="evenodd" clip-rule="evenodd" d="M134.903 66.395H33.901v86.334h21.374v-47.777h59.931v47.777h19.697V66.395z" fill="#2F0606"/>
+        <path id="front-wall" fill-rule="evenodd" clip-rule="evenodd" d="M153.164 50.786H15.641v117.551h29.102v-65.052h81.601v65.052h26.82V50.787z" fill="#781C1C"/>
         <g id="barn-trim" fill="#FFF9F9">
             <path d="M84.402 0L0 48.235l1.658 2.873L84.402 3.424l82.173 47.684L168 48.64 84.402 0zM15.64 164.913h29.103v3.424H15.641v-3.424zM129.073 164.722h24.176v3.688h-24.176v-3.688z"/>
             <path d="M15.64 164.913V50.786h3.424v114.127h-3.423zM149.971 164.942V50.81h3.278v114.132h-3.278zM40.178 99.29h90.16v3.424h-90.16V99.29z"/>
