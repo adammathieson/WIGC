@@ -1,17 +1,15 @@
 // const barn = document.querySelector("#barn")
-const flock = document.getElementById("flock-dtl")
+// const flock = document.getElementById("flock-dtl")
 // const rect = barn.getBoundingClientRect()
 
 // console.log(barn)
-console.log(flock)
-
-const tl = gsap.timeline({repeat:Infinity, repeatDelay: 1 })
+const tl = gsap.timeline({repeat:-1})
     // tl.set("#flock-dtl", {transform}) 
-    tl.to("#flock-dtl", {y: 200, scale: 2, transformOrigin: "50%, 50%",   duration: 3})
-    console.log(tl)
+    tl.to("#flock-dtl", {y: 200, scale: 3, transformOrigin: "50%, 50%",   duration: 4})
+    // tl.fromTo(".sheep", {y: 0}, {y:-10, duration: .2, repeat:-1}) 
 
-
-
+const tlHop = gsap.timeline({repeat:-1, yoyo: true})
+    tlHop.fromTo(".sheep", {y:0}, {y: 5, stagger: -0.1, duration: .1, ease: "none"}) 
 export const sheepAnimation = () => {
     
 }
