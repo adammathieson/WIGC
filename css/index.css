@@ -957,7 +957,7 @@ header nav .burger div {
   transform: translateY(-50%);
   justify-content: space-around;
 }
-.about-container .animation-container .building-container #obj-barn {
+.about-container .animation-container .building-container #barn {
   width: 20%;
   max-width: 150px;
   border: 1px solid red;

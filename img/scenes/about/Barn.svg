@@ -1,5 +1,5 @@
-<svg width="168" height="179" viewBox="0 0 168 179" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g id="Barn">
+<svg id="barn" width="168" height="179" viewBox="0 0 168 179" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g>
         <path id="Back_wall" fill-rule="evenodd" clip-rule="evenodd" d="M134.903 66.395H33.901v86.334h21.374v-47.777h59.931v47.777h19.697V66.395z" fill="#2F0606"/>
         <path id="Front_face_wall" fill-rule="evenodd" clip-rule="evenodd" d="M153.164 50.787H15.641v117.55h29.102v-65.052h81.601v65.052h26.82V50.787z" fill="#781C1C"/>
         <g id="barn-trim" fill="#FFF9F9">

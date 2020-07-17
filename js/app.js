@@ -1,7 +1,9 @@
+
 const toggleMenu = () => {
     const menu = document.querySelector('.nav-list')
     const burger = document.querySelector('.burger')
     const navLinks = document.querySelectorAll('.nav-list li a')
+    
     
     burger.addEventListener('click', () => {
         menu.classList.toggle('toggle')
