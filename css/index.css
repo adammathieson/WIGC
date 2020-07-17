@@ -950,6 +950,7 @@ header nav .burger div {
   position: relative;
 }
 .about-container .animation-container .building-container {
+  border: 1px solid blue;
   z-index: 1;
   position: relative;
   display: flex;
@@ -964,6 +965,13 @@ header nav .burger div {
 .about-container .animation-container .building-container #obj-house {
   width: 40%;
   max-width: 350px;
+}
+.about-container .animation-container .sheep-container {
+  border: 1px solid blue;
+}
+.about-container .animation-container .sheep-container .obj-sheep {
+  width: 10%;
+  min-width: 60px;
 }
 
 .flock {

@@ -1,4 +1,4 @@
-import { contentBox } from '../Content-display/contentBox.js'
+// import { contentBox } from '../Content-display/contentBox.js'
 import { carAnimation } from './carAnimation.js'
 import { lunaAnimation } from './lunaAnimation.js'
 import { goose } from './goose.js'
@@ -13,7 +13,7 @@ const home = () => {
     goose(3)
     goose(4)
     gooseAnimation()
-    contentBox(homeScript)
+    // contentBox(homeScript)
 }
 
 home()

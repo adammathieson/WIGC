@@ -38,8 +38,8 @@ const load = () => {
 }
 
 const app = () => {
-    toggleMenu()
-    load()
+    // toggleMenu()
+    // load()
 }
 
 app()

@@ -34,7 +34,7 @@
         // height: 100vh;
 
         .building-container {
-            // border: 1px solid blue;
+            border: 1px solid blue;
             z-index: 1;
             position: relative;
             display: flex;
@@ -51,6 +51,17 @@
                 width: 40%;
                 max-width: 350px;
             }
+        }
+        .sheep-container {
+            border: 1px solid blue;
+
+
+            .obj-sheep {
+                width: 10%;
+                // max-width: 100px;
+                min-width: 60px;
+            }
+
         }
     }
 }
