@@ -1,7 +1,14 @@
 .temp-container {
+    // width: 100vw;
+    // height: 100vh;
+    background-color: #1C8B0A;
 
 
     #svg-container {
+        // display: none;
+        // border: 1px solid red;
+        width: 100vw;
+        height: 100vh;
 
     }
     #farm-svg {
@@ -9,6 +16,15 @@
     }
 
     #bg-features {
+        // display: none;
 
+        border: 1px solid red;
+
+        height: 500px;
+        width: 100px;
+    }
+
+    #house {
+        // display: none;
     }
 }

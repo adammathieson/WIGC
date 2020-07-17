@@ -959,6 +959,7 @@ header nav .burger div {
 .about-container .animation-container .building-container #obj-barn {
   width: 20%;
   max-width: 150px;
+  border: 1px solid red;
 }
 .about-container .animation-container .building-container #obj-house {
   width: 40%;
@@ -1456,6 +1457,18 @@ header nav .burger div {
     transform-origin: top;
     transform: rotate(20deg);
   }
+}
+.temp-container {
+  background-color: #1C8B0A;
+}
+.temp-container #svg-container {
+  width: 100vw;
+  height: 100vh;
+}
+.temp-container #bg-features {
+  border: 1px solid red;
+  height: 500px;
+  width: 100px;
 }
 
 /*# sourceMappingURL=index.css.map */
